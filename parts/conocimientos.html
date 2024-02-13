@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico">
+    <title>Cuentos de Enforth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <!-- Hojas de estilos -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../files/css/header.css" />
+    <link rel="stylesheet" href="../files/css/estadisticas.css" />
+    <!-- Script -->
+  </head>
+  <body>
+    <header>
+      <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
+        <div class="title-main col-md-8 text-center">
+          <h2 class="medieval">Cuentos de Enforth</h2>
+          <h4 class="">Manual interactivo</h4>
+        </div>
+        <div class="header-main-admin col-md-2">
+          <div class="header-main-admin-btn d-flex justify-content-around">
+            <a href="../index.html" style="color: white;"><h4 class="medieval m-2">Inicio</h4></a>
+            <a href="#" style="color: white;"><h4 class="medieval m-2">Master</h4></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+    <h2 class="text-center m-2 p-2"><a href="../index.html">Inicio</a> > <a href="personaje.html">Personaje</a> > Conocimientos</h2>
+    <div class="main-main m-0 p-0 row row-cols-1 row-cols-md-3">
+        <div class="left-side col-md-6">
+            <h2 class="p-3 text-center">Conocimientos básicos</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="heading1">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse1"
+                        aria-expanded="false"
+                        aria-controls="collapse1"
+                        >
+                        Agricultura
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse1"
+                    class="collapse"
+                    aria-labelledby="heading1"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Puedes plantar, tratar y cosechar plantas y alimentos, incluidas las plantas relacionadas con la alquimia, aunque para esto también requieres herbolaria.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading2">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse2"
+                        aria-expanded="false"
+                        aria-controls="collapse2"
+                        >
+                        Alquimia
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse2"
+                    class="collapse"
+                    aria-labelledby="heading2"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Puedes crear brebajes y saber de cuales se tratan si no están marcados, en caso de no tener un manual, y siempre que tengas el nivel de conocimiento y práctica suficientes. Requieres de un laboratorio de alquimia.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading3">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse3"
+                        aria-expanded="false"
+                        aria-controls="collapse3"
+                        >
+                        Armamentística
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    class="collapse"
+                    id="collapse3"
+                    aria-labelledby="heading3"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">
+                        Creación de armas de fuego, y modificación de armas cuerpo a cuerpo.
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading4">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse4"
+                        aria-expanded="false"
+                        aria-controls="collapse4"
+                        >
+                        Cacería
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse4"
+                    class="collapse"
+                    aria-labelledby="heading4"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Conoces las debilidades de las criaturas del mundo, siempre que estas tengan el mismo nivel de peligro que tu nivel de cazador.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading5">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse5"
+                        aria-expanded="false"
+                        aria-controls="collapse5"
+                        >
+                        Carpintería
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse5"
+                    class="collapse"
+                    aria-labelledby="heading5"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Creación de objetos, mejora de las casas, y reparación de artefactos creados con madera.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading6">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse6"
+                        aria-expanded="false"
+                        aria-controls="collapse6"
+                        >
+                        Cocina
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse6"
+                    class="collapse"
+                    aria-labelledby="heading6"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Puedes cocinar sin que la comida se estropee, esto además te permitirá hacer platos para todo el grupo con dos piezas de alimento, y un equipo de cocina, causando que todos recuperen la vida mientras descansan.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading7">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse7"
+                        aria-expanded="false"
+                        aria-controls="collapse7"
+                        >
+                        Herbolaria
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse7"
+                    class="collapse"
+                    aria-labelledby="heading7"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Conoces las plantas de alquimia, y las plantas que pueden ser utilizadas como medicina, pudiéndolas buscar activamente durante exploraciones.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading8">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse8"
+                        aria-expanded="false"
+                        aria-controls="collapse8"
+                        >
+                        Herrería
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse8"
+                    class="collapse"
+                    aria-labelledby="heading8"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Das forma a minerales para crear armamento y objetos varios con diferentes tipos de metales y rocas. Para esto requieres de una herrería, para utilizar la forja y la fundidora.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading9">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse9"
+                        aria-expanded="false"
+                        aria-controls="collapse9"
+                        >
+                        Ingeniería
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse9"
+                    class="collapse"
+                    aria-labelledby="heading9"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Creas artefactos y sabes cómo puedes hacerlos funcionar, en especial las bombas, mecanismos y trampas.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading10">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse10"
+                        aria-expanded="false"
+                        aria-controls="collapse10"
+                        >
+                        Joyería
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse10"
+                    class="collapse"
+                    aria-labelledby="heading10"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Puedes crear joyas, con diferentes utilidades, dependiendo de la forma de la joya, y el fragmento de la gema utilizada, que le dará una habilidad especial, u otra. Requiere de una herrería para crear los anillos mediante los moldes.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading11">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse11"
+                        aria-expanded="false"
+                        aria-controls="collapse11"
+                        >
+                        Manualidades
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse11"
+                    class="collapse"
+                    aria-labelledby="heading11"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Habilidad de realizar actividades con las manos de forma rápida y precisa. Con esto podrás deshabilitar trampas y abrir cofres y puertas con ganzúas.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading12">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse12"
+                        aria-expanded="false"
+                        aria-controls="collapse12"
+                        >
+                        Medicina
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse12"
+                    class="collapse"
+                    aria-labelledby="heading12"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Puedes ayudar a sanar de forma más efectiva a otros individuos. Con el conocimiento de medicina, se podrá revivir mediante el uso de un Berilo desbloqueado, a quien esté al borde de la muerte, con tantos intentos como nivel en la profesión de Médico tenga.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading13">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse13"
+                        aria-expanded="false"
+                        aria-controls="collapse13"
+                        >
+                        Montura
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse13"
+                    class="collapse"
+                    aria-labelledby="heading13"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Puedes domesticar animales y criaturas salvajes, siempre y cuando tengas un nivel de carisma alto, y además, tu nivel en Domador sea igual o menor al nivel de peligro del ser al que se busque domesticar.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading14">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse14"
+                        aria-expanded="false"
+                        aria-controls="collapse14"
+                        >
+                        Música
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse14"
+                    class="collapse"
+                    aria-labelledby="heading14"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Sabes tocar instrumentos, pudiendo entretener a las personas con estos, dando un pequeño bono a tu carisma mientras lo haces.</b></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="heading15">
+                    <h5 class="mb-0 text-center">
+                        <button
+                        class="btn btn-link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse15"
+                        aria-expanded="false"
+                        aria-controls="collapse15"
+                        >
+                        Talabartería
+                        </button>
+                    </h5>
+                    </div>
+                    <div
+                    id="collapse15"
+                    class="collapse"
+                    aria-labelledby="heading15"
+                    data-bs-parent="#accordion"
+                    >
+                    <div class="card-body">Creas objetos con cuero, mejorando además las mochilas, con cualquier cuero, dándole un espacio extra por cada uno, creando espacios adicionales para llevar objetos, como es el caso de la riñonera y el cinturón, que requieren cuero fresco. Al crear armamento, el nivel de mejora, será igual al del nivel de profesión en Talabartero.</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side col-md-6">
+        <h2 class="p-3 text-center">Conocimientos mágicos</h2>
+          <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="heading16">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse16"
+                    aria-expanded="false"
+                    aria-controls="collapse16"
+                    >
+                    Magia Arcana (Magia básica)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse16"
+                class="collapse"
+                aria-labelledby="heading16"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere una Amatista para su uso.</b><br>Es la magia en un estado ausente de elementos, por lo que puede tener más variedad de usos.</b></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading17">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse17"
+                    aria-expanded="false"
+                    aria-controls="collapse17"
+                    >
+                    Magia de Fuego (Magia Elemental básica)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse17"
+                class="collapse"
+                aria-labelledby="heading17"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere un Rubi para su uso.</b><br>La magia de tipo elemental de Fuego, busca causar daño masivo, sin tener capacidad para la defensa de forma directa, los hechizos suelen ser de uso rápido, con mucha variedad de usos.</b></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading18">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse18"
+                    aria-expanded="false"
+                    aria-controls="collapse18"
+                    >
+                    Magia de Hielo (Magia Elemental básica)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse18"
+                class="collapse"
+                aria-labelledby="heading18"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere un Zafiro para su uso.</b><br>La magia de tipo elemental de hielo, busca crear hielo, generalmente para su uso de entorno, o defensa. Lo común es modificar el clima o buscar una ventaja al aplicar <b>congelamiento.</b></b></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading19">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse19"
+                    aria-expanded="false"
+                    aria-controls="collapse19"
+                    >
+                    Magia de Electricidad (Magia Elemental básica)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse19"
+                class="collapse"
+                aria-labelledby="heading19"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere un Berilio para su uso.</b><br>La magia de tipo elemental de electricidad, busca crear hechizos mixtos de daño y utilidad. Los hechizos eléctricos suelen ser débiles, a menos que aprovechen fuentes de energía cercanas.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading20">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse20"
+                    aria-expanded="false"
+                    aria-controls="collapse20"
+                    >
+                    Magia de Luz (Magia Semi-avanzada)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse20"
+                class="collapse"
+                aria-labelledby="heading20"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere un Diamante para su uso.</b><br>La magia de la luz, es una variante mejorada de la magia arcana, permitiendo mucha mas flexibilidad, aunque su poder en cuanto a habilidades de protección, ha sido aumentada, mientras que su poder destructivo esta muy disminuido.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading21">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse21"
+                    aria-expanded="false"
+                    aria-controls="collapse21"
+                    >
+                    Magia de Oscuridad (Magia Semi-avanzada)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse21"
+                class="collapse"
+                aria-labelledby="heading21"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere un Onix para su uso.</b><br>La magia de oscuridad rompe con lo normal de las magias, de crear poder desde la pureza de la magia, y convierte todo en un abasijo de corrupción y podredumbre, la magia de oscuridad compete a la necromancia y la penumbra.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading22">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse22"
+                    aria-expanded="false"
+                    aria-controls="collapse22"
+                    >
+                    Magia de Almas (Magia Semi-avanzada)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse22"
+                class="collapse"
+                aria-labelledby="heading22"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere un Jade para su uso.</b><br>El control de almas siempre fue mal visto, debido a que la mayoria de sus convocadores, los utilizaban para utilizar los restos de vida de los familiares de otros, para sobornos, o hacian de mediums, estafando con poder hablar con sus muertos, cuando en realidad usaba su espíritu para poder hablar como él. En la actualidad, los que utilizan estas magias, son por lo general invocadores, o moldeadores de alma, pudiendo crear objetos en base al poder del alma.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading23">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse23"
+                    aria-expanded="false"
+                    aria-controls="collapse23"
+                    >
+                    Magia de la Fé
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse23"
+                class="collapse"
+                aria-labelledby="heading23"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Es la obtenida cuando alguien se vuelve Paladin de su dios.</div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="../files/js/jquery.js"></script>
+  <script src="../files/js/popper.js"></script>
+  <script src="../files/bs/js/bootstrap.bundle.min.js"></script>
+</html>

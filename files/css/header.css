@@ -1,0 +1,26 @@
+@font-face {
+    font-family: MedievalSharp;
+    src: url(../fonts/MedievalSharp/MedievalSharp.ttf);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(../fonts/Abel/Abel.ttf);
+}
+
+* {
+    font-family: Abel;
+}
+
+.medieval {
+    font-family: MedievalSharp;
+}
+
+header {
+    font-family: MedievalSharp;
+}
+
+.header-main {
+    background-color: gray;
+    color:white;
+}

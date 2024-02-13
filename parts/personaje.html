@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="files/img/favicon.ico">
+    <title>Cuentos de Enforth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <!-- Hojas de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+
+      /* Header */
+
+      @font-face {
+          font-family: MedievalSharp;
+          src: url(../fonts/MedievalSharp/MedievalSharp.ttf);
+      }
+
+      @font-face {
+          font-family: Abel;
+          src: url(../fonts/Abel/Abel.ttf);
+      }
+
+      * {
+          font-family: Abel;
+      }
+
+      .medieval {
+          font-family: MedievalSharp;
+      }
+
+      header {
+          font-family: MedievalSharp;
+      }
+
+      .header-main {
+          background-color: gray;
+          color:white;
+      }
+
+      /* Body */
+
+      main {
+          max-width: 100%;
+      }
+
+      body {
+          background-color: black;
+          color:white;
+      }
+
+      .card-img-top {
+          width: 100%;
+          height: 10vw;
+          object-fit:cover;
+      }
+
+      .card {
+          border: 1px solid black;
+          transition: 0.3s;
+      }
+
+      .card:hover {
+          border: 1px solid rgb(130, 207, 238);
+          transition: 0.3s;
+          background-color: rgba(166, 220, 241);
+      }
+
+      .card-img-top {
+          border-radius: 0;
+      }
+
+      .main-main {
+          padding:20px;
+      }
+
+      .card-header {
+          font-weight: bold;
+      }
+
+      @media only screen and (max-width: 780px) {
+          .card-img-top {
+              width: 100%;
+              height: 24vw;
+              object-fit:cover;
+          }
+      }
+
+      @media only screen and (max-width: 430px) {
+          .card-img-top {
+              width: 100%;
+              height: 35vw;
+              object-fit:cover;
+          }
+      }
+    </style>
+    <!-- Script -->
+  </head>
+  <body>
+    <header>
+        <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
+          <div class="title-main col-md-8 text-center">
+            <h2 class="medieval">Cuentos de Enforth</h2>
+            <h4 class="">Manual interactivo</h4>
+          </div>
+          <div class="header-main-admin col-md-2">
+            <div class="header-main-admin-btn d-flex justify-content-around">
+              <a href="../index.html" style="color: white;"><h4 class="medieval m-2">Inicio</h4></a>
+              <a href="#" style="color: white;"><h4 class="medieval m-2">Master</h4></a>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+      <div
+        class="main-main d-flex justify-content-center text-center row m-0 w-100"
+      >
+        <h2><a href="../index.html">Inicio</a> > Personaje</h2>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Guia de creación</div>
+          <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Guia para poder crear a tu personaje
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Estadísticas</div>
+          <a href="estadisticas.html"><img class="card-img-top" src="https://i.imgur.com/6qchM00.jpeg" alt="Card image cap" /></a>
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Estas conforman a tu personaje, su forma física, y capacidades
+              mentales
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Conocimientos</div>
+          <a href="conocimientos.html"><img class="card-img-top" src="https://i.imgur.com/wHFCg2k.jpeg" alt="Card image cap" /></a>
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Conforma lo que el personaje sabe hacer, su conocimiento teórico
+              base
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Razas</div>
+          <img class="card-img-top" src="https://i.imgur.com/FTw771G.jpeg" alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Revisa cuales son las razas jugables que pertenecen al mundo
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Clases</div>
+          <img class="card-img-top" src="https://i.imgur.com/iEQvmsP.jpeg" alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Dale una mirada a las clases que formaran el equipamiento y
+              tácticas de tu personaje
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Profesiones</div>
+          <img class="card-img-top" src="https://i.imgur.com/Dx4QMCU.jpeg" alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Las profesiones te dan la capacidad de crear mejor equipamiento, y
+              mejorar tu equipamiento actual
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Maldiciones</div>
+          <img class="card-img-top" src="https://i.imgur.com/cGOSDV3.jpeg" alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Las maldiciones azotan en el mundo, y pueden proveer de ventajas a quienes las padecen, asi como grandes desventajas
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Niveles y experiencia</div>
+          <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Información sobre la subida de nivel del personaje, raza, clase y profesión, y la obtención de experiencia.
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Dones</div>
+          <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Los dones son aquellos que hace especial a cada personaje, puedes elegir alguno de una larga lista, el que mas se acople a ti.
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Idiomas</div>
+          <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Listado de los idiomas
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Reputaciones</div>
+          <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Explicación de la reputación, y cual es su utilidad según de quien la obtengas
+            </p>
+          </div>
+        </div>
+        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+          <div class="card-header">Inventario</div>
+          <img class="card-img-top" src="..." alt="Card image cap" />
+          <div class="card-body text-dark">
+            <p class="card-text">
+              Como funciona el inventario, que tipo de objetos se pueden apilar, y como expandir tu inventario
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
