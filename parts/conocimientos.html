@@ -16,6 +16,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <style>
+        body {
+          background: url("../files/img/background.jpg");
+        }
+    </style>
     <link rel="stylesheet" href="../files/css/header.css" />
     <link rel="stylesheet" href="../files/css/estadisticas.css" />
     <!-- Script -->
@@ -24,22 +29,22 @@
     <header>
       <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
         <div class="title-main col-md-8 text-center">
-          <h2 class="medieval">Cuentos de Enforth</h2>
-          <h4 class="">Manual interactivo</h4>
+          <h2 class="medieval titulo">Cuentos de Enforth</h2>
+          <h4 class="titulo">Manual interactivo</h4>
         </div>
         <div class="header-main-admin col-md-2">
           <div class="header-main-admin-btn d-flex justify-content-around">
-            <a href="../index.html" style="color: white;"><h4 class="medieval m-2">Inicio</h4></a>
-            <a href="#" style="color: white;"><h4 class="medieval m-2">Master</h4></a>
+            <a href="../index.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Inicio</h4></a>
+            <a href="#" style="color: white;"><h4 class="medieval m-2 titulo boton">Master</h4></a>
           </div>
         </div>
       </div>
     </header>
     <main>
-    <h2 class="text-center m-2 p-2"><a href="../index.html">Inicio</a> > <a href="personaje.html">Personaje</a> > Conocimientos</h2>
+    <h2 class="text-center m-2 p-2 titulo"><a href="../index.html">Inicio</a> > <a href="personaje.html">Personaje</a> > Conocimientos</h2>
     <div class="main-main m-0 p-0 row row-cols-1 row-cols-md-3">
         <div class="left-side col-md-6">
-            <h2 class="p-3 text-center">Conocimientos básicos</h2>
+            <h2 class="p-3 text-center titulo">Conocimientos básicos</h2>
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" id="heading1">
@@ -392,7 +397,7 @@
             </div>
         </div>
         <div class="right-side col-md-6">
-        <h2 class="p-3 text-center">Conocimientos mágicos</h2>
+        <h2 class="p-3 text-center titulo">Conocimientos mágicos</h2>
           <div id="accordion">
             <div class="card">
                 <div class="card-header" id="heading16">
@@ -575,7 +580,122 @@
                 aria-labelledby="heading23"
                 data-bs-parent="#accordion"
                 >
-                <div class="card-body"><b>Es la obtenida cuando alguien se vuelve Paladin de su dios.</div>
+                <div class="card-body">Es la obtenida cuando alguien se vuelve Paladin de su dios.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading24">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse24"
+                    aria-expanded="false"
+                    aria-controls="collapse24"
+                    >
+                    Magia Divina (Magia muy avanzada)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse24"
+                class="collapse"
+                aria-labelledby="heading24"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere un arma de Druvix para su uso.</b><br>Es magia creada por los dioses y semidioses, tienen mucho poder, capaces de modificar la realidad</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading25">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse25"
+                    aria-expanded="false"
+                    aria-controls="collapse25"
+                    >
+                    Magia Mental (Magia Avanzada)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse25"
+                class="collapse"
+                aria-labelledby="heading25"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere una Perla para su uso.</b><br>Esta magia permite crear ilusiones vividas en los individuos, además de poder indagar en sus mentes, ver recuerdos, y para los mejores en esta magia, controlar las mentes</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading26">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse26"
+                    aria-expanded="false"
+                    aria-controls="collapse26"
+                    >
+                    Magia de la Naturaleza (Magia Avanzada)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse26"
+                class="collapse"
+                aria-labelledby="heading26"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body">Es provista por la Diosa de la Naturaleza a quienes luchen por ella (Paladines), y a sus propias creaciones que defienden la tierra (Naturis).</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading27">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse27"
+                    aria-expanded="false"
+                    aria-controls="collapse27"
+                    >
+                    Magia de Sangre (Magia Avanzada)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse27"
+                class="collapse"
+                aria-labelledby="heading27"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body"><b>Requiere una Hematita para su uso.</b><br>Es poseída por los vampiros, cuya finalidad es utilizar la sangre como fuente de poder, en lugar del maná latente, que utilizan la magia arcana y las elementales.</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="heading28">
+                <h5 class="mb-0 text-center">
+                    <button
+                    class="btn btn-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse28"
+                    aria-expanded="false"
+                    aria-controls="collapse28"
+                    >
+                    Magia del Tiempo (Avanzado)
+                    </button>
+                </h5>
+                </div>
+                <div
+                id="collapse28"
+                class="collapse"
+                aria-labelledby="heading28"
+                data-bs-parent="#accordion"
+                >
+                <div class="card-body">Una magia muy rara y difícil de conseguir, muy pocos saben de su existencia, y menos aún saben dónde localizarla. Controla tu propio tiempo, o el de algún aliado, corriendo el tiempo real, tal como está.</div>
                 </div>
             </div>
         </div>

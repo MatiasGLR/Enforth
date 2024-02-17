@@ -1,16 +1,58 @@
+/* Header */
+
+@font-face {
+    font-family: MedievalSharp;
+    src: url(../fonts/MedievalSharp/MedievalSharp.ttf);
+}
+
+@font-face {
+    font-family: Abel;
+    src: url(../fonts/Abel/Abel.ttf);
+}
+
+* {
+    font-family: Abel;
+}
+
+.medieval {
+    font-family: MedievalSharp;
+}
+
+header {
+    font-family: MedievalSharp;
+}
+
+.header-main {
+    background-color: gray;
+    color:white;
+}
+
+/* Body */
+
 main {
     max-width: 100%;
+    
 }
 
 body {
     background-color: black;
     color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card-img-top {
     width: 100%;
     height: 10vw;
     object-fit:cover;
+}
+
+.titulo {
+    color:white;
+    text-shadow: -1px 1px 0 #000,
+          1px 1px 0 #000,
+          1px -1px 0 #000,
+          -1px -1px 0 #000;
 }
 
 .card {

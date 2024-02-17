@@ -24,3 +24,22 @@ header {
     background-color: gray;
     color:white;
 }
+
+.titulo {
+    text-shadow: -1px 1px 0 #000,
+            1px 1px 0 #000,
+            1px -1px 0 #000,
+            -1px -1px 0 #000;
+  }
+
+.boton:hover {
+    color:skyblue;
+}
+
+a {
+    color:skyblue;
+}
+
+a:hover {
+    color:cyan;
+}

@@ -17,6 +17,13 @@ body {
     padding:20px;
 }
 
+body {
+    background-color: black;
+    color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .card-header {
     font-weight: bold;
 }
