@@ -1,132 +1,941 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico">
-    
-    <title>Cuentos de Enforth</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <!-- Hojas de estilos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Script -->
-    <style>
-      body {
-        background: url("../files/img/background.jpg");
-      }
-    </style>
-    <link rel="stylesheet" href="../files/css/header.css">
-    <link rel="stylesheet" href="../files/css/main.css">
-  </head>
-  <body>
-    <header>
-        <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
-          <div class="title-main col-md-8 text-center">
-            <h2 class="medieval titulo">Cuentos de Enforth</h2>
-            <h4 class="titulo">Manual interactivo</h4>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico">
+  <title>Cuentos de Enforth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <!-- Hojas de estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Script -->
+  <style>
+    body {
+      background: url("../files/img/background.jpg");
+    }
+  </style>
+  <link rel="stylesheet" href="../files/css/header.css">
+  <link rel="stylesheet" href="../files/css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
+      <div class="title-main col-md-8 text-center">
+        <h2 class="medieval titulo">Cuentos de Enforth</h2>
+        <h4 class="titulo">Manual interactivo</h4>
+      </div>
+      <div class="header-main-admin col-md-2">
+        <div class="header-main-admin-btn d-flex justify-content-around">
+          <a href="../index.html" style="color: white;">
+            <h4 class="medieval m-2 titulo boton">Inicio</h4>
+          </a>
+          <a href="#" style="color: white;">
+            <h4 class="medieval m-2 titulo boton">Master</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+    <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
+      <h2 class="titulo"><a href="../index.html">Inicio</a> > <a href="./personaje.html">Personaje</a> > Razas</h2>
+      <div style="max-width: 100%; border-radius: 5px;"
+        class="mw-100 w-100 p-2 m-2 col-12 bg-dark text-white text-start">
+        <p>El elegir la raza es una de las decisiones más importantes al momento de crear al protagonista de tu historia, la raza va a establecer las habilidades iniciales que tiene el personaje, parte de las estadísticas, como la defensa natural que este tiene.
+          <br>La raza tiene ciertas habilidades, pudiendo desbloquear una habilidad perteneciente a la raza, como opción al subir de nivel <a class="linkredirect" href="./expyniv.html">(Ver Experiencia y niveles)</a>.
+        </p>
+        <p>Es importante destacar, que ciertas razas tienen una <a class="linkredirect" href="./reputacion.html">reputación general</a> poco favorable, lo que te hará iniciar con una cierta desventaja con respecto a otras, que podrías eliminar en tu travesía, al limpiar el manchado nombre de tu especie sobre ti.</p>
+        <p>Al momento de elegir una raza, esta puede ser pura, con ambos padres de la misma raza, o puede ser un hibrido entre dos padres de raza pura distintas; en caso de elegir una hibridación, una de las dos razas prevalece sobre la otra, lo que se nombra como “Raza principal”, y la raza secundaria, como “Raza hibridada”. En cada raza se establece el “Rasgo distintivo”, el cual el personaje heredará de la raza principal, formando parte de su apariencia física, y única raza de la que se podrá desbloquear la habilidad “Herencia” <b>(Esta habilidad vendrá de base, cuando el personaje sea creado)</b>.</p>
+        <p>Las habilidades de cada raza tienen un cierto nivel, que requiere que la raza sea subida de nivel antes de poder desbloquearla, pudiendo desbloquear una habilidad cada que la raza es subida de nivel, ya sea del mismo, o de uno inferior.</p>
+        <p>De la raza secundaria, solo podrán desbloquearse habilidades, gastando dos puntos de mejora <a class="linkredirect" href="./expyniv.html">(Ver Experiencia y niveles)</a>.</p>
+        <hr id="skipto">
+        <div id="informacion">
+          <div id="humano" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Humano</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> Como una de las razas más débiles en general, tanto física, como
+                  mágicamente, debieron de valerse de su ingenio, para poder construir la tecnología que les permitiera
+                  sobrevivir en este intrépido mundo.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Agilidad.</b> 2 puntos.<br>
+                    <b>Inteligencia.</b> 2 puntos.<br>
+                    <b>Suerte.</b> 1 punto.<br>
+                    <b>Armadura natural.</b> 2 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    Los humanos son considerados generalmente inofensivos, al no tener una malicia innata, como podría ser
+                    el caso de los orcos, estos siempre prefirieron mantenerse al margen de los problemas, la reputación
+                    de los humanos en todos los continentes es de <b>0 (Neutral)</b>.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Cazador.</b> Nivel 2.<br>
+                    <b>Armero.</b> Nivel 2.<br>
+                    <b>Conocimiento.</b> "Cacería".<br>
+                    <b>Conocimiento.</b> "Herbolaria".<br>
+                    <b>Conocimiento.</b> "Armamentistica".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> 150cm a 180cm.<br>
+                    <b>Color de piel.</b> Variables en tonos de beige y marrón.<br>
+                    <b>Color de cabello.</b> Variables en tonos de marrón, amarillo, rojo, celeste y negro.<br>
+                    <b>No tienen ningún rasgo en especial en su forma física.</b><br>
+
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Historial de persecución (Habilidad pasiva)</b><br>
+                  Obtienen desventaja al resistirse al miedo, y el doble de probabilidad de ser causado.
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza,
+                  solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Rebusque (Habilidad nivel 1)</b><br>
+                  Tienes el doble de probabilidad de encontrar plantas medicinales al buscarlas activamente durante una
+                  exploración.
+                </p>
+                <p>
+                  <b>Mínimo para vivir (Habilidad nivel 1)</b><br>
+                  Al lanzar tiradas de estadística con negativo, puedes contar este como cero.
+                </p>
+                <p>
+                  <b>Mal presagio (Habilidad nivel 2)</b><br>
+                  Podrán saber cuándo algún animal salvaje hostil se encuentre cerca.
+                </p>
+                <p>
+                  <b>Hipersupervivencia (Habilidad nivel 3)</b><br>
+                  Ante un peligro inmediato, se agregará dos puntos a todas las tiradas que busquen salvar al personaje de
+                  ese peligro.
+                </p>
+                <p>
+                  <b>Venganza (Habilidad nivel 4)</b><br>
+                  Si un aliado es abatido, obtendrás un dado de daño adicional, y un dado más contra el enemigo que abatió
+                  a tu aliado (No acumulables).
+                </p>
+                <p>
+                  <b>Múltiple especialidad (Habilidad nivel 5)</b><br>
+                  Puede desbloquear un segundo don.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="header-main-admin col-md-2">
-            <div class="header-main-admin-btn d-flex justify-content-around">
-              <a href="../index.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Inicio</h4></a>
-              <a href="#" style="color: white;"><h4 class="medieval m-2 titulo boton">Master</h4></a>
+          <div id="orco" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Orco</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> Conquistadores casi desde sus inicios, debido a su fatal arrogancia, la sed de sangre, y de demostrar su fuerza, creyéndose las perfectas armas de combate, debido a que, en cuanto a ejército, ellos son el que mejor resiste a los ataques, y el hecho de que no pueden ser detenidos por cualquiera durante enfrentamientos directos.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Fuerza.</b> 2 puntos.<br>
+                    <b>Resistencia.</b> 2 puntos.<br>
+                    <b>Armadura natural.</b> 4 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    Son odiados y repudiados en la mayoría de regiones, a excepción de una buena parte de Suredozo, donde está la ciudad de estos, siendo limitada su expansión por el Reino de Pandleins. La reputación general de los Orcos es de <b>-10 (Mala)</b>.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Herrería.</b> Nivel 2.<br>
+                    <b>Cazador.</b> Nivel 2.<br>
+                    <b>Conocimiento.</b> "Cacería".<br>
+                    <b>Conocimiento.</b> "Herrería".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> 180cm a 210cm.<br>
+                    <b>Color de piel.</b> Tonos de gris.<br>
+                    <b>Color de cabello.</b> Tonos de negro o rojo.<br><br>
+                    <b>Los orcos cuentan con colmillos de mayor tamaño, que suelen sobresalir de la boca, y una cabeza un
+                      poco más grande, si comparamos a un humano con su cuerpo.</b><br>
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Falta de tacto (Habilidad pasiva)</b><br>
+                  Su forma tosca y agresiva de ser también forma parte de su habla, por lo que tienen desventaja en cualquier tirada de carisma, excepto en la intimidación. El uso de armas a distancia tendrá desventaja en daño
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza, solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Preferencia de contacto (Habilidad nivel 1)</b><br>
+                  No pueden utilizar ningún tipo de magia, y al usar combate desarmado, obtienen un dado adicional de daño por nivel (Escalan con dados ficticios de Fuerza, mínimo 1d6).
+                </p>
+                <p>
+                  <b>Contraataque feroz (Habilidad nivel 1)</b><br>
+                  Al recibir un ataque que vaya a dejarlos fuera de combate, pueden anular el daño, y curarse 1d10, apartando al enemigo una casilla (Solo usable una vez por turno enemigo).
+                </p>
+                <p>
+                  <b>Furia interna (Habilidad nivel 2)</b><br>
+                  Al tener 30% de vida o menos, se duplica la probabilidad de efecto en ataques físicos, y al tener 10% de vida o menos, obtiene dos dados adicionales de daño en ataques desarmados.
+                </p>
+                <p>
+                  <b>Rompecascos (Habilidad nivel 3)</b><br>
+                  Duplica la ruptura de armadura de las armas a dos manos, y las armas a una mano, aplican rompearmadura.
+                </p>
+                <p>
+                  <b>Embestida titánica (Habilidad nivel 4)</b><br>
+                  Pueden correr en una dirección, consumiendo una acción de ataque y movimiento; si impacta contra un enemigo, le causa tanto daño en dados de 6 (Max. 2 por nivel), como casillas se hayan recorrido, alejando al enemigo, la mitad de casillas recorridas.
+                </p>
+                <p>
+                  <b>Ejecución sanguinaria (Habilidad nivel 5)</b><br>
+                  Al atinar un ataque a un enemigo que tenga 10% de vida o menos, puede tomarlo, y ejecutarlo en el momento (Siempre que sea de tamaño igual o menor al orco).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="shira" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Shira</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> Provenientes de las heladas tierras de Glosbeheim, los Shira se han adecuado a los inhóspitos climas helados, en los cuales han aprendido a sobrevivir al frío, y a cazar la poca variedad de especies que hay en esas tierras, o al menos las que se les podía cazar fácilmente.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Resistencia.</b> 2 puntos.<br>
+                    <b>Vitalidad.</b> 2 puntos.<br>
+                    <b>Combate.</b> 1 punto.<br>
+                    <b>Armadura natural.</b> 4 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    Son generalmente desconocidos para el mundo, debido a que son confundidos con humanos comunes. Su reputación es de <b>0 (Neutral)</b>, debido a ser confundidos con humanos.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Cazador.</b> Nivel 2.<br>
+                    <b>Talabartería.</b> Nivel 2.<br>
+                    <b>Conocimiento.</b> "Cacería".<br>
+                    <b>Conocimiento.</b> "Talabartería".<br>
+                    <b>Magia.</b> "Hielo".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> 160cm a 200cm.<br>
+                    <b>Color de piel.</b> Blanco.<br>
+                    <b>Color de cabello.</b> Rojo, bordo, negro rojizo.<br><br>
+                    <b>Los hombres tienen un crecimiento rápido en su barba, y las mujeres suelen tener largas
+                      cabelleras.</b><br>
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Criofilia (Habilidad pasiva)</b><br>
+                  Son inmunes al daño de hielo, y al efecto del congelamiento. Al recibir una carga de quemadura, son abatidos al momento, perdiendo la mitad de la vida (Redondeado hacia arriba).
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza, solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Punto frío (Habilidad nivel 1)</b><br>
+                  Al atacar a un enemigo que tenga cargas de congelamiento, obtienen un 1d4 de daño por cada carga, quitando las cargas al impactar el ataque.
+                </p>
+                <p>
+                  <b>Danza de hielo (Habilidad nivel 1)</b><br>
+                  Moverse en climas helados, y en el hielo, no les costará acciones de movimiento. Pueden moverse al estar estatizados, mientras pisen hielo, o nieve.
+                </p>
+                <p>
+                  <b>Escarcha del gigante de hielo (Habilidad nivel 2)</b><br>
+                  Por cada 10% de vida que le falte, obtienen un punto de armadura helada, la cual aumenta la armadura natural por cada carga de armadura helada.
+                </p>
+                <p>
+                  <b>Porte sencillo (Habilidad nivel 3)</b><br>
+                  Pueden utilizar un hacha a dos manos, con una mano, pudiendo utilizar únicamente un escudo en su otra mano.
+                </p>
+                <p>
+                  <b>Rompehielos (Habilidad nivel 3)</b><br>
+                  Al atinar un golpe a un enemigo que tenga diez cargas de congelamiento, lo congela en un bloque de hielo, dejándolo fuera de combate.
+                </p>
+                <p>
+                  <b>Tormenta helada (Habilidad nivel 4)</b><br>
+                  Pueden crear una tormenta de nieve en la zona de combate, la cual colocará una carga de congelamiento a cada individuo en la zona de combate, al final de la ronda. (Costo: 3 Acciones de combate).
+                </p>
+                <p>
+                  <b>Forja helada (Habilidad nivel 5)</b><br>
+                  Pueden hacer una aleación de Titanio (1) y Zafiro desbloqueado (1), para hacer lingotes de Everfrost, los cuales tendrán el mismo daño que el Titanio, y el efecto de veneno helado, el cual colocará una carga de congelamiento al final de su turno a quien se vea afectado.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="lhanie" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Lhanie</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> Mitad hombre y mitad bestia, los Lhanies son los más conectados al mundo animal, entendiendo estos la manera de poder comunicarse de forma relativa con estos, y así, poder pedir su ayuda en este intrépido mundo.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Agilidad.</b> 2 puntos.<br>
+                    <b>Carisma.</b> 2 puntos.<br>
+                    <b>Armadura natural.</b> 3 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    Debido a la amistad que tienen estos con los animales, son generalmente bien vistos por las demás razas, como unos seres pacíficos, que buscan resolver los problemas con la menor violencia posible, aunque hay situaciones en las que no queda alternativa. La reputación general de <b>5 (Buena)</b>.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Cazador.</b> Nivel 2.<br>
+                    <b>Talabartería.</b> Nivel 2.<br>
+                    <b>Conocimiento.</b> "Cacería".<br>
+                    <b>Conocimiento.</b> "Talabartería".<br>
+                    <b>Conocimiento.</b> "Herbolaria".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> 170cm a 180cm.<br><br>
+                    <b>Los colores de piel y cabello dependerán del animal originario del Lhanie.</b><br>
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Desomnivorismo (Habilidad pasiva)</b><br>
+                  No pueden comer otro alimento, que no sea el preferente de su animal originario (Carnes, o frutas y vegetales).
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza, solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Casi domesticado (Habilidad nivel 1)</b><br>
+                  Tienen una probabilidad de convencer a animales salvajes, para que les acompañen en sus exploraciones, pudiendo este abandonar en cualquier momento la expedición.
+                </p>
+                <p>
+                  <b>Rastreo (Habilidad nivel 1)</b><br>
+                  Aumenta al doble la probabilidad de encontrar activamente animales durante una exploración.
+                </p>
+                <p>
+                  <b>Alimentación balanceada (Habilidad nivel 2)</b><br>
+                  Al comer un alimento preferente, obtienen el doble de beneficios.
+                </p>
+                <p>
+                  <b>Equipamiento natural (Habilidad nivel 3)</b><br>
+                  Pueden hacer armas y armaduras adicionales, que ocupan el espacio de funda extra, con el uso de huesos y cuero, aumentando la armadura en un punto por cada pieza, y en caso de usarse en una zona de ataque, aumenta en un dado el daño de ataque desarmado (Tirada ficticia de fuerza, sin armas), por cada pieza.
+                </p>
+                <p>
+                  <b>Absorción de nutrientes (Habilidad nivel 4)</b><br>
+                  Al comer un alimento preferente durante un combate, puedes renunciar al bufo que este da (Puedes obtenerlo de nuevo al comer otro alimento preferente), para curarte como una Poción de Vida Lv2. Puedes apilar alimentos preferentes hasta 10.
+                </p>
+                <p>
+                  <b>Adaptabilidad (Habilidad nivel 5)</b><br>
+                  Al derrotar a un enemigo, obtienes dos dados adicionales de daño contra enemigos del mismo tipo, hasta el final del combate.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="turbe" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Turbe</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> Son por lo general confundidos con Lhanies enanos, aunque las
+                  razas de animales que conforman a ambos, no son las mismas, y nunca concuerdan. Los Turbes tienden a ser
+                  más juguetones que otros animales, además de que los objetos brillantes se les hace muy atractivos, por
+                  lo que tienden a investigarlos.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Agilidad.</b> 2 puntos.<br>
+                    <b>Inteligencia.</b> 3 puntos.<br>
+                    <b>Suerte.</b> -1 puntos.<br>
+                    <b>Armadura natural.</b> 1 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    Por su pequeña y tierna apariencia en general, son tratados como seres benignos y casi inofensivos,
+                    aunque el conocerlos a fondo podrá determinar que esto no es así en todos los casos. Su reputación
+                    general es de <b>5 (Buena)</b>.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Herrero.</b> Nivel 2.<br>
+                    <b>Talabartería.</b> Nivel 2.<br>
+                    <b>Carpintería.</b> Nivel 1.<br>
+                    <b>Conocimiento.</b> "Talabartería".<br>
+                    <b>Conocimiento.</b> "Herrería".<br>
+                    <b>Conocimiento.</b> "Carpintería".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> 70cm a 120cm.<br><br>
+                    <b>Los colores de piel y cabello dependerán del animal originario del Turbe.</b><br>
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Pequeñas travesuras (Habilidad pasiva)</b><br>
+                  Debido a su pequeño tamaño, no pueden utilizar armas que se consideran pesadas. Al encontrarse con
+                  objetos brillantes no pueden resistirse a revisar que son. No pueden subir puntos en suerte, de forma
+                  permanente, temporal, raza, etc.
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza,
+                  solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Lanzas brillantes (Habilidad nivel 1)</b><br>
+                  Pueden apilar lanzas de madera, hasta dos por nivel. El daño de estas lanzas al arrojarlas
+                  individualmente, será de 1d10 mágico por nivel, escalando con Inteligencia. Las lanzas quedarán clavadas
+                  en el enemigo, y pueden ser retiradas con una acción de movimiento por lanza, causando 1d6 de daño
+                  verdadero, y un punto de daño verdadero a los enemigos entre ti, y las lanzas, por cada lanza (Max.
+                  10ft).
+                </p>
+                <p>
+                  <b>Escurridizo (Habilidad nivel 1)</b><br>
+                  Al esquivar, pueden pasar hacia detrás del enemigo, siempre que a este se le pueda pasar por debajo, o
+                  entre medio.
+                </p>
+                <p>
+                  <b>Bajo tierra (Habilidad nivel 2)</b><br>
+                  Pueden crear túneles entre dos partes del mapa de combate por tres acciones de movimiento, y cruzar
+                  entre estos, a cambio de dos acciones de movimiento.
+                </p>
+                <p>
+                  <b>Refuerzo mágico (Habilidad nivel 3)</b><br>
+                  Pueden cambiar el daño físico, por daño mágico, agregándole 1d6 de daño al arma por nivel en la clase de
+                  mago.
+                </p>
+                <p>
+                  <b>Espiritualidad (Habilidad nivel 4)</b><br>
+                  Obtienen el conocimiento de magia de almas. Conseguir almas tendrá el doble de probabilidad.
+                </p>
+                <p>
+                  <b>Unión espiritual (Habilidad nivel 5)</b><br>
+                  Pueden consumir un alma para invocar al animal correspondiente, en forma de fantasma, como apoyo de
+                  combate, además, de obtener una de sus estadísticas, durante un combate, o una acción narrativa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="fjereo" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Fjereo</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> Parientes lejanos de las aves, los Fjereos tienen una gran
+                  capacidad física cuando se trata de evitar peligros, debido a la capacidad de vuelo que tienen, que les
+                  permite evitar peligros cercanos, manteniéndose al margen de las adversidades.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Agilidad.</b> 2 puntos.<br>
+                    <b>Percepción.</b> 2 puntos.<br>
+                    <b>Armadura natural.</b> 0 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    Son bastante conocidos en el mundo debido a que se les suele contratar como guías, ya que, aunque no
+                    vuelen durante largos tiempos, estos pueden tener el suficiente tiempo de tomar un vistazo, y poder
+                    advertir de posibles peligros, o rutas alternas. Su reputación es de <b>5 (Buena)</b>.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Explorador.</b> Nivel 2.<br>
+                    <b>Ladrón.</b> Nivel 2.<br>
+                    <b>Conocimiento.</b> "Manualidades".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> 130cm a 160cm.<br>
+                    <b>Color de piel.</b> Varía según la especie, generalmente siendo blanco, gris o negro.<br>
+                    <b>Color de plumas.</b> Varía según la especie.<br>
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Aviación turbulenta (Habilidad pasiva)</b><br>
+                  La resistencia no les aumenta la vida. Obtienen ventaja en agilidad y percepción.
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza,
+                  solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Valentía (Habilidad nivel 1)</b><br>
+                  Al luchar con aliados, se vuelve inmune al debufo de miedo.
+                </p>
+                <p>
+                  <b>Alza el vuelo (Habilidad nivel 2)</b><br>
+                  Puede volar durante el resto de la ronda, a 5ft de altura por cada nivel en la raza, teniendo que tomar
+                  una ronda de descanso antes de poder volver a volar.
+                </p>
+                <p>
+                  <b>Alma de fénix (Habilidad nivel 2)</b><br>
+                  Al morir, el cuerpo arde en llamas, destruyendo todo el equipamiento, posteriormente, las llamas se unirán en un huevo de oro, el cual emerge en llamas nuevamente en la forma antes de morir, sin heridas, al día siguiente de consumirse. Se debe esperar otro día para volver a usar esta habilidad.
+                </p>
+                <p>
+                  <b>Caída en picada (Habilidad nivel 3)</b><br>
+                  <b>Requiere “Alza el vuelo”.</b> Mientras vuelas, puedes caer hacia un enemigo, atacándolo con el
+                  impulso de la caída, causando tantos dados de 6 de daño, por cada 5ft de distancia de vuelo, sumado a la
+                  distancia del enemigo (No puede sobrepasar la altura). <b>Costo.</b> 3 Acciones de ataque.
+                </p>
+                <p>
+                  <b>Plumas afiladas (Habilidad nivel 4)</b><br>
+                  Cualquier ataque cuerpo a cuerpo que recibas, devolverá el 25% del daño recibido al enemigo como daño
+                  real (Redondeado hacia abajo). Los ataques cuerpo a cuerpo dejarán plumas clavadas en el enemigo, que
+                  tendrán un 10% de probabilidad de causar sangrado por pluma.
+                </p>
+                <p>
+                  <b>Tornado de plumas (Habilidad nivel 5)</b><br>
+                  <b>Requiere “Plumas afiladas”.</b> Puede consumir cualquier cantidad de acciones de ataque, para lanzar
+                  plumas en dirección a un enemigo (Max. 15ft), que causa tantos dados de 6 de daño, como acciones de
+                  ataque se consumieron. En caso de consumir todos los puntos de acción de ataque, se suma un dado
+                  adicional, por cada Nivel en la raza.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="sarka" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Sarka</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> En cada exploración en desiertos deberá beber agua, o algún
+                  líquido sano, o tendrán desventaja en sus tiradas, hasta hidratarse. Tomar agua contaminada (Estancada)
+                  no les afecta.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Fuerza.</b> 2 puntos.<br>
+                    <b>Carisma.</b> 2 puntos.<br>
+                    <b>Resistencia.</b> 1 punto.<br>
+                    <b>Armadura natural.</b> 3 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    Son tratados como piratas sin moral, como unos demonios que solo llegan a querer quitarte todo, y que
+                    es mejor mantenerse apartado de ellos, pues no sabes cuándo te pueden llegar a traicionar. Su
+                    reputación general es de <b>-5 (Mala)</b>.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Cacería.</b> Nivel 2.<br>
+                    <b>Explorador.</b> Nivel 2.<br>
+                    <b>Ladrón.</b> Nivel 1.<br>
+                    <b>Carpintería.</b> Nivel 1.<br>
+                    <b>Conocimiento.</b> "Cacería".<br>
+                    <b>Conocimiento.</b> "Carpintería".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> 160cm a 190cm.<br>
+                    <b>Color de piel.</b> Sus pieles varían entre grises azulados, y tonos de celestes tenues.<br><br>
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Hidratación (Habilidad pasiva)</b><br>
+                  En cada exploración en desiertos deberá beber agua, o algún líquido sano, o tendrán desventaja en sus
+                  tiradas, hasta hidratarse. Tomar agua contaminada (Estancada) no les afecta.
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza,
+                  solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Respiración acuática (Habilidad nivel 1)</b><br>
+                  Puedes mantenerte debajo del agua, durante tantos turnos, como nivel tengas en esta raza, más uno.
+                </p>
+                <p>
+                  <b>Ventaja marina (Habilidad nivel 2)</b><br>
+                  Obtienen un dado adicional de daño por arma, al estar peleando bajo la lluvia, o en una fuente de agua.
+                </p>
+                <p>
+                  <b>Escamas reforzadas (Habilidad nivel 2)</b><br>
+                  Al hidratarse, obtienen dos puntos de resistencia natural por nivel en la raza, durante el resto de la
+                  ronda (No acumulable).
+                </p>
+                <p>
+                  <b>Tramposo (Habilidad nivel 3)</b><br>
+                  Luego de esquivar un ataque, pueden lanzar un chorro de agua hacia el enemigo, lo cual lo dejará
+                  derribado, y le causará un punto de daño verdadero. <b>Costo.</b> 1 Acción de ataque.
+                </p>
+                <p>
+                  <b>Negociación (Habilidad nivel 4)</b><br>
+                  Obtienen ventaja en tiradas de negociación y de convencimiento. En caso de fallar en este tipo de
+                  tiradas, el efecto negativo no será grave. Obtienen 5% más de oro en ventas.
+                </p>
+                <p>
+                  <b>Ráfaga de anguila (Habilidad nivel 5)</b><br>
+                  Requiere saber Magia de Electricidad. Al portar una joya con un Berilio desbloqueado, los ataques cuerpo
+                  a cuerpo, causarán Estatizado con un 40% de probabilidad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="demonio" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Demonio</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> Siendo ya una raza impura, debido al pasar de tantos años, que
+                  los demonios ya se fueron extinguiendo en esta tierra, donde su inmortalidad desaparecía, solo quedaron
+                  los herederos de estos, quienes aún portan parte del poder de sus antepasados.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Fuerza.</b> 2 puntos.<br>
+                    <b>Combate.</b> 2 puntos.<br>
+                    <b>Armadura natural.</b> 2 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    No son tan repudiados como los demonios puros, aunque en ciertas zonas, los ven con desconfianza. Su
+                    reputación general es de <b>0 (Neutral)</b>.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Herrería.</b> Nivel 2.<br>
+                    <b>Joyería.</b> Nivel 2.<br>
+                    <b>Conocimiento.</b> "Herrería".<br>
+                    <b>Conocimiento.</b> "Joyería".<br>
+                    <b>Magia.</b> "Fuego".<br>
+                    <b>Idioma.</b> "Selga".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> 150cm a 180cm.<br>
+                    <b>Color de piel.</b>Blanco muy pálido, y tonos de rojo claro o morado claro.<br>
+                    <b>Color de cabello.</b>Azul oscuro, negro, o blanco.<br><br>
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Locura ancestral (Habilidad pasiva)</b><br>
+                  A partir de la tercera ronda en un combate, estos empiezan a ver a cualquier participante del combate
+                  como sus enemigos, atacando al objetivo más cercano, obteniendo un dado adicional de daño. Son inmunes a
+                  la maldición. Pueden evitar atacar a un aliado, si este los convence con una tirada de Carisma contra tu
+                  Combate.
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza,
+                  solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Preferencia por lo pesado (Habilidad nivel 1)</b><br>
+                  Obtienen un dado adicional de daño al utilizar armas cuerpo a cuerpo a dos manos. En caso de ser un
+                  tridente, obtienen un dado adicional extra.
+                </p>
+                <p>
+                  <b>Altas temperaturas (Habilidad nivel 2)</b><br>
+                  Son inmunes al daño por quemadura. Recibir daño por fuego, reducirá el daño a la mitad.
+                </p>
+                <p>
+                  <b>Herrería infernal (Habilidad nivel 3)</b><br>
+                  Obtienen el conocimiento de Herrería con Infernita, además, pueden agregar infernita como impureza a un
+                  arma, para agregarle el efecto de Quemadura. Aprenden como hacer la espada larga, la lanza y las dagas
+                  de infernita.
+                </p>
+                <p>
+                  <b>Infusión ígnea (Habilidad nivel 4)</b><br>
+                  Puedes imbuir un arma cuerpo a cuerpo en fuego, cambiando su efecto por quemadura. En caso de que el
+                  arma estuviera hecha de Infernita, causa 1d6 de daño al enemigo por cada carga de quemadura que tenga.
+                  <b>Costo.</b> 1 Acción de ataque y 1 Acción de movimiento.
+                </p>
+                <p>
+                  <b>Cauterización (Habilidad nivel 5)</b><br>
+                  Absorbes todas las cargas de quemadura (De todos los participantes del combate), para curarte 1d4 por
+                  cada carga, y causando un punto de daño a cada ser del que se absorbieron las quemaduras, aplicando el
+                  siguiente efecto, dependiendo de la cantidad de cargas:
+                <ul>
+                  <li>3 cargas. Tu siguiente ataque causará quemadura de forma asegurada.</li>
+                  <li>5 cargas. En caso de tener desbloqueada la clase de Mago, obtienes 2 Núcleos.</li>
+                  <li>7 cargas. Tu siguiente ataque tiene efecto asegurado.</li>
+                  <li>10 cargas. La zona a tu alrededor (10ft) se quema, todo ser que se encuentre sobre la zona, obtiene
+                    dos cargas de quemadura al inicio de su turno</li>
+                  <li>15 cargas. Tu arma se imbuye en Magia Infernal, por lo que todos los ataques tendrán 100% de
+                    probabilidad de dar dos cargas de quemadura.</li>
+                  <li>25 cargas. Puedes canalizar tus hechizos de Fuego sin consumir núcleos, por el resto de la ronda
+                    (Máximo 3 hechizos por turno).</li>
+                  <li>35 cargas. Explotas una carga de quemadura en cada ser del combate (Excepto tú y tus aliados),
+                    curando a tus aliados y a ti, 1d4 de vida por cada enemigo que recibió daño, y causándoles desventaja
+                    en su siguiente esquive.</li>
+                </ul>
+                </p>
+                <p>
+                  <b>Refuerzo del mas allá (Habilidad nivel 6)</b><br>
+                  Al utilizar una armadura de Infernita completa, podrán conjurar magia de fuego, sin la necesidad de una
+                  gema.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="naturis" class="collapse" data-bs-parent="#informacion">
+            <div class="razatitulo w-100 text-center">
+              <h2 class="w-100">Naturis</h2>
+            </div>
+            <div class="razamain row">
+              <div class="raza-info col-md-6">
+                <p><b class="text-white">Descripción.</b> Creados por parte de la Diosa de la Naturaleza para servirle
+                  como sus heraldos, cuidando la tierra de las creaciones de sus hermanos, y de los propios seres, para
+                  preservarla en armonía lo mejor que se pueda.</p>
+                <hr>
+                <p>
+                <div class="row">
+                  <div class="stats col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Estadísticas base</b><br><br>
+                    <b>Carisma.</b> 2 puntos.<br>
+                    <b>Inteligencia.</b> 2 puntos.<br>
+                    <b>Armadura natural.</b> 5 puntos.<br>
+                  </div>
+                  <div class="rep col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Reputación</b><br><br>
+                    Son relativamente conocidos, más como los protectores del bosque que como una raza directamente
+                    vinculada a un dios. Su reputación general es de <b>5 (Buena)</b>.
+                  </div>
+                  <div class="profcon col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Profesiones y conocimientos</b><br><br>
+                    <b>Alquimista.</b> Nivel 2.<br>
+                    <b>Explorador.</b> Nivel 2.<br>
+                    <b>Granjero.</b> Nivel 1.<br>
+                    <b>Conocimiento.</b> "Alquimia".<br>
+                    <b>Conocimiento.</b> "Agricultura".<br>
+                    <b>Conocimiento.</b> "Herbolaria".<br>
+                  </div>
+                  <div class="rasgo col-xl-3 mb-2 text-center">
+                    <b class="text-danger mt-2">Rasgo distintivo</b><br><br>
+                    <b>Altura.</b> La misma altura de la raza a la que le hace mímica.<br>
+                    <b>Color de piel.</b>Distintos tonos de verde.<br><br>
+                  </div>
+                </div>
+                </p>
+              </div>
+              <div class="raza-skill col-md-6">
+                <p class="skill0">
+                  <b>Forma natural (Habilidad pasiva)</b><br>
+                  No tienen una forma física como tal, sino que pueden replicar la de una raza a voluntad, aunque
+                  manteniendo los rasgos de su raza. Cualquier fuente de daño de fuego les causa el doble de daño.
+                  Comienzan con el Dios de la Naturaleza, y este no puede ser cambiado, hasta Nivel 3 de raza, no pueden
+                  tener puntos positivos en Fuerza o Combate (Máximo 0). La primera clase que tengan, debe ser Curandero
+                  hasta Nivel 2, antes de desbloquear otra clase. Solo pueden alimentarse de agua, frutas y verduras. Son
+                  inmunes a las maldiciones.
+                </p>
+                <p>
+                  <b>Herencia (Habilidad nivel 1)</b><br>
+                  Obtienes las estadísticas, profesión y conocimientos de tu raza. El desbloquear esta con fruto de raza,
+                  solo dará las estadísticas.
+                </p>
+                <p>
+                  <b>Crecimiento afortunado (Habilidad nivel 1)</b><br>
+                  Todas las frutas y verduras que sean obtenidas de forma salvaje, tendrán ventaja en su cantidad (Excepto
+                  frutos de raza).
+                </p>
+                <p>
+                  <b>Baile de la rosa (Habilidad nivel 2)</b><br>
+                  Tu cuerpo se cubre con enredaderas de espinas por tantos turnos como nivel en raza, por lo que un ataque
+                  cuerpo a cuerpo que recibas, causará sangrado al enemigo con 50% de probabilidad (No aumentable).
+                </p>
+                <p>
+                  <b>Regeneración (Habilidad nivel 3)</b><br>
+                  Al inicio de cada ronda, o cuando reviven, regeneran 1d4 de vida por nivel en la raza. Las amputaciones
+                  que se les realicen, solo duran una ronda.
+                </p>
+                <p>
+                  <b>Enredaderas (Habilidad nivel 3)</b><br>
+                  Puedes lanzar semillas a una zona hasta 20ft de distancia, a la cual le crecerán enredaderas, que atraparán a quien sea que pase sobre ellas. Pueden ser eliminadas con un golpe.
+                  <b>Costo.</b> 1 Acciones de ataque.
+                </p>
+                <p>
+                  <b>Brotes (Habilidad nivel 4)</b><br>
+                  Pueden plantar pequeños brotes en el suelo (Uno por cada Nivel del jugador), que crecerán al final de la ronda, y correrán al enemigo más cercano, pegándose a su armadura y debilitándola, por lo que perderá un punto de armadura por cada brote, a los 10 puntos perdidos, romperá la armadura.
+                  <b>Costo.</b> 2 Acciones de ataque.
+                </p>
+                <p>
+                  <b>Lanzaespinas (Habilidad nivel 5)</b><br>
+                  <b>Requiere “Brotes”</b>. Luego de que un brote explote, lanzará una semilla de rosa a 10ft en tu
+                  dirección, creciendo al inicio de tu turno en una Rosa lanzadora, la cual escupirá espinas al enemigo
+                  más cercano (Max. 15ft desde la planta) al invocador al inicio de cada turno, causándole envenenamiento
+                  con 50% de probabilidad al impactar. Estas Rosas pueden ser destruidas con dos golpes, o con un ataque
+                  de fuego. Al ser destruida una Enredadera, también crecerá una semilla de rosa en su ubicación.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-    </header>
-    <main>
-      <div
-        class="main-main d-flex justify-content-center text-center row m-0 w-100"
-      >
-        <h2 class="titulo"><a href="../index.html">Inicio</a> > <a href="./personaje.html">Personaje</a> > Razas</h2>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Humano</div>
-          <img class="card-img-top" src="../files/img/razas/humano.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Su uso se basa principalmente en la supervivencia, y la variación
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Orcos</div>
-          <img class="card-img-top" src="../files/img/razas/orc.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Hechos para el combate cuerpo a cuerpo, y el daño masivo
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Shira</div>
-          <img class="card-img-top" src="../files/img/razas/shira.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Se especializan en el uso de la magia de hielo, la resistencia al frío, y el combate directo cuerpo a cuerpo
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Lhanie</div>
-          <img class="card-img-top" src="../files/img/razas/lhanie.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              El compañerismo de los animales, el rastreo, y el uso de armas naturales, como sus garras, son su principal especialidad
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Turbe</div>
-          <img class="card-img-top" src="../files/img/razas/turbe.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Son particularmente escurridizos, y son muy buenos en las magias de alma, por lo que el poder escapar y realizar invocaciones sorpresa, es lo suyo
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Fjereo</div>
-          <img class="card-img-top" src="../files/img/razas/fjereo.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Hechos para el combate aereo de gran agilidad, y tener una buena visión para encontrar objetivos desde el cielo
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Sarkas</div>
-          <img class="card-img-top" src="../files/img/razas/sarka.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Desde las profundidades del oceano llegan para dar una paliza a sus enemigos, o hacer negocios como caballeros
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Demonio</div>
-          <img class="card-img-top" src="../files/img/razas/demon.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Controlan la magia de fuego, y el combate con armas a dos manos
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Naturis</div>
-          <img class="card-img-top" src="../files/img/razas/naturis.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Creados por la Diosa de la Naturaleza para defender la vida, el ecosistema y detener los que destruyen lo que es de todos
-            </p>
-          </div>
-        </div>
       </div>
-    </main>
-    <footer></footer>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#humano" aria-expanded="true"
+        aria-controls="humano" onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Humano</b></span>
+        <img class="card-img-top" src="../files/img/razas/humano.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Su uso se basa principalmente en la supervivencia, y la variación
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#orco" aria-expanded="true" aria-controls="orco"
+        onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Orcos</b></span>
+        <img class="card-img-top" src="../files/img/razas/orc.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Hechos para el combate cuerpo a cuerpo, y el daño masivo
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#shira" aria-expanded="true" aria-controls="shira"
+        onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Shira</b></span>
+        <img class="card-img-top" src="../files/img/razas/shira.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Se especializan en el uso de la magia de hielo, la resistencia al frío, y el combate directo cuerpo a cuerpo
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#lhanie" aria-expanded="true" aria-controls="lhanie"
+        onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Lhanie</b></span>
+        <img class="card-img-top" src="../files/img/razas/lhanie.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            El compañerismo de los animales, el rastreo, y el uso de armas naturales, como sus garras, son su principal
+            especialidad
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#turbe" aria-expanded="true" aria-controls="turbe"
+        onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Turbe</b></span>
+        <img class="card-img-top" src="../files/img/razas/turbe.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Son particularmente escurridizos, y son muy buenos en las magias de alma, por lo que el poder escapar y
+            realizar invocaciones sorpresa, es lo suyo
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#fjereo" aria-expanded="true" aria-controls="fjereo"
+        onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Fjereo</b></span>
+        <img class="card-img-top" src="../files/img/razas/fjereo.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Hechos para el combate aereo de gran agilidad, y tener una buena visión para encontrar objetivos desde el
+            cielo
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#sarka" aria-expanded="true" aria-controls="sarka"
+        onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Sarka</b></span>
+        <img class="card-img-top" src="../files/img/razas/sarka.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Desde las profundidades del oceano llegan para dar una paliza a sus enemigos, o hacer negocios como caballeros
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#demonio" aria-expanded="true" aria-controls="demonio"
+        onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Demonio</b></span>
+        <img class="card-img-top" src="../files/img/razas/demon.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Controlan la magia de fuego, y el combate con armas a dos manos
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#naturis" aria-expanded="true" aria-controls="naturis"
+        onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Naturis</b></span>
+        <img class="card-img-top" src="../files/img/razas/naturis.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Creados por la Diosa de la Naturaleza para defender la vida, el ecosistema y detener los que destruyen lo que
+            es de todos
+          </p>
+        </div>
+      </button>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+
 </html>

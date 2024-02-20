@@ -1,114 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico">
-    
-    <title>Cuentos de Enforth</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <!-- Hojas de estilos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Script -->
-    <style>
-      body {
-        background: url("../files/img/background.jpg");
-      }
-    </style>
-    <link rel="stylesheet" href="../files/css/header.css">
-    <link rel="stylesheet" href="../files/css/main.css">
-  </head>
-  <body>
-    <header>
-        <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
-          <div class="title-main col-md-8 text-center">
-            <h2 class="medieval titulo">Cuentos de Enforth</h2>
-            <h4 class="titulo">Manual interactivo</h4>
-          </div>
-          <div class="header-main-admin col-md-2">
-            <div class="header-main-admin-btn d-flex justify-content-around">
-              <a href="../index.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Inicio</h4></a>
-              <a href="#" style="color: white;"><h4 class="medieval m-2 titulo boton">Master</h4></a>
-            </div>
-          </div>
-        </div>
-    </header>
-    <main>
-      <div
-        class="main-main d-flex justify-content-center text-center row m-0 w-100"
-      >
-        <h2 class="titulo"><a href="../index.html">Inicio</a> > <a href="./personaje.html">Personaje</a> > Clases</h2>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Guerrero</div>
-          <img class="card-img-top" src="../files/img/clases/knight.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Combate cuerpo a cuerpo, espadas largas y escudo. Se basa en la defensa y contraataque con ataques directos.
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Picaro</div>
-          <img class="card-img-top" src="../files/img/clases/rogue.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Combate cuerpo a cuerpo, uso de armas dobles. Se basa en el combate sigiloso, el ahorro de movimiento y la acumulación de daño por múltiples armas.
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Clérigo</div>
-          <img class="card-img-top" src="../files/img/clases/priest.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Se basan en el poder de la curación, o, en el poder de la fé hacia tu Dios, para obtener el poder que este te otorga
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Ranger</div>
-          <img class="card-img-top" src="../files/img/clases/ranger.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Combate a distancia, con ballestas, arcos y armas de fuego. Se basan en la potenciación de municiones, creaciones unicas, y mucha, mucha pólvora
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Luchador</div>
-          <img class="card-img-top" src="../files/img/clases/fighter.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Combate cuerpo a cuerpo, desarmado o con cestus. Se basa en habilidades de alto efecto, aumentar daños, y mantener combates prolongados.
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Mago</div>
-          <img class="card-img-top" src="../files/img/clases/wizard.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Combate con hechizos, o cuerpo a cuerpo, pero basado en el uso de hechizos para crear o potenciar. Se basa en la creación de hechizos y la acumulación de núcleos.
-            </p>
-          </div>
-        </div>
-        <div class="card mb-3 text-center m-1" style="max-width: 18rem">
-          <div class="card-header">Artificiero</div>
-          <img class="card-img-top" src="../files/img/clases/artificier.png" alt="Card image cap" />
-          <div class="card-body text-dark">
-            <p class="card-text">
-              Combate con arrojadizos, cualesquiera sean. Utiliza objetos arrojadizos, como pociones, bombas, dagas, etc, y se basa en la acumulación de daño de los mismos.
-            </p>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico" />
+
+  <title>Cuentos de Enforth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet" />
+  <!-- Hojas de estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- Script -->
+  <style>
+    body {
+      background: url("../files/img/background.jpg");
+    }
+  </style>
+  <link rel="stylesheet" href="../files/css/header.css" />
+  <link rel="stylesheet" href="../files/css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
+      <div class="title-main col-md-8 text-center">
+        <h2 class="medieval titulo">Cuentos de Enforth</h2>
+        <h4 class="titulo">Manual interactivo</h4>
+      </div>
+      <div class="header-main-admin col-md-2">
+        <div class="header-main-admin-btn d-flex justify-content-around">
+          <a href="../index.html" style="color: white">
+            <h4 class="medieval m-2 titulo boton">Inicio</h4>
+          </a>
+          <a href="#" style="color: white">
+            <h4 class="medieval m-2 titulo boton">Master</h4>
+          </a>
         </div>
       </div>
-    </main>
-    <footer></footer>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </div>
+  </header>
+  <main>
+    <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
+      <h2 class="titulo">
+        <a href="../index.html">Inicio</a> >
+        <a href="./personaje.html">Personaje</a> > Clases
+      </h2>
+      <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+        <div class="card-header">Guerrero</div>
+        <img class="card-img-top" src="../files/img/clases/knight.png" alt="Card image cap" />
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Combate cuerpo a cuerpo, espadas largas y escudo. Se basa en la
+            defensa y contraataque con ataques directos.
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+        <div class="card-header">Picaro</div>
+        <img class="card-img-top" src="../files/img/clases/rogue.png" alt="Card image cap" />
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Combate cuerpo a cuerpo, uso de armas dobles. Se basa en el
+            combate sigiloso, el ahorro de movimiento y la acumulación de daño
+            por múltiples armas.
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+        <div class="card-header">Clérigo</div>
+        <img class="card-img-top" src="../files/img/clases/priest.png" alt="Card image cap" />
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Se basan en el poder de la curación, o, en el poder de la fé hacia
+            tu Dios, para obtener el poder que este te otorga
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+        <div class="card-header">Ranger</div>
+        <img class="card-img-top" src="../files/img/clases/ranger.png" alt="Card image cap" />
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Combate a distancia, con ballestas, arcos y armas de fuego. Se
+            basan en la potenciación de municiones, creaciones unicas, y
+            mucha, mucha pólvora
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+        <div class="card-header">Luchador</div>
+        <img class="card-img-top" src="../files/img/clases/fighter.png" alt="Card image cap" />
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Combate cuerpo a cuerpo, desarmado o con cestus. Se basa en
+            habilidades de alto efecto, aumentar daños, y mantener combates
+            prolongados.
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+        <div class="card-header">Mago</div>
+        <img class="card-img-top" src="../files/img/clases/wizard.png" alt="Card image cap" />
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Combate con hechizos, o cuerpo a cuerpo, pero basado en el uso de
+            hechizos para crear o potenciar. Se basa en la creación de
+            hechizos y la acumulación de núcleos.
+          </p>
+        </div>
+      </div>
+      <div class="card mb-3 text-center m-1" style="max-width: 18rem">
+        <div class="card-header">Artificiero</div>
+        <img class="card-img-top" src="../files/img/clases/artificier.png" alt="Card image cap" />
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Combate con arrojadizos, cualesquiera sean. Utiliza objetos
+            arrojadizos, como pociones, bombas, dagas, etc, y se basa en la
+            acumulación de daño de los mismos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </html>
