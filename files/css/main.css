@@ -103,10 +103,6 @@ body {
     font-weight: bold;
 }
 
-:focus {
-    background-color: skyblue;
-}
-
 #myBtn {
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */

@@ -19,6 +19,15 @@
     body {
       background: url("../files/img/background.jpg");
     }
+
+    #myBtn {
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        width:100px;
+      }
   </style>
   <link rel="stylesheet" href="../files/css/header.css" />
   <link rel="stylesheet" href="../files/css/main.css" />
@@ -44,13 +53,51 @@
     </div>
   </header>
   <main>
+    <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
     <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
       <h2 class="titulo">
         <a href="../index.html">Inicio</a> >
         <a href="./personaje.html">Personaje</a> > Clases
       </h2>
-      <div class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem">
-        <div class="card-header">Guerrero</div>
+      <div style="max-width: 100%; border-radius: 5px;" class="mw-100 w-100 p-2 m-2 col-12 bg-dark text-white text-start">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores accusamus, exercitationem officia sapiente consequuntur inventore pariatur velit commodi! Iure iusto aliquid reprehenderit excepturi nam earum maiores. Fugiat nemo dolor enim ullam! Fugit, quam tenetur? Laborum illo, harum quam molestias magni voluptas dolorem eaque. Explicabo, culpa corrupti. Aspernatur qui, architecto, sit dolorum atque voluptate ipsa nulla nemo accusantium facere quisquam soluta ut minima quidem dolores quia expedita non itaque laboriosam vel iste mollitia animi molestiae cumque! Nostrum at harum corrupti quidem corporis! Aut nihil quam tempore ea similique deleniti sunt cum quia eius pariatur, quis hic laborum, delectus ex optio.</p>
+        <hr id="skipto">
+        <div id="informacion">
+          <div id="guerrero" class="collapse" data-bs-parent="#informacion">
+            <div class="proftitulo w-100 text-center">
+              <h2 class="w-100">Guerrero</h2>
+            </div>
+            <div class="profmain">
+              <div class="prof-data row p-3">
+                <div class="prof-info col-md-6 text-center">
+                  <b class="text-warning">Estadisticas requeridas para desbloquear la clase</b><br><br>
+                  <ul style="list-style-type: none;">
+                    <li><b class="text-info">♦</b> 2 puntos en <b>Fuerza</b></li>
+                    <li><b class="text-info">♦</b> 2 puntos en <b>Combate</b></li>
+                  </ul>
+                  <b class="text-warning">Equipamiento que se debe usar para utilizar habilidades con daño:</b><br><br>
+                  <ul style="list-style-type: none;">
+                    <li><b class="text-info">♦</b> Espadas cortas, espadas largas, espadones y escudos.</li>
+                    <li><b class="text-info">♦</b> <b class="text-danger">Senescal.</b> Lanza y Alabarda.</li>
+                    <li><b class="text-info">♦</b> <b class="text-danger">Samurai.</b> Katana a dos manos.</li>
+                  </ul>
+                </div>
+                <div class="prof-info2 col-md-6">
+                  <h4>Habilidades desbloqueadas por nivel en la clase</h4>
+                  <div class="btn btn-danger text-start sgue1 w-100" data-bs-toggle="collapse" href="#sgue1" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>(Nivel 0). </b>Alma de guerrero</a>
+                    <div id="sgue1" style="border-radius: 5px;" class="collapse bg-white text-dark p-2 m-2">Por cada nivel en la clase, aumenta la probabilidad de efecto de las armas cuerpo a cuerpo en 5% (Max. 30%).</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#guerrero" aria-expanded="true" aria-controls="guerrero"
+        onclick="window.location.href='#skipto'">
+        <div class="card-header align-self-center">Guerrero</div>
         <img class="card-img-top" src="../files/img/clases/knight.png" alt="Card image cap" />
         <div class="card-body text-white">
           <p class="card-text">
@@ -58,9 +105,11 @@
             defensa y contraataque con ataques directos.
           </p>
         </div>
-      </div>
-      <div class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem">
-        <div class="card-header">Picaro</div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#picaro" aria-expanded="true" aria-controls="picaro"
+        onclick="window.location.href='#skipto'">
+        <div class="card-header align-self-center">Picaro</div>
         <img class="card-img-top" src="../files/img/clases/rogue.png" alt="Card image cap" />
         <div class="card-body text-white">
           <p class="card-text">
@@ -69,9 +118,11 @@
             por múltiples armas.
           </p>
         </div>
-      </div>
-      <div class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem">
-        <div class="card-header">Clérigo</div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#clerigo" aria-expanded="true" aria-controls="clerigo"
+        onclick="window.location.href='#skipto'">
+        <div class="card-header align-self-center">Clérigo</div>
         <img class="card-img-top" src="../files/img/clases/priest.png" alt="Card image cap" />
         <div class="card-body text-white">
           <p class="card-text">
@@ -79,9 +130,11 @@
             tu Dios, para obtener el poder que este te otorga
           </p>
         </div>
-      </div>
-      <div class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem">
-        <div class="card-header">Ranger</div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#ranger" aria-expanded="true" aria-controls="ranger"
+        onclick="window.location.href='#skipto'">
+        <div class="card-header align-self-center">Ranger</div>
         <img class="card-img-top" src="../files/img/clases/ranger.png" alt="Card image cap" />
         <div class="card-body text-white">
           <p class="card-text">
@@ -90,9 +143,11 @@
             mucha, mucha pólvora
           </p>
         </div>
-      </div>
-      <div class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem">
-        <div class="card-header">Luchador</div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#luchador" aria-expanded="true" aria-controls="luchador"
+        onclick="window.location.href='#skipto'">
+        <div class="card-header align-self-center">Luchador</div>
         <img class="card-img-top" src="../files/img/clases/fighter.png" alt="Card image cap" />
         <div class="card-body text-white">
           <p class="card-text">
@@ -101,9 +156,11 @@
             prolongados.
           </p>
         </div>
-      </div>
-      <div class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem">
-        <div class="card-header">Mago</div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#mago" aria-expanded="true" aria-controls="mago"
+        onclick="window.location.href='#skipto'">
+        <div class="card-header align-self-center">Mago</div>
         <img class="card-img-top" src="../files/img/clases/wizard.png" alt="Card image cap" />
         <div class="card-body text-white">
           <p class="card-text">
@@ -112,9 +169,11 @@
             hechizos y la acumulación de núcleos.
           </p>
         </div>
-      </div>
-      <div class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem">
-        <div class="card-header">Artificiero</div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#artificiero" aria-expanded="true" aria-controls="artificiero"
+        onclick="window.location.href='#skipto'">
+        <div class="card-header align-self-center">Artificiero</div>
         <img class="card-img-top" src="../files/img/clases/artificier.png" alt="Card image cap" />
         <div class="card-body text-white">
           <p class="card-text">
@@ -128,11 +187,16 @@
   </main>
   <footer></footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </html>
