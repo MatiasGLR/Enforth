@@ -54,6 +54,7 @@
   </header>
   <main>
     <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+    <div class="x" onclick="$('.collapse').collapse('hide');"><span>X</span></div>
     <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
       <h2 class="titulo">
         <a href="../index.html">Inicio</a> >
@@ -72,8 +73,23 @@
                 <div class="prof-info col-md-6 text-center">
                   <b class="text-warning">Estadisticas requeridas para desbloquear la clase</b><br><br>
                   <ul style="list-style-type: none;">
+                    <li><b class="text-warning">Principal</b></li>
                     <li><b class="text-info">♦</b> 2 puntos en <b>Fuerza</b></li>
                     <li><b class="text-info">♦</b> 2 puntos en <b>Combate</b></li>
+                  </ul>
+                  <ul style="list-style-type: none;">
+                    <li><b class="text-warning">Senescal</b></li>
+                    <li><b class="text-info">♦</b> 5 puntos en <b>Fuerza</b></li>
+                    <li><b class="text-info">♦</b> 3 puntos en <b>Combate</b></li>
+                    <li><b class="text-info">♦</b> 2 puntos en <b>Agilidad</b></li>
+                    <li><b class="text-info">♦</b> 30 puntos de reputación en la <b>Guardia de Everland</b> y <b>Nivel 3 en su Guardia</b></li>
+                  </ul>
+                  <ul style="list-style-type: none;">
+                    <li><b class="text-warning">Samurai</b></li>
+                    <li><b class="text-info">♦</b> 5 puntos en <b>Fuerza</b></li>
+                    <li><b class="text-info">♦</b> 3 puntos en <b>Combate</b></li>
+                    <li><b class="text-info">♦</b> 3 puntos en <b>Resistencia</b></li>
+                    <li><b class="text-info">♦</b> 30 puntos de reputación en la <b>Guardia de Raitosodo</b> y <b>Nivel 3 en su Guardia</b></li>
                   </ul>
                   <b class="text-warning">Equipamiento que se debe usar para utilizar habilidades con daño:</b><br><br>
                   <ul style="list-style-type: none;">
@@ -82,11 +98,101 @@
                     <li><b class="text-info">♦</b> <b class="text-danger">Samurai.</b> Katana a dos manos.</li>
                   </ul>
                 </div>
-                <div class="prof-info2 col-md-6">
-                  <h4>Habilidades desbloqueadas por nivel en la clase</h4>
-                  <div class="btn btn-danger text-start sgue1 w-100" data-bs-toggle="collapse" href="#sgue1" role="button" aria-expanded="false">
-                    <a style="text-decoration: none;" class="text-white"><b>(Nivel 0). </b>Alma de guerrero</a>
-                    <div id="sgue1" style="border-radius: 5px;" class="collapse bg-white text-dark p-2 m-2">Por cada nivel en la clase, aumenta la probabilidad de efecto de las armas cuerpo a cuerpo en 5% (Max. 30%).</div>
+                <div id="#prof-info2" class="prof-info2 col-md-6 text-center">
+
+                  <h4>Habilidades principales</h4>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue1" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 0 ).&emsp;&emsp; </b>Alma de guerrero</a>
+                    <div id="sgue1" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                        Por cada nivel en la clase, aumenta la probabilidad de efecto de las armas cuerpo a cuerpo en 5% (Max. 30%).
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue2" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 0 ).&emsp;&emsp; </b>Parry</a>
+                    <div id="sgue2" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Puedes lanzar una tirada de combate, contra un ataque cuerpo a cuerpo enemigo, y, en caso de superarlo, puedes bloquear el ataque, y de forma opcional, 
+                      gastar una acción de ataque, para atacar en el momento (Sin realizar la tirada de puntería). En caso de perder en el Parry, el enemigo tendrá un dado adicional de daño.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue3" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 1 ).&emsp;&emsp; </b>Último esfuerzo</a>
+                    <div id="sgue3" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      <b>Requiere:</b> Parry desbloqueado.<br>
+                      Al recibir un daño que fuera a ser mortal, puedes realizar un <b>Parry</b> sin costo a último momento. Solo puede ser utilizado una vez por ronda.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue4" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 2 ).&emsp;&emsp; </b>Escudazo</a>
+                    <div id="sgue4" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Al atinar un ataque, puedes realizar un ataque con el escudo que tendrá atine asegurado, y causará un punto de daño. 
+                      La defensa base del escudo se duplica. Pueden desviar proyectiles mientras posean un escudo.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue5" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 3 ).&emsp;&emsp; </b>Defensa perfecta</a>
+                    <div id="sgue5" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      <b>Requiere:</b> Parry desbloqueado.<br>
+                      Al realizar un Parry con máximo valor (20), y este sea efectivo, si se realiza un ataque, este tendrá dos dados adicionales de daño, y obtienes dos acciones de movimiento.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue6" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 4 ).&emsp;&emsp; </b>Pose de defensa</a>
+                    <div id="sgue6" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Puedes utilizar tu arma como un escudo (No aplica Escudazo), protegiendo igual que su equivalente en material. 
+                      Deberás gastar una acción de movimiento al cambiar entre <b>pose de defensa</b>, y <b>pose de ataque</b>. No se puede atacar durante poses de defensa.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue7" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 5 ).&emsp;&emsp; </b>Táctica de distancia</a>
+                    <div id="sgue7" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      <b>Requiere:</b> Parry desbloqueado.<br>
+                      Al realizar un ataque seguido del Parry, alejas al enemigo a 5ft de ti, y en caso de que este impacte contra un objeto o pared, 
+                      puedes volver a realizar un ataque sin costo contra este (Te acercas a este sin gastar acciones de movimiento de igual modo).
+                    </div>
+                  </div>
+
+                  <h4 class="p-2">Senescal</h4>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue8" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 2 ).&emsp;&emsp; </b>Larga distancia</a>
+                    <div id="sgue8" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Puedes atacar con lanzas y alabardas a 15ft de distancia.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue9" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 3 ).&emsp;&emsp; </b>Táctica de Alto Rango</a>
+                    <div id="sgue9" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Cada ataque acertado, tendrá una probabilidad de 5% de causar desventaja al esquive del enemigo por el resto del combate.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue10" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 4 ).&emsp;&emsp; </b>Avance inmediato</a>
+                    <div id="sgue10" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Cuando un enemigo se aleja de ti (5ft), puedes saltar sobre él al atacarlo para evitar su movimiento, evitando además que este esquive el ataque.
+                      <br><b>Costo:</b> 1 Acción de movimiento
+                    </div>
+                  </div>
+
+                  <h4 class="p-2">Samurai</h4>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue11" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 2 ).&emsp;&emsp; </b>Recobrar el honor</a>
+                    <div id="sgue11" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Al ser abatido por un enemigo, obtendrás ventaja en la puntería contra el enemigo que te derribó por el resto del combate.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue12" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 3 ).&emsp;&emsp; </b>Enfrentando el temor</a>
+                    <div id="sgue12" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Obtienes un dado adicional de daño por cada carga de miedo que tengas.
+                    </div>
+                  </div>
+                  <div class="btn btn-danger text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" href="#sgue13" role="button" aria-expanded="false">
+                    <a style="text-decoration: none;" class="text-white"><b>( Nivel 4 ).&emsp;&emsp; </b>Disciplina honrada</a>
+                    <div id="sgue13" style="border-radius: 5px;" class="collapse bg-white text-dark p-3 m-2" data-bs-parent="#prof-info2">
+                      Obtienes un dado adicional de daño al utilizar Katanas, además, obtienen un dado adicional, al usarla a dos manos.
+                    </div>
+                  </div>
+                  <div class="btn btn-info text-start sgue1 w-100 border-0 mb-2" data-bs-toggle="collapse" onclick="$('.collapse.bg-white').collapse('hide'); window.location.href='#skipto';">
+                    <a href="#skipto" style="text-decoration: none;" class="text-dark"><b>Cerrar todo</b></a>
                   </div>
                 </div>
               </div>
@@ -96,7 +202,7 @@
       </div>
       <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
         data-bs-toggle="collapse" data-bs-target="#guerrero" aria-expanded="true" aria-controls="guerrero"
-        onclick="window.location.href='#skipto'">
+        onclick="window.location.href='#skipto'; $('.collapse.bg-white').collapse('hide');">
         <div class="card-header align-self-center">Guerrero</div>
         <img class="card-img-top" src="../files/img/clases/knight.png" alt="Card image cap" />
         <div class="card-body text-white">
@@ -108,7 +214,7 @@
       </button>
       <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
         data-bs-toggle="collapse" data-bs-target="#picaro" aria-expanded="true" aria-controls="picaro"
-        onclick="window.location.href='#skipto'">
+        onclick="window.location.href='#skipto'; $('.collapse.bg-white').collapse('hide');">
         <div class="card-header align-self-center">Picaro</div>
         <img class="card-img-top" src="../files/img/clases/rogue.png" alt="Card image cap" />
         <div class="card-body text-white">
@@ -121,7 +227,7 @@
       </button>
       <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
         data-bs-toggle="collapse" data-bs-target="#clerigo" aria-expanded="true" aria-controls="clerigo"
-        onclick="window.location.href='#skipto'">
+        onclick="window.location.href='#skipto'; $('.collapse.bg-white').collapse('hide');">
         <div class="card-header align-self-center">Clérigo</div>
         <img class="card-img-top" src="../files/img/clases/priest.png" alt="Card image cap" />
         <div class="card-body text-white">
@@ -133,7 +239,7 @@
       </button>
       <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
         data-bs-toggle="collapse" data-bs-target="#ranger" aria-expanded="true" aria-controls="ranger"
-        onclick="window.location.href='#skipto'">
+        onclick="window.location.href='#skipto'; $('.collapse.bg-white').collapse('hide');">
         <div class="card-header align-self-center">Ranger</div>
         <img class="card-img-top" src="../files/img/clases/ranger.png" alt="Card image cap" />
         <div class="card-body text-white">
@@ -146,7 +252,7 @@
       </button>
       <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
         data-bs-toggle="collapse" data-bs-target="#luchador" aria-expanded="true" aria-controls="luchador"
-        onclick="window.location.href='#skipto'">
+        onclick="window.location.href='#skipto'; $('.collapse.bg-white').collapse('hide');">
         <div class="card-header align-self-center">Luchador</div>
         <img class="card-img-top" src="../files/img/clases/fighter.png" alt="Card image cap" />
         <div class="card-body text-white">
@@ -159,7 +265,7 @@
       </button>
       <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
         data-bs-toggle="collapse" data-bs-target="#mago" aria-expanded="true" aria-controls="mago"
-        onclick="window.location.href='#skipto'">
+        onclick="window.location.href='#skipto'; $('.collapse.bg-white').collapse('hide');">
         <div class="card-header align-self-center">Mago</div>
         <img class="card-img-top" src="../files/img/clases/wizard.png" alt="Card image cap" />
         <div class="card-body text-white">
@@ -172,7 +278,7 @@
       </button>
       <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
         data-bs-toggle="collapse" data-bs-target="#artificiero" aria-expanded="true" aria-controls="artificiero"
-        onclick="window.location.href='#skipto'">
+        onclick="window.location.href='#skipto'; $('.collapse.bg-white').collapse('hide');">
         <div class="card-header align-self-center">Artificiero</div>
         <img class="card-img-top" src="../files/img/clases/artificier.png" alt="Card image cap" />
         <div class="card-body text-white">

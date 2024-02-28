@@ -111,3 +111,29 @@ body {
     cursor: pointer; /* Add a mouse pointer on hover */
     width:100px;
   }
+
+.x {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+.x span {
+    font-size: 300%;
+    font-family: 'Courier New', Courier, monospace;
+    transition:ease-out 0.3s;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+}
+
+.x span:hover {
+    color:red;
+    transition:ease-in 0.3s;
+    background-color: white;
+    border-radius: 50%;
+}
