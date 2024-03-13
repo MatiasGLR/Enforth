@@ -50,7 +50,7 @@
 
   function isAdmin(){
     if(Cookies.get('isadmin') == "12345") {
-        $('#ingresar').textContent = "Administrador";
+        document.getElementById("ingresar").textContent = "Administrador";
     } else {
         alert('No eres administrador (Cookie: ' + Cookies.get("isadmin") + ')');
     }
