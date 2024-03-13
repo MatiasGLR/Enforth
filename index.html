@@ -31,7 +31,7 @@
           <div class="header-main-admin col-md-2">
             <div class="header-main-admin-btn d-flex justify-content-around">
               <a href="./index.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Inicio</h4></a>
-              <a href="#" style="color: white;" data-bs-toggle="modal" data-bs-target="#exampleModal"><h4 id="ingresar" class="medieval m-2 titulo boton">Ingresar</h4></a>
+              <a href="#" style="color: white;" onclick="if(isAdmin()) {alert('Ya estás conectado como administrador')} else {$('exampleModal').modal('show');}"><h4 id="ingresar" class="medieval m-2 titulo boton">Ingresar</h4></a>
             </div>
           </div>
         </div>
