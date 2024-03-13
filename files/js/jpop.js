@@ -49,9 +49,8 @@
   });
 
   function isAdmin(){
-    var cookie = Cookies.get('isadmin');
-    if(cookie == "12345") {
-        $('#ingresar').innerHTML = "Administrador";
+    if(Cookies.get('isadmin') == "12345") {
+        $('#ingresar').textContent = "Administrador";
     } else {
         alert('No eres administrador (Cookie: ' + Cookies.get("isadmin") + ')');
     }
