@@ -19,14 +19,15 @@
     if(isAdmin()) {
       alert("Ya estás conectado como administrador");
     } else {
-      $('exampleModal').modal('show');
+      $('#exampleModal').modal('show');
     }
   }
 
   document.addEventListener("DOMContentLoaded", (event) => {
-    if(isAdmin()){
-
-    }
+    
+      $('#ingresar').text('Administrador');
+      $('#ingresar').parent().css('display', 'none');
+      $('#logged').css('display', 'block');
   });
 
   function isAdmin(){

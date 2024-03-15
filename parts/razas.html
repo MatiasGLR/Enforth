@@ -53,6 +53,36 @@
     </div>
   </header>
   <main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered text-dark" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title m-auto" id="exampleModalLabel"><b class="text-danger">Ingresar a tu cuenta</b></h5>
+          </div> 
+          <div class="modal-body">
+              <div id="login-box" class="bg-white text-dark p-2">
+              <div class="data m-auto" style="width:80%">
+                  <div class="usuario">
+                      <label for="user"><b class="text-danger">Usuario</b></label><br>
+                      <input id="username" name="username" type="text" id="user" style="width:100%">
+                  </div>
+                  <div class="usuario mt-4">
+                      <label for="pass"><b class="text-danger">Contraseña</b></label><br>
+                      <input id="password" name="password" type="text" max="24" id="pass" style="width:100%">
+                  </div>
+                  <div id="datos">
+
+                  </div>
+              </div>
+              </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+              <button id="loginButton" class="btn btn-danger" type="button" onclick="login(); return false">Ingresar</button>
+          </div>
+          </div>
+      </div>
+  </div>
     <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
     <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
       <h2 class="titulo"><a href="../index.html">Inicio</a> > <a href="./personaje.html">Personaje</a> > Razas</h2>

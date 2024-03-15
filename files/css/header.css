@@ -32,14 +32,14 @@ header {
             -1px -1px 0 #000;
   }
 
-.boton:hover {
+.boton:not(.unbind):hover {
     color:skyblue;
 }
 
-a {
+a:not(.unbind) {
     color:skyblue;
 }
 
-a:hover {
+a:not(.unbind):hover {
     color:cyan;
 }
