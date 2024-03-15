@@ -15,6 +15,14 @@
     }
   }
 
+  function openAdm() {
+    if(isAdmin()) {
+      alert("Ya estás conectado como administrador");
+    } else {
+      $('exampleModal').modal('show');
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", (event) => {
     if(isAdmin()){
 
