@@ -24,13 +24,22 @@
   }
 
   document.addEventListener("DOMContentLoaded", (event) => {
-    
-      $('#ingresar').text('Administrador');
+    if(isAdmin()) {
       $('#ingresar').parent().css('display', 'none');
       $('#logged').css('display', 'block');
+    } else {
+      if(!isAdmin()) { 
+        $('#administracion').css('display','none');
+      }
+    }
   });
 
   function isAdmin(){
     if(Cookies.get('isadmin') == "12345") return true;
     else return false;
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }

@@ -31,12 +31,15 @@
           <div class="header-main-admin col-md-2">
             <div class="header-main-admin-btn d-flex justify-content-around">
               <a href="../index.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Inicio</h4></a>
-              <a href="./logueo.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Ingresar</h4></a>
+              <a href="#" style="color: white;" onclick="openAdm();"><h4 class="medieval m-2 titulo boton">Ingresar</h4></a>
+              <h4 id="logged" style="display:none" class="text-warning medieval m-2 titulo boton">Administrador</h4>
             </div>
           </div>
         </div>
     </header>
     <main>
+      <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+      <div class="x" onclick="$('.collapse').collapse('hide');"><span>X</span></div>
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered text-dark" role="document">
             <div class="modal-content">
@@ -69,7 +72,7 @@
     </div>
       <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
       <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
-        <h2 class="titulo"><a href="../index.html">Inicio</a> > <a href="./personaje.html">Personaje</a> > Profesiones</h2>
+        <h2 class="titulo"><a href="../index.html">Inicio</a> > <a href="./personaje.html">Personaje</a> > Maldiciones</h2>
         <div style="max-width: 100%; border-radius: 5px;" class="mw-100 w-100 p-2 m-2 col-12 bg-dark text-white text-start">
           <p>El elegir la raza es una de las decisiones más importantes al momento de crear al protagonista de tu historia, la raza va a establecer las habilidades iniciales que tiene el personaje, parte de las estadísticas, como la defensa natural que este tiene.
             <br>La raza tiene ciertas habilidades, pudiendo desbloquear una habilidad perteneciente a la raza, como opción al subir de nivel <a class="linkredirect" href="./expyniv.html">(Ver Experiencia y niveles)</a>.
@@ -161,7 +164,15 @@
     </main>
     <footer></footer>
   </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <script type="text/javascript" src="../files/js/jpop.js"></script>
+  <script>
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </html>
