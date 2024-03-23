@@ -1,0 +1,53 @@
+Razas:
+Humano
+Orco
+Shira
+Lhanie
+Turbe
+Fjereo
+Demonio
+Naturis
+Clases:
+Guerrero
+Picaro
+Clérigo (incluye Curandero y Paladín)
+Ranger
+Luchador
+Mago
+Artificiero
+Estadísticas:
+Agilidad
+Carisma
+Combate (Puntería)
+Fuerza
+Inteligencia
+Percepción
+Resistencia
+Vitalidad
+Suerte
+Conocimientos:
+Agricultura
+Alquimia
+Armamentística (relacionada con armas de fuego)
+Cacería
+Carpintería
+Cocina
+Herbolaría
+Herrería
+Ingeniería (incluye Artificiería, bombas, mecanismos, etc.)
+Joyería
+Manualidades (habilidad con las manos, incluye forzar cerraduras)
+Medicina
+Montura
+Música
+Talabartería
+Idiomas:
+Revent (común)
+Ledusval (continente de Loux, tierras gélidas)
+Naturis (idioma de la raza Naturis)
+Esder (dragones y habitantes de Foreign Frontier)
+Liven (variante del Revent, continente de Fostade)
+Selga (demonios, incluye chirridos y chillidos)
+Terak (Orcos nativos de Rukakhlan)
+Koi (continente de Suredozo, combinación de japonés y coreano)
+Emión (dioses y arcángeles)

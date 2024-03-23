@@ -1,0 +1,173 @@
+            <div id="inventario" class="collapse" data-bs-parent="#informacion">
+              <div style="box-sizing: border-box; padding:4px;">
+                <div class="proftitulo w-100 text-center">
+                  <h2 class="w-100 text-warning">Inventario</h2>
+                </div>
+                <div class="p-4 profmain">
+                  <div class="prof-data row text-center">
+                    <p> El inventario en tu mundo es un aspecto crucial para la gestión de recursos, herramientas, armas, y 
+                      equipamiento de los personajes. Está diseñado para equilibrar la capacidad de carga y fomentar la toma de 
+                      decisiones estratégicas sobre qué llevar en cada aventura. A continuación, se detalla su estructura y 
+                      funcionamiento:</p>
+                    <div class="prof-info col-md-3 text-start">
+                      <h5 class="text-warning text-center">Mochila</h5>
+                      <x class="text-warning">Capacidad estándar.</x> 9 espacios.<br>
+                      <x class="text-warning">Con el Don de la Carga.</x> Se expande a 14 espacios, y puedes apilar objetos hasta dos.<br>
+                      Este Don otorga una capacidad adicional, permitiendo a los aventureros llevar más equipo, recursos o tesoros 
+                      encontrados durante sus viajes.
+                    </div>
+                    <div class="prof-info col-md-3 text-start">
+                      <h5 class="text-warning text-center">Riñonera</h5>
+                      <x class="text-warning">Capacidad.</x> 4 espacios.<br>
+                      Ideal para almacenar objetos pequeños y de rápido acceso, como pociones, amuletos, o ingredientes de alquimia.
+                    </div>
+                    <div class="prof-info col-md-3 text-start">
+                      <h5 class="text-warning text-center">Cinturón</h5>
+                      <x class="text-warning">Capacidad.</x> 3 espacios.<br>
+                      Pensado para llevar herramientas o armas pequeñas que puedan ser necesarias de forma inmediata, como dagas, 
+                      varitas mágicas o herramientas de ladrón.
+                    </div>
+                    <div class="prof-info col-md-3 text-start">
+                      <h5 class="text-warning text-center">Fundas extra</h5>
+                      <x class="text-warning">Capacidad.</x> 1 espacio cada una, con un máximo de 4.<br>
+                      Pensadas para ser utilizadas con objetos especificos, como lo pueden ser Pociones, Armas, Armadura, Dinero,
+                      Arrojadizos, etc. La funda extra permite apilar el objeto en 1 adicional, pero solo si es exactamente igual.
+                    </div>
+                    <hr class="m-3 text-warning">
+                    <div class="col-12">
+                      <h5 class="text-warning">Objetos equipados</h5>
+                      <div class="prof-data row text-center">
+                        <div class="col-md-4 text-start">
+                          <x class="text-warning">Manos.</x> Pueden sostener armas, escudos, o herramientas específicas para la 
+                          aventura en curso.<br>
+                          <x class="text-warning">Armadura.</x> Dividida en varias partes para una personalización detallada del equipamiento.<br>
+                          <ul>
+                            <li class="text-warning"><x class="text-white">Yelmo</x></li>
+                            <li class="text-warning"><x class="text-white">Peto</x></li>
+                            <li class="text-warning"><x class="text-white">Pantalones</x></li>
+                            <li class="text-warning"><x class="text-white">Guantes</x></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 text-start">
+                          <x class="text-warning">Extras.</x> Espacio destinado para equipamiento adicional que no se incluye en la 
+                          categoría estándar de armaduras, como cotas de malla bajo la armadura regular o trajes específicos para 
+                          ciertas profesiones (por ejemplo, un traje de herrero).<br>
+                        </div>
+                        <div class="col-md-4 text-start">
+                          <x class="text-warning">Joyas.</x> Hasta cuatro espacios disponibles para objetos que otorgan beneficios o 
+                          poderes mágicos, como collares, pendientes, y anillos.<br>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="m-3 text-warning">
+                    <div class="col-12">
+                      <h5 class="text-warning">Reglamentos adicionales del inventario</h5>
+                      <div class="row text-start">
+                        <div class="col-md-4 text-start">
+                          <x class="text-warning">Apilado de objetos.</x> Solo pueden apilarse objetos que tiendan a tener una cantidad
+                          alta, como las municiones, las monedas, y los polvos de los lingotes. La forma de apilar mas objetos, sería
+                          mediante las habilidades de las <a href="./profesiones.html">profesiones</a>, o con el <x class="text-warning">
+                          Don de la Carga</x>, que aumenta en 1 el máximo que un objeto puede ser apilado, siempre que sea del mismo tipo,
+                          y en caso de armas y equipamiento modificable, tiene que contener el mismo encantamiento, nivel, etc.
+                        </div>
+                        <div class="col-md-4 text-start">
+                          <x class="text-warning">Uso de objetos en Narrativo.</x> Durante los momentos narrativos, se pueden hacer uso rápido sin
+                          problema de objetos dentro de la riñonera, funda extra o el cinturón, pero los objetos de la mochila, 
+                          requerirán superar una tirada de Agilidad.
+                        </div>
+                        <div class="col-md-4 text-start">
+                          <p><x class="text-warning">Uso de objetos en Combate.</x> Durante los momentos de combate, utilizar objetos de la
+                          funda extra no constará ningun tipo de acción; la riñonera y el cinturón consumirán una Acción de Movimiento,
+                          y la mochila consumirá dos acciones de movimiento.</p>
+                          <p class="text-danger">Si se utiliza un objeto para atacar, siempre consumirá sus correspondientes acciones
+                          de ataque.</p>
+                          <p class="text-success">Si se usa un objeto para curar, o cualquier acción que requiera una adicional, no
+                          consumirá acciones adicionales (excepto atacar), la Acción de Movimiento contará como "Sacar objeto para 
+                          curar", por ejemplo</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div> 
+                </div>
+              </div>
+            </div>
+<div id="guia" class="collapse" data-bs-parent="#informacion">
+              <div style="box-sizing: border-box; padding:4px;">
+                <div class="proftitulo w-100 text-center">
+                  <h2 class="w-100 text-warning">Guia de creación de personaje</h2>
+                </div>
+                <div class="p-4 profmain">
+                  <div class="prof-data row text-start">
+                    <div class="col-12 row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-10">
+                        <p>En el vasto y complejo universo de tu mundo, la creación de un personaje es una odisea propia, una ceremonia 
+                        donde la esencia de lo que será se entreteje con el destino y las infinitas posibilidades. Aquí no solo se da 
+                        forma a un simple avatar para aventuras venideras; se forja una entidad viva, cargada de sueños, conflictos y 
+                        potencial sin límites.</p>
+                        <p>Un personaje en el contexto de tu mundo es una entidad compleja y multifacética, un ser forjado por la voluntad de su creador y alimentado por la rica tela de la narrativa y el lore que permea cada rincón del universo en el que habita. No es simplemente un conjunto de estadísticas o habilidades; es una vida que respira dentro de la imaginación, con sueños, aspiraciones, temores y deseos que lo impulsan hacia adelante en su viaje.
+                        </p>
+                        <p>Este ser se convierte en un avatar para el jugador, una extensión de sí mismo en un reino donde lo imposible se convierte en cotidiano, y lo fantástico es simplemente el pan de cada día. A través de sus ojos, los jugadores exploran mundos desconocidos, enfrentan desafíos titánicos, y forjan alianzas o rivalidades que pueden cambiar el destino de reinos enteros.
+                        </p>
+                        <p>El personaje es, en esencia, un puente entre la realidad y la ficción, permitiendo una inmersión profunda en historias que trascienden lo ordinario. Es un vehículo para la emoción, el conflicto y el crecimiento personal, tanto dentro como fuera del juego. Con cada decisión tomada, cada batalla librada, y cada misterio desentrañado, el personaje evoluciona, reflejando el viaje del jugador no solo en habilidades y poder, sino también en comprensión y empatía hacia los muchos seres y culturas que habitan el mundo.
+                        </p>
+                        <p>En última instancia, un personaje es un legado, una huella que deja el jugador en el tejido de la narrativa del juego, un recordatorio de las aventuras vividas, las amistades forjadas, y las batallas ganadas o perdidas. Es una historia esperando ser contada, un poema compuesto en el campo de batalla, una obra de arte forjada en la forja de la imaginación.
+                        </p>
+                      </div>
+                      <div class="col-md-1"></div>
+                    </div>
+                    <hr class="m-3">
+                    <div class="col-12 row ms-2 me-2 text-center">
+                      <h5 class="text-warning">Elección de datos físicos</h5>
+                      <div class="col-md-4"><img src="https://imgur.com/3sMbXEg.png" style="width:100%"></div>
+                      <div class="col-md-8 text-start">
+                        <p>Primero se deberán elegir el nombre, el apellido, edad, género, <a href="./razas.html">raza</a> (y en 
+                          caso de querer ser un hibrido con otra raza, también a que raza se hibridará), estatura (en centimetros), 
+                          peso (en kilogramos), y una <a href="./maldiciones.html">maldición</a> en caso de querer tener una.</p>
+                        <p>Tras elegir esto, se procede a elegir un <a data-bs-toggle="collapse" href="#dones" role="button" aria-expanded="false" 
+                          aria-controls="dones" onclick="window.location.href='#skipto'">don</a>, el cuál solo puede tener
+                          tu personaje, y no puedes elegir otro que ya haya sido elegido por un jugador.</p>
+                      </div>
+                    </div>
+                    <div class="col-12 row ms-2 me-2 text-center">
+                      <h5 class="text-warning">Tirada de estadísticas</h5>
+                      <div class="col-md-4"><img src="https://imgur.com/yzOyNzA.png" style="width:100%"></div>
+                      <div class="col-md-8 text-start">
+                        <p>Las <a data-bs-toggle="collapse" href="#estadisticas" role="button" aria-expanded="false" aria-controls="estadisticas" 
+                          onclick="window.location.href='#skipto'">estadísticas</a> conforman una parte importante del personaje, debido a
+                          que determinan el estado actual de tu personaje al iniciar. Para conseguir tus estadísticas, se deben realizar 8
+                          tiradas con el siguiente formato: <p class="text-center"><code>8#1d10-5</code></p>Se pueden realizar tiradas varias veces, hasta que se consigan
+                          un mínimo de 7 de esas estadísticas iguales o mayores a 0. Deberás dejar de tirar cuando llegue una tirada que cumpla
+                          con la condición anterior, y entonces, debes elegir la tirada que mas te guste, y colocar los puntos en cualquier orden
+                          en la parte de <b class="text-danger">Inicio</b> (Como se ve en la imagen), excepto Suerte, la cuál debe ser de 0.</p>
+                      </div>
+                    </div>
+                    <div class="col-12 row ms-2 me-2 text-center">
+                      <h5 class="text-warning">Elección de divinidad</h5>
+                      <div class="col-md-4"><img src="https://imgur.com/qo9S0FV.png" style="width:100%"></div>
+                      <div class="col-md-8 text-start">
+                        <p>Los <a data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="#" 
+                          onclick="window.location.href='#skipto'">dioses</a> son aquellos que te crearon y van juzgando tus acciones a medida
+                          que vas haciendo tu vida. El nivel en Karma que tengas, será la reputación con tu Dios, mientras mas alta sea, mejor
+                          será para ti, mas aun, si eres un <b>Paladin</b>. El Dios puede ser escogido a gusto, de uno de los 5, excepto si:</p>
+                          <ul>
+                            <li class="text-warning"><x class="text-white">Eres Naturis, por lo que deberás tener a la Diosa de la Naturaleza</x></li>
+                            <li class="text-warning"><x class="text-white">Eres Sin alma, por lo tanto no tienes un Dios</x></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 row ms-2 me-2 text-center">
+                      <h5 class="text-warning">Elección de profesión</h5>
+                      <div class="col-md-4"><img src="https://imgur.com/viqqQf2.png" style="width:100%; "></div>
+                      <div class="col-md-8 text-start">
+                        <p>Puedes elegir una <a href="./profesiones.html">profesión</a> que tu personaje ya conozca, o que haya trabajado un corto
+                          tiempo. Para ello, debes ir hasta el apartado de profesión, y colocar 1 punto en la linea de la profesión elegida, en la
+                          linea <b>raza</b> (No puedes elegir una profesión, que ya esté en nivel 1 o superior). Elegir esa profesión te dará los
+                          conocimientos requeridos, pero <x class="text-danger">no te dará las estadísticas</x>.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
