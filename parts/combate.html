@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico">
+    
+    <title>Cuentos de Enforth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <!-- Hojas de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Script -->
+    <style>
+      body {
+        background: url("../files/img/background.jpg");
+      }
+    </style>
+    <link rel="stylesheet" href="../files/css/header.css">
+    <link rel="stylesheet" href="../files/css/main.css">
+  </head>
+  <body>
+    <header>
+        <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
+          <div class="title-main col-md-8 text-center">
+            <h2 class="medieval titulo">Cuentos de Enforth</h2>
+            <h4 class="titulo">Manual interactivo</h4>
+          </div>
+          <div class="header-main-admin col-md-2">
+            <div class="header-main-admin-btn d-flex justify-content-around">
+              <a href="../index.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Inicio</h4></a>
+              <a href="#" style="color: white;" onclick="openAdm();"><h4 class="medieval m-2 titulo boton">Ingresar</h4></a>
+              <h4 id="logged" style="display:none" class="text-warning medieval m-2 titulo boton">Administrador</h4>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+      <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+      <div class="x" onclick="$('.collapse').collapse('hide');"><span>X</span></div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-dark" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title m-auto" id="exampleModalLabel"><b class="text-danger">Ingresar a tu cuenta</b></h5>
+            </div> 
+            <div class="modal-body">
+                <div id="login-box" class="bg-white text-dark p-2">
+                <div class="data m-auto" style="width:80%">
+                    <div class="usuario">
+                        <label for="user"><b class="text-danger">Usuario</b></label><br>
+                        <input id="username" name="username" type="text" id="user" style="width:100%">
+                    </div>
+                    <div class="usuario mt-4">
+                        <label for="pass"><b class="text-danger">Contraseña</b></label><br>
+                        <input id="password" name="password" type="text" max="24" id="pass" style="width:100%">
+                    </div>
+                    <div id="datos">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                <button id="loginButton" class="btn btn-danger" type="button" onclick="login(); return false">Ingresar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+      <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+      <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
+        <h2 class="titulo"><a href="../index.html">Inicio</a> > Combate</h2>
+        <div style="max-width: 100%; border-radius: 5px;" style="box-sizing: border-box;" class="mw-100 w-100 p-4 m-2 col-12 bg-dark text-white row text-start">
+          <div class="col-1"></div>
+          <div class="col-md-10">
+            <p>
+              <p>
+              El combate es una danza compleja y multifacética de estrategia, habilidad, y un poco de azar, tejida intrínsecamente en el tejido de la narrativa y el desarrollo de los personajes. No es meramente un intercambio de golpes o el lanzamiento de hechizos; es una prueba de inteligencia, una batalla de voluntades, y un escenario para momentos épicos y decisiones críticas.
+              </p><p>
+              Cada enfrentamiento es una historia en sí misma, donde las tácticas se entremezclan con las emociones y las decisiones tomadas en fracciones de segundo pueden tener repercusiones duraderas. Los combatientes deben conocer no solo sus propias capacidades y limitaciones, sino también las de sus adversarios, adaptándose constantemente a un campo de batalla en evolución.
+              </p><p>
+              El combate se desarrolla en turnos, ofreciendo a cada jugador la oportunidad de moverse, atacar, o emplear habilidades especiales y objetos. Sin embargo, más allá de la mecánica, lo que realmente lo define es su capacidad para integrarse armónicamente en la historia y los personajes involucrados. Las batallas pueden ser tan variadas como un duelo tenso y táctico entre maestros de espadas, una confrontación masiva que decide el destino de reinos, o un enfrentamiento contra criaturas míticas cuya sola presencia desafía la realidad.
+              </p><p>
+              Las habilidades y poderes de los personajes, junto con su equipo y artefactos, juegan un papel crucial, pero la verdadera clave del éxito radica en la estrategia, la cooperación entre aliados, y la capacidad de anticipar y reaccionar a los movimientos del enemigo. El entorno también puede influir significativamente en el resultado de la batalla, proporcionando oportunidades para tácticas ingeniosas o imponiendo desafíos adicionales.
+              </p><p>
+              En resumen, el combate en tu mundo no es solo un aspecto del juego, sino un lienzo para el heroísmo, el sacrificio, y la astucia. Es una expresión de la esencia misma del juego de rol: vivir aventuras extraordinarias, enfrentar desafíos imposibles, y, a través de la victoria o la derrota, contar historias que perdurarán en la memoria de los jugadores mucho después de que los dados hayan dejado de rodar.</p>
+              </p>
+          </div>
+          <div class="col-1"></div>
+          <hr id="skipto">
+          <div id="informacion">
+            <div id="bestia" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100">Guia de combate</h2>
+              </div>
+              <div class="razamain row text-center">
+                <div class="col-md-12">
+                  <h5 class="p-2 text-warning text-center">¿Cómo funciona el combate?</h5>
+                </div>
+                <div class="col-md-6 text-start">
+                  <h5 class="text-warning">1. Declarando el combate</h5>
+                  <p>Un combate puede inicar por iniciativa de los jugadores, como por los enemigos, o incluso otro jugador.
+                    Quien haya atacado primero, puede realizar una acción de ataque sin costo, o una acción narrativa que pueda
+                    ayudar en el posterior combate.
+                  </p>
+                  <h5 class="text-warning">2. Iniciando el combate</h5>
+                  <p>Luego de realizada la primera acción, ya se puede comenzar el combate por turnos. Los turnos se orientan de
+                    mayor a menor, en base a las <code>tiradas de iniciativa</code>, que se realizan con <code>agilidad</code>. En
+                    caso de que alguien tenga habilidades o consumibles que modifiquen el orden de los turnos, debe ser usado
+                    antes de iniciado el combate.
+                  </p>
+                  <h5 class="text-warning">3. Durante los turnos</h5>
+                  <p>Un integrante del combate, cuando es su turno, puede realizar tanto ataques, como acciones narrativas. Los
+                    ataques consumen acciones de ataque, y las acciones narrativas, acciones de movimiento. Entre las acciones
+                    narrativas, está el moverse, pudiendo cada jugador moverse hasta 25ft por cada acción de movimiento consumida,
+                    en caso de tener una armadura pesada, se consumirán 2 cada 25ft, y al usar una muy pesada, 3 cada 25ft. Algunas
+                    otras acciones que se pueden realizar con acciones de movimiento, son:
+                    <ul>
+                      <li class="text-warning"><x class="text-white">Levantar jugadores derribados</x></li>
+                      <li class="text-warning"><x class="text-white">Mover objetos de la mochila a la mano</x></li>
+                      <li class="text-warning"><x class="text-white">Cambiar de armas</x></li>
+                      <li class="text-warning"><x class="text-white">Usar consumibles</x></li>
+                    </ul>
+                  </p>
+                  <h5 class="text-warning">4. Atacando</h5>
+                  <p>Para poder ganar, debes derrotar a los enemigos, o doblegarlos. Para ello, puedes hacer uso de las acciones
+                    de ataque. Las acciones de ataque te permitirán hacer cualquier tipo de ataque, desde hechizos, ataques
+                    cuerpo a cuerpo, recargar y disparar (Esto cuesta únicamente una acción), castear hechizos (Esto, en si
+                    no consume acciones de ataque, sino que consume tus <x class="text-info">núcleos de maná</x>, aunque puedes
+                    obtener 1 núcleo de maná nuevo, por cada acción de ataque que desees consumir para este fin). Hay ciertas
+                    tácticas que para atacar, además de consumir acciones de ataque, consumirán acciones de movimiento, aunque
+                    esto solo aplica para esos casos, los ataques normales (A menos que el arma usada tenga algun efecto), solo
+                    consumirá acciones de ataque.
+                  </p>
+                  <p>Al atacar, se deberá realizar una tirada de puntería, <b>mediante la estadística de Combate</b>, y esperar
+                    que el enemigo lo esquive. En caso de que la tirada de puntería sacara un 20 (o números mas bajos, dependiendo
+                    tu probabilidad de efecto), habrás aplicado <x class="text-danger">efecto</x>.
+                  </p>
+                  <p>Si tu oponente, esquiva el ataque (El <a href="#defenderse">punto 5</a> trata de Defenderse, y esquivar), aun asi podrás aplicar el
+                    efecto (A menos que el oponente tenga alguna habilidad que lo evite). En caso de que el oponente no haya podido
+                    esquivar el ataque, se procede a realizar el <x class="text-warning">cálculo de daño</x>.
+                  </p>
+                  <p>El daño que causas, será la suma del daño de tu arma (y los dados agregados por habilidades), o daño del
+                    hechizo utilizado, con la estadística de escalado correspondiente, ya sea Fuerza o Combate, dependiendo del
+                    escalado de arma cuerpo a cuerpo, o la Inteligencia, para los hechizos. Las ballestas, armas de fuego, arcos,
+                    e instrumentos, no tienen un escalado. El total de la tirada de estos daños, se restará a la Defensa total del
+                    objetivo (Ver la zona de Protección, en la <a href="../index.html">Guía de funcionamiento de la ficha</a>), y
+                    ese será el daño que el objetivo recibirá.
+                  </p>
+                  <p>En caso de que el ataque haya sido esquivado, y el ataque fuera dado con un proyectil, todos los objetivos que
+                    se encuentren dentro de la distancia limite, y en la trayectoria de ese proyectil, deberán esquivarlo como si se
+                    tratase de un ataque hacia ese objetivo. Cuando se dispara con escopeta, a una distancia mayor a quemarropa, los
+                    objetivos de atras también deberán esquivar el ataque del perdigón perdido por la distancia.
+                  </p>
+                  <p>En caso de que el ataque en su totalidad haya sido resistido, aun asi el objetivo perderá un punto de vida
+                    debido al impacto. Si el objetivo decidió resistir desde un inicio, esto hará que no puedas causarle un
+                    impacto crítico.
+                  </p>
+                  <p>En caso de que un objetivo que esté a 5ft de ti (Si ocupa un espacio de, por ejemplo, 2x2, cualquiera de los 
+                    cuadros cuenta como estar cerca) se aleje (Ninguna parte de este se encuentre a 5ft de ti), podrás realizar
+                    un ataque de oportunidad, el cuál no costará acciones de ataque, pero que aun puede ser esquivado. (Los 
+                    esquives no cuentan para los ataques de oportunidad).
+                  </p>
+                </div>
+                <div class="col-md-6 text-start">
+                  <h5 id="defenderse" class="text-warning">5. Defenderse</h5>
+                  <p>En caso de que se reciba un ataque, puede elegir entre resistir el ataque, lo cuál evitará que el atacante
+                    pueda efectuar un ataque crítico, o esquivar el ataque, para poder evitar el dañó. En caso de elegir resistir ese ataque, se
+                    puede realizar una tirada de Resistencia, que, en caso de superar o igualar el ataque enemigo, evitará además 
+                    el punto de daño obligatorio (En caso de que tu armadura no hubiera sido suficiente). Si se decide esquivar, 
+                    se deberá realizar una tirada de Agilidad, la cuál, si iguala o supera al ataque enemigo, se podrá realizar
+                    un esquive, moviendose en cualquier dirección <x class="text-danger">posible</x> (Sin obstáculos, u otros
+                    enemigos, en caso de no poder moverse, no se podrá esquivar). <b>Este esquive no activará el ataque de oportunidad
+                    del enemigo.</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#bestia" aria-expanded="true" aria-controls="bestia"
+        onclick="window.location.href='#skipto'">
+          <div class="card-header align-self-center">Guia de combate</div>
+          <img class="card-img-top" src="../files/img/combate/guia.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Instrucciones de como actuar durante un combate
+            </p>
+          </div>
+        </button>
+
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <script type="text/javascript" src="../files/js/jpop.js"></script>
+  <script>
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</html>
