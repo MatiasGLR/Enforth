@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico">
+    
+    <title>Cuentos de Enforth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <!-- Hojas de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Script -->
+    <style>
+      body {
+        background: url("../files/img/background.jpg");
+      }
+    </style>
+    <link rel="stylesheet" href="../files/css/header.css">
+    <link rel="stylesheet" href="../files/css/main.css">
+  </head>
+  <body>
+    <header>
+        <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
+          <div class="title-main col-md-8 text-center">
+            <h2 class="medieval titulo">Cuentos de Enforth</h2>
+            <h4 class="titulo">Manual interactivo</h4>
+          </div>
+          <div class="header-main-admin col-md-2">
+            <div class="header-main-admin-btn d-flex justify-content-around">
+              <a href="../index.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Inicio</h4></a>
+              <a href="#" style="color: white;" onclick="openAdm();"><h4 class="medieval m-2 titulo boton">Ingresar</h4></a>
+              <h4 id="logged" style="display:none" class="text-warning medieval m-2 titulo boton">Administrador</h4>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+      <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+      <div class="x" onclick="$('.collapse').collapse('hide');"><span>X</span></div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-dark" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title m-auto" id="exampleModalLabel"><b class="text-danger">Ingresar a tu cuenta</b></h5>
+            </div> 
+            <div class="modal-body">
+                <div id="login-box" class="bg-white text-dark p-2">
+                <div class="data m-auto" style="width:80%">
+                    <div class="usuario">
+                        <label for="user"><b class="text-danger">Usuario</b></label><br>
+                        <input id="username" name="username" type="text" id="user" style="width:100%">
+                    </div>
+                    <div class="usuario mt-4">
+                        <label for="pass"><b class="text-danger">Contraseña</b></label><br>
+                        <input id="password" name="password" type="text" max="24" id="pass" style="width:100%">
+                    </div>
+                    <div id="datos">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                <button id="loginButton" class="btn btn-danger" type="button" onclick="login(); return false">Ingresar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+      <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+      <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
+        <h2 class="titulo"><a href="../index.html">Inicio</a> > Creación</h2>
+        <div style="max-width: 100%; border-radius: 5px;" style="box-sizing: border-box;" class="mw-100 w-100 p-4 m-2 col-12 bg-dark text-white row text-start">
+          <div class="col-1"></div>
+          <div class="col-md-10">
+            <p>
+              En tu mundo, los consumibles abarcan una vasta gama de ítems diseñados para ser usados una vez antes de desvanecerse o consumirse 
+              totalmente. Estos objetos esenciales para la supervivencia y el combate incluyen pociones de curación, que restauran la salud de 
+              quien las bebe; elixires de maná, que reponen la energía mágica necesaria para lanzar hechizos; y bombas de diversos efectos, desde 
+              explosiones devastadoras hasta la liberación de gases paralizantes o venenosos. Además, los consumibles pueden incluir alimentos y 
+              bebidas que otorgan bonificaciones temporales en habilidades o estadísticas, antídotos contra venenos específicos, y pergaminos 
+              mágicos que permiten invocar poderosos hechizos sin necesidad de conocer la magia subyacente. Cada consumible es una herramienta 
+              valiosa que puede inclinar la balanza a favor de sus usuarios en momentos críticos, ofreciendo no solo una ayuda inmediata sino 
+              también una capa adicional de estrategia y preparación en las aventuras.
+            </p>
+            <p>Aqui vamos a enlistar los tipos de consumibles, y los objetos que son requeridos para crearlos, en el caso de que sean creables.</p>
+            <p><h5 class="text-warning">Recetas</h5></p>
+            <p>Cierto equipamiento para ser creado, requiere primero de tener la receta con la cual esta se hace.</p>
+            <p>En el caso de las armas de platino, requieres la receta del arma de platino, y la receta de la aleación del platino con el material 
+              correspondiente, otras armas que requieren de tener la receta o el manual para crearlas, es el Oricalco, la Infernita, el Druvix y 
+              la Luminita. En caso de que se quiera realizar una aleación de Platino, con un material que requiera también la receta o manual, se 
+              requerirán todas las recetas correspondientes, la receta del arma de platino, la receta del material, y la receta de la aleación entre 
+              el platino y ese otro material.</p>
+            <p>Una vez aprendida la receta, esta quedará guardada entre los conocimientos del jugador, pudiendo dar a otra persona la receta, 
+              para que también la aprenda, además, el jugador puede crear un pergamino con la receta, y dársela a un aliado para que la aprenda.</p>
+          </div>
+          <div class="col-1"></div>
+          <hr id="skipto">
+          <div id="informacion">
+            <div id="guia" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100 text-warning">Guia de minerales y lingotes</h2>
+              </div>
+              <div class="razamain row text-center">
+                <div class="col-md-12 text-start">
+                  <p>
+                    En el caso de la herrería, joyería, armamentística, y otras artes que utilizan distintos tipos de materiales, podemos encontrar 
+                    distintos tipos, los cuales pueden ser sintetizados y purificados en lingotes de este material. La forma más sencilla de obtener 
+                    minerales, es en las minas, donde se encuentran varias menas de estos, o en meteoritos que suelen caer en distintas zonas, o incluso 
+                    podrías ver uno caer, e ir hacia él.
+                  </p>
+                  <p>Los minerales purificados, tienen una cierta cantidad para poder confeccionar el lingote:
+                    <ul>
+                      <li class="text-warning">Mineral inferior. <x class="text-white">Requieren de 2 minerales para crear el lingote</x></li>
+                      <li class="text-warning">Mineral medio. <x class="text-white">Requieren de 3 minerales para crear el lingote</x></li>
+                      <li class="text-warning">Mineral superior. <x class="text-white">Requieren de 4 minerales para crear el lingote</x></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="magia" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100">Magia y hechizos</h2>
+              </div>
+              <div class="razamain row text-center">
+                <div class="col-1"></div>
+                <div class="col-md-10 text-start">
+                  <h5 class="p-2 text-warning text-center">¿Cómo funciona la magia?</h5>
+                  <p>La magia es una fuerza primordial, tan antigua como la creación misma, entrelazada con el tejido de 
+                    la realidad y permeando todos sus aspectos. No se trata solo de lanzar hechizos o invocar energías arcanas; es un 
+                    arte profundo, una ciencia compleja, y un camino espiritual que se extiende hacia lo desconocido. La magia es tanto 
+                    una herramienta como un misterio, accesible a aquellos con el talento, el conocimiento, y la voluntad para dominarla,
+                    pero siempre con elementos que escapan a la comprensión completa.
+                  </p>
+                  <p>
+                    Los practicantes de la magia, sean magos eruditos, hechiceros innatos, o clérigos divinos, buscan comprender y 
+                    manipular esta fuerza a través de diversos medios. La magia puede ser tejida en hechizos, imbuida en objetos, o 
+                    invocada para alterar la realidad de maneras sutiles o espectaculares. Su aplicación es tan variada como la 
+                    imaginación, desde la curación y la protección hasta la destrucción y la manipulación del espacio-tiempo.
+                  </p>
+                  <p>
+                    Un aspecto de la magia es el uso de gemas mágicas, una de las muchas formas en que los practicantes pueden 
+                    canalizar y amplificar sus poderes. Las gemas mágicas son cristales naturales o refinados que almacenan energía 
+                    mágica, cada uno sintonizado con diferentes aspectos de la magia. Algunas potencian hechizos específicos, otras 
+                    mejoran la capacidad del usuario para manipular ciertos elementos, y hay incluso algunas que sirven como 
+                    catalizadores para poderosas invocaciones. Estas gemas pueden ser incrustadas en armas, armaduras, o incluso 
+                    utilizadas solas, convirtiéndose en herramientas esenciales para los aventureros y eruditos mágicos por igual.
+                  </p>
+                </div>
+                <div class="col-1"></div>
+                <style>
+                  .btn:hover > h5 {
+                    color:black !important; 
+                  }
+                </style>
+                <div class="col-md-12 text-start">
+                  <div id="desplegables" class="bg-dark">
+                    <button type="button" class="btn btn-outline-warning w-100" data-bs-toggle="collapse" data-bs-target="#nucleos" 
+                    data-bs-parent="desplegables" onclick="bugcoll('#desplegables')">
+                    <h5 class="text-warning m-auto">Explicación del uso de la magia</h5></button>
+                    <div id="nucleos" class="row collapse mt-2">
+                      <p>Los núcleos de maná son el consumible elegido para el casteo de los hechizos que provienen de las gemas.
+                        Algunas clases y objetos canalizan hechizos mediante acciones, pero eso es por la diferencia de naturalezas,
+                        la magia que proviene directamente al utilizar una gema como canalizador, utiliza estos llamados "Núcleos
+                        de maná" (En caso de Vampiros, cambian a ser <x class="text-danger">núcleos de sangre</x>, explicados mas
+                        adelante). Al castear un hechizo, este no consume acciones, sino, que consume los núcleos correspondientes
+                        (A excepción de si el hechizo especifica el uso de acciones). Se pueden obtener núcleos, mediante las
+                        habilidades naturales de la clase de Mago (Ver <a href="./clases.html">clases</a>), mediante algunos
+                        hechizos relacionados (Ver hechizos), o al consumir una Acción de ataque, lo que agregará un núcleo de maná
+                        a tu reserva. 
+                      </p>
+                      <p>Los núcleos de maná tienen apariencia de pequeñas esferas aureas que flotan alrededor del mago, este puede
+                        decidir si las ve solo él, o si todos pueden verlas. Un mago no puede usar los núcleos de otro mago (excepto
+                        en el caso de los núcleos de sangre). Estos núcleos son intangibles, por lo que no pueden ser destruidos. Al
+                        momento de canalizar un hechizo, estos entraran en la gema.
+                      </p>
+                      <p>Al atacar a un enemigo mediante hechizos, el daño se considera mágico, y además, se le agrega el tipo de
+                        magia como subtipo de daño, por ejemplo, daño mágico de fuego. Esto es importante considerarlo, por los
+                        distintos tipos de protección mágica que un ser puede tener.
+                      </p>
+                    </div>
+                    <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#gemas" 
+                    data-bs-parent="desplegables" onclick="bugcoll('#desplegables')">
+                    <h5 class="text-warning m-auto">Listado de gemas</h5></button>
+                    <div id="gemas" class="collapse mt-2">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-4">
+                          <p class="text-warning">Amatista. <x class="text-white">
+                            La magia arcana, en este mundo, es la esencia misma de la versatilidad mágica. Se caracteriza por su capacidad 
+                            para ser moldeada y adaptada a una innumerable variedad de efectos, desde los hechizos más simples hasta las 
+                            construcciones mágicas más complejas. Los magos que dominan este tipo de magia pueden tejer encantamientos que 
+                            abarcan desde la defensa hasta el ataque. La naturaleza altamente maleable de la magia arcana la convierte en 
+                            una herramienta de inmenso poder y precisión, permitiendo a sus usuarios explorar los límites de la creatividad 
+                            mágica y adaptar sus conjuros a cualquier situación o necesidad. Tiene un color violeta claro, con unos
+                            pequeños tonos cyan en su interior.</x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Rubi. <x class="text-white">
+                            Es el catalizador predilecto para invocar la magia de fuego, una forma de arte arcano 
+                            enfocada en desatar el poder destructivo y la furia elemental del fuego. Esta magia se especializa en causar 
+                            daño masivo a través de explosiones, llamaradas y ondas de calor, capaces de arrasar con obstáculos y enemigos 
+                            con igual facilidad. Además, los conjuros de fuego a menudo aplican quemaduras persistentes sobre sus objetivos, 
+                            infligiendo daño constante a lo largo del tiempo y debilitando gradualmente incluso a los adversarios más 
+                            formidables. La rubí amplifica estos efectos, convirtiendo a los hechiceros de fuego en maestros del caos y 
+                            la destrucción, capaces de cambiar el curso de una batalla con un solo gesto ardiente. Es de un color 
+                            completamente rojo brillante.</x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Zafiro. <x class="text-white">
+                            Es la gema elegida para dominar la magia de hielo, una disciplina arcanista centrada en el dominio 
+                            del frío y el hielo para controlar el campo de batalla. Esta magia permite a sus usuarios crear barreras de hielo, 
+                            lanzar proyectiles congelantes y generar áreas de terreno helado, dificultando significativamente la movilidad del 
+                            enemigo. Además, los hechizos de hielo especializados pueden congelar directamente a los adversarios, restringiendo 
+                            sus movimientos y dejándolos vulnerables a ataques adicionales. La habilidad de manipular las condiciones del 
+                            entorno hace de la magia de hielo una herramienta táctica invaluable, permitiendo a los magos con zafiro no solo 
+                            dañar sino también controlar el flujo del combate, convirtiendo el terreno en un aliado contra sus enemigos.
+                            Es de un color azul oscuro, con algunos reflejos celestes, simbolizando el frio.</x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Berilio. <x class="text-white">
+                            Se vincula estrechamente con la potente magia eléctrica, una forma de arte arcana 
+                            que sobresale en el dominio sobre la electricidad y el magnetismo. Quienes lo emplean pueden manipular los campos 
+                            eléctricos para controlar y desorientar a sus adversarios, haciendo uso de descargas eléctricas que pueden 
+                            paralizar o estatizar, inhibiendo así su capacidad para moverse libremente. Más allá del control físico, esta 
+                            magia permite a sus usuarios ejercer influencia magnética, manipulando metales y generando campos de fuerza que 
+                            pueden ser utilizados tanto defensiva como ofensivamente. La magia eléctrica, gracias al berilio, se convierte en 
+                            una herramienta versátil para el control del campo de batalla, limitando severamente las opciones del enemigo 
+                            mientras se les somete a un constante riesgo de parálisis y daño eléctrico. Es de un color amarillo, con
+                            pequeños simbolos anaranjados dentro de si, que parecen formar un rayo.</x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Diamante. <x class="text-white">
+                            En este mundo es el cristal que invoca la magia de luz, considerada una versión avanzada y más 
+                            potente de la magia arcana. Esta forma de magia se especializa en infligir daño a múltiples objetivos 
+                            simultáneamente, ampliando el alcance y la eficacia del usuario en el campo de batalla. La luz emanada no 
+                            solo ilumina sino que también decanta el poder puro, ofreciendo un espectro de posibilidades ofensivas contra 
+                            las fuerzas enemigas. Es una roca blanca casi traslucida, que al ponerla a contraluz, ilumina todo su alrededor.
+                            </x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Onix. <x class="text-white">
+                            Es la piedra angular para invocar magias oscuras, centradas en la manipulación de energías sombrías. Esta forma 
+                            de magia se especializa en la aplicación de cargas oscuras que desgastan paulatinamente a los enemigos, 
+                            erosionando su vitalidad y reduciendo su vida máxima. A través de estas artes arcanas, el usuario puede sembrar 
+                            el miedo y debilitar gradualmente a sus adversarios, controlando el flujo de la batalla con un poder que se 
+                            extiende más allá del daño inmediato, hacia un deterioro prolongado y letal. Es una roca negro azabache, que
+                            absorbe casi toda la luz, por lo que no se distingue su interior.</x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Jade. <x class="text-white">
+                            Es el catalizador para la magia de almas, una disciplina única que se especializa en la invocación de 
+                            aliados espirituales y la captura de las esencias de seres caídos. Los practicantes pueden absorber estas almas 
+                            en delicadas cabezas de cristal, meticulosamente talladas para reflejar la forma de la entidad absorbida, 
+                            permitiéndoles convocar la fuerza y habilidades de estas almas en momentos cruciales, o forjar distintos
+                            objetos con las mismas, como armas. Es de un color verde oscuro semi traslucido, con las esquinas de la
+                            gema en un color verde lima.</x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Perla. <x class="text-white">
+                            Es el núcleo elegido para quienes buscan dominar el poder de la mente y el arte de la ilusión. Esta práctica 
+                            se centra en influir, controlar o engañar a otros mediante la manipulación de sus percepciones o pensamientos, 
+                            creando ilusiones tan convincentes que pueden confundir tanto a la mente como a los sentidos, haciendo de la 
+                            perla una herramienta poderosa en manos de aquellos con la astucia para utilizarla. Es de un color blanco,
+                            tirando a rosado.</x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Esmeralda. <x class="text-white">
+                            Es el núcleo mágico ideal para aquellos que desean especializarse en el dominio del veneno, el ácido y otras 
+                            toxinas mortales. Su esencia permite al portador manipular, crear y controlar estas sustancias con una precisión 
+                            letal, convirtiéndolas en armas formidables tanto para atacar a sus enemigos como para defenderse. La maestría 
+                            sobre la esmeralda promete un dominio sin igual sobre los elementos más corrosivos y venenosos, abriendo un 
+                            abanico de posibilidades tácticas en combate. Es de color verde opaco, muy oscuro, y que desprende un olor
+                            muy fuerte, similar al del vinagre, pero solo cuando se lo huele directamente.</x></p>
+                        </div>
+                        <div class="col-md-4">
+                          <p class="text-warning">Hematita. <x class="text-white">
+                            Ofrece a sus portadores el poder de manipular la sangre, aunque de una manera menos intensa y profunda que el 
+                            control innato de los vampiros. Esta piedra permite a sus usuarios influir en el flujo sanguíneo, tanto para 
+                            curar como para causar daño, dotándolos de una habilidad única para afectar tanto a aliados como a enemigos 
+                            en el campo de batalla. Aunque su dominio sobre la sangre no alcanza la maestría vampírica, la hematita sigue 
+                            siendo una herramienta poderosa para aquellos que desean explorar y utilizar las propiedades vitales y letales 
+                            de la sangre. Es de color rojo, con pequeños cristales blancos que sobresalen de este, y algunas lineas
+                            blancas que se encuentran en su interior.</x></p>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#" 
+                    data-bs-parent="desplegables" onclick="bugcoll('#desplegables')"><h5 class="text-warning m-auto">Hechizos</h5></button>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#guia" aria-expanded="true" aria-controls="guia"
+        onclick="window.location.href='#skipto'">
+          <div class="card-header align-self-center">Minerales y lingotes</div>
+          <img class="card-img-top" src="../files/img/creacion/minerales.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Descripción de los tipos de minerales
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#magia" aria-expanded="true" aria-controls="magia"
+        onclick="window.location.href='#skipto'; bugcoll('#desplegables');">
+          <div class="card-header align-self-center">Forja</div>
+          <img class="card-img-top" src="../files/img/creacion/fundidora.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Reglas generales de creación con minerales y lingotes
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#tacticas" aria-expanded="true" aria-controls="tacticas"
+        onclick="window.location.href='#skipto'">
+          <div class="card-header align-self-center">Herrería</div>
+          <img class="card-img-top" src="../files/img/creacion/herreria.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Objetos creados mediante la profesión de herrero
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#daños" aria-expanded="true" aria-controls="daños"
+        onclick="window.location.href='#skipto'; bugcoll('#desplegadaño');">
+          <div class="card-header align-self-center">Mejoras en equipamiento</div>
+          <img class="card-img-top" src="../files/img/daños.jpg" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Mejoras realizadas en armas y armaduras
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#armor" aria-expanded="true" aria-controls="armor"
+        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
+          <div class="card-header align-self-center">Armamentística</div>
+          <img class="card-img-top" src="../files/img/profesiones/armero.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Creación de armas de fuego, y municiones especiales
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#armor" aria-expanded="true" aria-controls="armor"
+        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
+          <div class="card-header align-self-center">Pociones</div>
+          <img class="card-img-top" src="../files/img/profesiones/alquimista.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Creación de armas de fuego, y municiones especiales
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#armor" aria-expanded="true" aria-controls="armor"
+        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
+          <div class="card-header align-self-center">Medicamentos</div>
+          <img class="card-img-top" src="../files/img/creacion/medicina.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Medicinas, antidotos, y otros tipos de curas no mágicas
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#armor" aria-expanded="true" aria-controls="armor"
+        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
+          <div class="card-header align-self-center">Explosivos</div>
+          <img class="card-img-top" src="../files/img/creacion/explosivos.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Creación de explosivos estilo bombas
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#armor" aria-expanded="true" aria-controls="armor"
+        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
+          <div class="card-header align-self-center">Herrería de almas</div>
+          <img class="card-img-top" src="../files/img/creacion/herreria de almas.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Creación de armas y armaduras, hechas mediante la magia de almas
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#armor" aria-expanded="true" aria-controls="armor"
+        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
+          <div class="card-header align-self-center">Talabartería</div>
+          <img class="card-img-top" src="../files/img/creacion/talabarteria.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Creación y mejora de armaduras mediante cueros
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#armor" aria-expanded="true" aria-controls="armor"
+        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
+          <div class="card-header align-self-center">Armaduras especiales</div>
+          <img class="card-img-top" src="../files/img/creacion/armadurasespeciales.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Armaduras que proveen habilidades especiales a quien la porte
+            </p>
+          </div>
+        </button>
+
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <script type="text/javascript" src="../files/js/jpop.js"></script>
+  <script>
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</html>
