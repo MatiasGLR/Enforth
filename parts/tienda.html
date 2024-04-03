@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico">
+    
+    <title>Cuentos de Enforth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <!-- Hojas de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Script -->
+    <style>
+      body {
+        background: url("../files/img/background.jpg");
+      }
+    </style>
+    <link rel="stylesheet" href="../files/css/header.css">
+    <link rel="stylesheet" href="../files/css/main.css">
+  </head>
+  <body>
+    <header>
+        <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
+          <div class="title-main col-md-8 text-center">
+            <h2 class="medieval titulo">Cuentos de Enforth</h2>
+            <h4 class="titulo">Manual interactivo</h4>
+          </div>
+          <div class="header-main-admin col-md-2">
+            <div class="header-main-admin-btn d-flex justify-content-around">
+              <a href="../index.html" style="color: white;"><h4 class="medieval m-2 titulo boton">Inicio</h4></a>
+              <a href="#" style="color: white;" onclick="openAdm();"><h4 class="medieval m-2 titulo boton">Ingresar</h4></a>
+              <h4 id="logged" style="display:none" class="text-warning medieval m-2 titulo boton">Administrador</h4>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+      <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+      <div class="x" onclick="$('.collapse').collapse('hide');"><span>X</span></div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-dark" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title m-auto" id="exampleModalLabel"><b class="text-danger">Ingresar a tu cuenta</b></h5>
+            </div> 
+            <div class="modal-body">
+                <div id="login-box" class="bg-white text-dark p-2">
+                <div class="data m-auto" style="width:80%">
+                    <div class="usuario">
+                        <label for="user"><b class="text-danger">Usuario</b></label><br>
+                        <input id="username" name="username" type="text" id="user" style="width:100%">
+                    </div>
+                    <div class="usuario mt-4">
+                        <label for="pass"><b class="text-danger">Contraseña</b></label><br>
+                        <input id="password" name="password" type="text" max="24" id="pass" style="width:100%">
+                    </div>
+                    <div id="datos">
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                <button id="loginButton" class="btn btn-danger" type="button" onclick="login(); return false">Ingresar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+      <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+      <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
+        <h2 class="titulo"><a href="../index.html">Inicio</a> > Tienda</h2>
+        <div style="max-width: 100%; border-radius: 5px;" style="box-sizing: border-box;" class="mw-100 w-100 p-4 m-2 col-12 bg-dark text-white row text-start">
+          <div class="col-1"></div>
+          <div class="col-md-10">
+            <p>
+              En un mundo de fantasía vibrante y lleno de misterios, las tiendas no son meros establecimientos comerciales, sino 
+              portales a un sinfín de posibilidades y aventuras. Aquí, en cada esquina, en cada aldea escondida o ciudad majestuosa, 
+              las tiendas sirven como puntos de encuentro entre lo cotidiano y lo mágico, lugares donde lo ordinario se encuentra 
+              con lo extraordinario.
+            </p>
+            <p>
+              Estas tiendas varían enormemente en forma y función, desde humildes puestos de mercado que ofrecen hierbas curativas 
+              recolectadas en los bosques encantados, hasta imponentes emporios donde se pueden adquirir artefactos ancestrales 
+              imbuidos de poderes incomprensibles. Los aventureros pueden encontrar tiendas especializadas en pociones mágicas, 
+              capaces de curar heridas o aumentar temporalmente las habilidades de quien las consume, o armerías que forjan armas 
+              y armaduras no solo con los mejores metales, sino también con encantamientos que las hacen letales para cualquier 
+              criatura de la oscuridad.
+            </p>
+            <p>
+              Más allá de los objetos físicos, algunas tiendas ofrecen servicios únicos: un mago que puede encantar objetos 
+              personales, un vidente que ofrece vislumbres del futuro o incluso un mercader que comercia con información, 
+              vendiendo secretos tan valiosos como cualquier tesoro tangible.
+            </p>
+            <p>
+              Las tiendas en este mundo de fantasía también se caracterizan por la singularidad de sus propietarios y empleados, 
+              seres de todas las razas y orígenes, cada uno con su propia historia, conocimientos y secretos. Desde el enigmático 
+              Naturis que vende arcos imbuidos con la esencia de los bosques antiguos, hasta el robusto orco cuya forja en las 
+              profundidades de la montaña produce las armaduras más resistentes, cada tienda es un reflejo de su dueño, lleno de 
+              personalidad y misterio.
+            </p>
+            <p>
+              Las tiendas en este mundo no solo son lugares de transacción, sino también de interacción social, aprendizaje y 
+              descubrimiento. Un joven aprendiz puede encontrar en ellas no solo los ingredientes necesarios para su próxima poción, 
+              sino también la sabiduría de generaciones pasadas. Un guerrero puede descubrir una espada que no solo se ajuste a su 
+              estilo de lucha, sino que también esté imbuida con una historia tan rica y compleja como la suya.
+            </p>
+            <p>
+              En resumen, las tiendas son mucho más que simples puntos de compra; son centros de aventura, 
+              conocimiento y magia, son fundamentales para cualquier viajero, aventurero o habitante de este vasto y maravilloso mundo.
+            </p>
+          </div>
+          <div class="col-1"></div>
+          <hr id="skipto">
+          <div id="informacion">
+            <div id="vendedores" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100 text-warning">Vendedores</h2>
+              </div>
+              <div class="razamain row text-start">
+                <div style="box-sizing: border-box;" class="col-12 p-4">
+                  <p>Se pasarán a enlistar los tipos de objetos que compran y venden los diferentes comerciantes.</p>
+                </div>
+                <div class="row col-md-12 text-start">
+                  <p class="col-md-4">
+                    <x class="text-warning">Alquimista</x><br>
+                    <b>Vende.</b> Pociones, viales de infusión, y encantamientos.<br>
+                    <b>Compra.</b> Materiales de alquimia, fragmentos de gema, y pociones.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Armero</x><br>
+                    <b>Compra y vende.</b> Armas de fuego y municiones.<br>
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Bibliotecario</x><br>
+                    <b>Vende.</b> Libros de herrería, encantamientos y bestiarios (Solo en Abbasel).<br>
+                    <b>Compra.</b> Encantamientos.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Cantinero</x><br>
+                    <b>Compra y vende.</b> Comida y bebida (No pociones).<br>
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Carpintero</x><br>
+                    <b>Vende.</b> Servicios de mejora de casas, objetos de madera, y vende, mejora y repara carretas.<br>
+                    <b>Compra.</b> Objetos de madera.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Cazador</x><br>
+                    <b>Vende.</b> Carnes, pieles y bestiarios (Estos últimos, solo en Abbasel).<br>
+                    <b>Compra.</b> Carnes, pieles, y partes de animales.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Domador</x><br>
+                    <b>Vende.</b> Monturas y animales domesticados.<br>
+                    <b>Compra.</b> Animales.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Explorador</x><br>
+                    <b>Vende.</b> Mapa y brújula.<br>
+                    <b>Compra.</b> Mapas del tesoro.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Granjero</x><br>
+                    <b>Vende.</b> Frutas y verduras, y materiales de cocina en general.<br>
+                    <b>Compra.</b> Frutas y verduras.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Guardia</x><br>
+                    Provee misiones para los guardias y mercenarios. Además, arresta bandidos entregados y recompensa
+                    por los mismos
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Herrero</x><br>
+                    <b>Vende.</b> Objetos, armamento y equipamiento hechos de metales y rocas, mejora de equipamiento y lingotes.<br>
+                    <b>Compra.</b> Armas y equipamiento, lingotes y menas de minerales.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Ingeniero</x><br>
+                    <b>Vende.</b> Explosivos, piezas de explosivos o ingenieria, como engranjes y <b>mecanismos</b>.<br>
+                    <b>Compra.</b> Explosivos.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Mercader general</x><br>
+                    <b>Vende.</b> Objetos de la categoría "General", y otros aleatorios.<br>
+                    <b>Compra.</b> Todo tipo de objetos.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Joyero</x><br>
+                    <b>Vende.</b> Distintos tipos de joyería.<br>
+                    <b>Compra.</b> Gemas y joyas.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Ladrón</x><br>
+                    <b>Vende.</b> Servicio de apertura de cofres.<br>
+                    <b>Compra.</b> Cambio de monedas y objetos robados.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Médico</x><br>
+                    <b>Vende.</b> Medicamentos y servicios de medicina.<br>
+                    <b>Compra.</b> Materiales para medicamentos.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Mercenario</x><br>
+                    <b>Vende.</b> Servicio de contratación de mercenarios.<br>
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Minero</x><br>
+                    <b>Vende.</b> Picos.<br>
+                    <b>Compra.</b> Menas de minerales, al triple de precio.
+                  </p>
+                  <p class="col-md-4">
+                    <x class="text-warning">Talabartero</x><br>
+                    <b>Vende.</b> Equipamiento de cuero, y mejoras a objetos de cuero.<br>
+                    <b>Compra.</b> Cuero y objetos de cuero.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="propio" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100 text-warning">Negocio propio</h2>
+              </div>
+              <div class="razamain row text-start">
+                <div style="box-sizing: border-box;" class="col-12 p-4">
+                  <p>Un jugador puede tener un negocio, al colocar una mejora de habitación de su casa correspondiente (Tienda), 
+                    teniendo una probabilidad del 20% diario de poder vender un producto que tenga colocado, o 5%, si hay otro negocio 
+                    en el pueblo que se dedique a ello. Al vender, podrán usar, en lugar del precio de venta, el 50% del precio 
+                    de compra. Solo se podrá vender un tipo de objeto dependiendo de la profesión (Descritos anteriormente en Vendedores).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="materiales" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100 text-warning">Materiales generales</h2>
+              </div>
+              <p>Los objetos tienen un precio de compra, un precio de venta, y una región en la que se venden (Zona). En caso
+                de que la zona sea "Enforth", significa que se vende en todo el mundo.
+              </p>
+              <div class="razamain row text-start">
+                <table class="table table-striped table-dark">
+                  <thead>
+                    <th scope="col">Objeto</th>
+                    <th scope="col">Compra</th>
+                    <th scope="col">Venta</th>
+                    <th scope="col">Zona</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-warning" scope="row">Cuero</th>
+                      <td class="text-warning">50</td>
+                      <td class="text-warning">10</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Agua destilada</th>
+                      <td class="text-warning">20</td>
+                      <td class="text-warning">5</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Polvo de lingote</th>
+                      <td class="text-warning">25% del lingote</td>
+                      <td class="text-warning">5% de lingote</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Hoja de sauce rojo</th>
+                      <td class="text-warning">50</td>
+                      <td class="text-warning">10</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Hoja de sauce verde</th>
+                      <td class="text-warning">150</td>
+                      <td class="text-warning">20</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Hoja de sauce azul</th>
+                      <td class="text-warning">300</td>
+                      <td class="text-warning">50</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Hoja de sauce blanco</th>
+                      <td class="text-warning">500</td>
+                      <td class="text-warning">150</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Hoja de sauce dorado</th>
+                      <td class="text-warning">1500</td>
+                      <td class="text-warning">300</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Vial de sangre roja</th>
+                      <td class="text-warning">100</td>
+                      <td class="text-warning">10</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Vial de sangre azul</th>
+                      <td class="text-warning">250</td>
+                      <td class="text-warning">50</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Vial de sangre verde</th>
+                      <td class="text-warning">400</td>
+                      <td class="text-warning">80</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Fragmento de gema</th>
+                      <td class="text-warning">25% de la gema</td>
+                      <td class="text-warning">5% de la gema</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="lingotes" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100 text-warning">Lingotes</h2>
+              </div>
+              <p>Los objetos tienen un precio de compra, un precio de venta, y una región en la que se venden (Zona). En caso
+                de que la zona sea "Enforth", significa que se vende en todo el mundo.
+              </p>
+              <div class="razamain row text-start">
+                <table class="table table-striped table-dark">
+                  <thead>
+                    <th scope="col">Objeto</th>
+                    <th scope="col">Compra</th>
+                    <th scope="col">Venta</th>
+                    <th scope="col">Zona</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-warning" scope="row">Minerales</th>
+                      <td class="text-warning">0</td>
+                      <td class="text-warning">10</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Cobre</th>
+                      <td class="text-warning">50</td>
+                      <td class="text-warning">0</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Hierro</th>
+                      <td class="text-warning">100</td>
+                      <td class="text-warning">20</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Plata</th>
+                      <td class="text-warning">150</td>
+                      <td class="text-warning">30</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Oro</th>
+                      <td class="text-warning">250</td>
+                      <td class="text-warning">50</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Cuarzo</th>
+                      <td class="text-warning">500</td>
+                      <td class="text-warning">150</td>
+                      <td class="text-warning">Redain</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Basalto</th>
+                      <td class="text-warning">600</td>
+                      <td class="text-warning">150</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Titanio</th>
+                      <td class="text-warning">500</td>
+                      <td class="text-warning">100</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Cobalto</th>
+                      <td class="text-warning">1200</td>
+                      <td class="text-warning">300</td>
+                      <td class="text-warning">Suredozo</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Oricalco</th>
+                      <td class="text-warning">2000</td>
+                      <td class="text-warning">500</td>
+                      <td class="text-warning">Suredozo</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Luminita</th>
+                      <td class="text-warning">2500</td>
+                      <td class="text-warning">600</td>
+                      <td class="text-warning">Fostade</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Platino</th>
+                      <td class="text-warning">6000</td>
+                      <td class="text-warning">2000</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="llaves" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100 text-warning">Llaves</h2>
+              </div>
+              <p>Los objetos tienen un precio de compra, un precio de venta, y una región en la que se venden (Zona). En caso
+                de que la zona sea "Enforth", significa que se vende en todo el mundo.
+              </p>
+              <div class="razamain row text-start">
+                <table class="table table-striped table-dark">
+                  <thead>
+                    <th scope="col">Objeto</th>
+                    <th scope="col">Compra</th>
+                    <th scope="col">Venta</th>
+                    <th scope="col">Zona</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-warning" scope="row">Llave marrón</th>
+                      <td class="text-warning">500</td>
+                      <td class="text-warning">50</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Llave gris</th>
+                      <td class="text-warning">1000</td>
+                      <td class="text-warning">100</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Llave blanca</th>
+                      <td class="text-warning">1500</td>
+                      <td class="text-warning">150</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Llave amarilla</th>
+                      <td class="text-warning">2000</td>
+                      <td class="text-warning">200</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                    <tr>
+                      <th class="text-warning" scope="row">Llave negra</th>
+                      <td class="text-warning">2500</td>
+                      <td class="text-warning">250</td>
+                      <td class="text-warning">Enforth</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          
+
+          </div>
+        </div>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#vendedores" aria-expanded="true" aria-controls="vendedores"
+        onclick="window.location.href='#skipto'">
+          <div class="card-header align-self-center">Comerciantes</div>
+          <img class="card-img-top" src="../files/img/tienda/comerciantes.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Tipos de objetos que compran y venden los comerciantes
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#propio" aria-expanded="true" aria-controls="propio"
+        onclick="window.location.href='#skipto'">
+          <div class="card-header align-self-center">Negocios propios</div>
+          <img class="card-img-top" src="../files/img/tienda/propia.jpg" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Información sobre la creación de un negocio propio
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#materiales" aria-expanded="true" aria-controls="materiales"
+        onclick="window.location.href='#skipto'">
+          <div class="card-header align-self-center">Materiales generales</div>
+          <img class="card-img-top" src="../files/img/tienda/materiales.jpg" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Materiales utilizados en distintos tipos de profesiones. Hierbas, viales, fragmentos, etc.
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#lingotes" aria-expanded="true" aria-controls="lingotes"
+        onclick="window.location.href='#skipto'">
+          <div class="card-header align-self-center">Lingotes</div>
+          <img class="card-img-top" src="../files/img/creacion/minerales.png" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Precio de los lingotes y rocas para la confección de armamento y equipamiento
+            </p>
+          </div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#llaves" aria-expanded="true" aria-controls="llaves"
+        onclick="window.location.href='#skipto'">
+          <div class="card-header align-self-center">Llaves</div>
+          <img class="card-img-top" src="../files/img/tienda/llaves.jpg" alt="Card image cap" />
+          <div class="card-body text-white">
+            <p class="card-text">
+              Llaves por material, para los distintos tipos de cofres
+            </p>
+          </div>
+        </button>
+
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <script type="text/javascript" src="../files/js/jpop.js"></script>
+  <script>
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</html>
