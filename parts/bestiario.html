@@ -18,17 +18,17 @@
         background: url("../files/img/background.jpg");
       }
     </style>
-    <script>
-      document.addEventListener("DOMContentLoaded", (event) => {
-        if(!isAdmin()) { 
-          window.location.replace("../index.html");
-          alert('No eres administrador, no puedes entrar aqui');
-        }
-      });
-    </script>
     <link rel="stylesheet" href="../files/css/header.css">
     <link rel="stylesheet" href="../files/css/main.css">
   </head>
+  <script>
+    window.onload = function() {
+      if(!isAdmin()) { 
+        window.location.replace("../index.html");
+        alert('No eres administrador, no puedes entrar aqui');
+      }
+    };
+  </script>
   <body>
     <header>
         <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
@@ -1310,6 +1310,7 @@
     function topFunction() {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      
     }
   </script>
 </html>
