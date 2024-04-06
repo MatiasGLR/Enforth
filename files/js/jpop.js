@@ -27,6 +27,7 @@
     if(isAdmin()) {
       $('#ingresar').parent().css('display', 'none');
       $('#logged').css('display', 'block');
+      $('#administracion').css('display','block');
     } else {
       if(!isAdmin()) { 
         $('#administracion').css('display','none');
