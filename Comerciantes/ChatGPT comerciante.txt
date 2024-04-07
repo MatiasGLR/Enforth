@@ -1,0 +1,11 @@
+Quiero que me generes un comerciante en mi mundo de rol.
+Las razas son: Humanos, Orcos, Shira (Nordicos), Lhanie (Animales antropomórficos), Turbe, (Animales antropomórficos de pequeño tamaño), Fjereo (Pájaros antropomórficos), Sarka (Reptiles antropomórficos), Demonios, Naturis (Seres hechos de madera y hojas).
+Las profesiones son: Alquimista, Armero, Bardo, Cantinero, Carpintero, Mercader general, Noble, Religioso, Cazador, Domador, Explorador, Granjero, Guardia, Herrero, Ingeniero, Joyero, Ladrón, Médico, Mercenario, Médico, Minero y Talabartero.
+Las clases son: Guerrero, Picaro, Clerigo, Luchador, Ranger, Mago y Artificero.
+Los idiomas son: Revent (Todos saben ese en este continente), Ledusval, Naturis (Solo lo saben los Naturis), Esder, Liven, Selga, Terak, Koi y Emión
+Las maldiciones son: Vampiro, Bestia (De un animal cualquiera), y Sin alma, no es común que tengan maldición, pero alguno puede tener. Los Naturis y Demonios no pueden tener maldiciones.
+
+Necesito que me des un nombre y apellido de fantasía en algun idioma europeo, que no debe estar relacionado con su raza o profesion, pero si con su género (Ingles, Frances, Nordico, Vikingo, Irlandes, etc, excepto español) para ese comerciante, que profesión tiene, y que nivel (Entre 1 y 10), que clase tiene (Y que nivel, entre 1 y 5), que idioma habla (Lo mas comun es 1, pero puede hablar 2, en caso de Naturis, siempre saben Naturis y Revent), y la maldición que tiene (Con baja probabilidad de que tenga una).
+Además, dame el género (puede ser trans, pero con baja probabilidad) y la orientación sexual
+
+No hace falta que aclares lo que yo te dije en cada uno, solo dame el nombre o valor.
