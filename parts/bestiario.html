@@ -84,1195 +84,276 @@
       <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
         <h2 class="titulo"><a href="../index.html">Inicio</a> > Bestiario</h2>
         <div style="max-width: 100%; border-radius: 5px;" style="box-sizing: border-box;" class="mw-100 w-100 p-4 m-2 col-12 bg-dark text-white row text-start">
+          <h2 class="w-100 text-warning text-center">Funcionamiento del Bestiario</h2>
+          <p>
+            <x class="text-warning">Nivel de peligro. </x>Es el nivel que los Bestiarios creados por Francis Crawell
+            catalogan a las criaturas, en base a su experiencia estudiandolas. Estos van del 1 al 10.<br>
+            <x class="text-warning">Nivel promedio. </x>Es el nivel de daño que causan las criaturas en promedio,
+            y las capacidades de sus habilidades. El Nivel de peligro se basa mayormente, si una persona de ese
+            nivel podría vencerla sin problemas mayores (Podría tener problemas en base a su clase, habilidades,
+            etc.). También, una persona que se encuentre en un nivel mayor al de este peligro, podría superarlos
+            sin problemas. <br>
+          </p>
           <hr id="skipto">
+          <style>
+            .btn:hover > h5 {
+              color:black !important; 
+            }
+          </style>
           <div id="informacion">
-            <div id="guia" class="collapse" data-bs-parent="#informacion">
+            <div id="J" class="collapse" data-bs-parent="#informacion">
               <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Guia de minerales y lingotes</h2>
+                <h2 class="w-100 text-warning"></h2>
               </div>
               <div class="razamain row text-center">
-                <div class="col-md-12 text-start">
-                  <p>
-                    En el caso de la herrería, joyería, armamentística, y otras artes que utilizan distintos tipos de materiales, podemos encontrar 
-                    distintos tipos, los cuales pueden ser sintetizados y purificados en lingotes de este material. La forma más sencilla de obtener 
-                    minerales, es en las minas, donde se encuentran varias menas de estos, o en meteoritos que suelen caer en distintas zonas, o incluso 
-                    podrías ver uno caer, e ir hacia él.
-                  </p>
-                  <p>Los minerales purificados, tienen una cierta cantidad para poder confeccionar el lingote:
-                    <ul>
-                      <li class="text-warning">Mineral inferior. <x class="text-white">Requieren de 2 minerales para crear el lingote</x></li>
-                      <li class="text-warning">Mineral medio. <x class="text-white">Requieren de 3 minerales para crear el lingote</x></li>
-                      <li class="text-warning">Mineral superior. <x class="text-white">Requieren de 4 minerales para crear el lingote</x></li>
-                    </ul>
-                  </p>
-                </div>
-                <hr>
-                <div class="col-md-12 row d-flex justify-content-center">
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Cobre</h5>
-                    <x class="text-warning">Material inferior.</x> El material más débil, en cuestiones de resistencia, tanto así, que no es utilizado para 
-                    hacer armas o protección, sino para confeccionar artículos que no requieran de ser resistentes.
+                <div class="row col-md-12 text-start">
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#jabali" 
+                      data-bs-parent="desplegables" onclick="bugcoll('#desplegables')">
+                      <h5 class="text-warning m-auto">Jabalí</h5></button>
                   </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Hierro</h5>
-                    <x class="text-warning">Material inferior.</x> Es uno de los más comunes, encontrado en mayor cantidad, y que tiene múltiples aplicaciones 
-                    para la vida diaria. Se suele utilizar para las piezas de carros, moldes para los hogares, utensilios, herramientas de trabajo, etc.
+                  <div class="col-md-4">
+
                   </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Plata</h5>
-                    <x class="text-warning">Material inferior.</x> Es un poco menos común que el hierro, pero tiene unos usos similares, agregado a que es 
-                    usado en la joyería, al ser un material fácil de moldear, y que no pierde su color blanco brillante con el pasar del tiempo.
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Oro</h5>
-                    <x class="text-warning">Material inferior.</x> Se encuentra bastante fácil, junto con la Plata, con la diferencia que es más difícil de 
-                    moldear, y, por lo tanto, menos utilizado por los herreros, aunque sigue teniendo popularidad con los joyeros.
-                  </div>
-                </div>
-                <div class="col-md-12 row d-flex justify-content-center mt-4">
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Basalto</h5>
-                    <x class="text-warning">Material medio.</x> Rocas negras obtenidas en zonas volcánicas subterráneas, se las suele encontrar en ciertos 
-                    minerales, unidos a estos, aunque en menor cantidad. Tiene una capacidad de daño muy alta, al poder afilarse más que otras armas, aunque 
-                    su mayor desventaja, es su fragilidad, pudiendo romperse al usarse en combate.
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Cuarzo</h5>
-                    <x class="text-warning">Material medio.</x> Una roca de color blanco pálido con la capacidad única de absorber la magia, por lo que se 
-                    utiliza para hacer báculos, armas con gemas para aumentar su poder mágico, o armaduras que repelan la magia.
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Titanio</h5>
-                    <x class="text-warning">Material medio.</x> Este metal de color gris verdoso, tiene una capacidad tóxica, la cual luego de fundirse, 
-                    suele ser algo nociva para las heridas que toquen su filo.
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Cobalto</h5>
-                    <x class="text-warning">Material medio.</x> Es capaz de absorber y generar electricidad, manteniéndola dentro de sí, por lo que el usarla 
-                    en combate, generalmente descargará esta energía. Es de un color azul brillante, y no suele encontrarse muy a menudo. Tiene las 
-                    capacidades de aguantar el poder del Berilio.
-                  </div>
-                </div>
-                <div class="col-md-12 row d-flex justify-content-center mt-4">
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Oricalco</h5>
-                    <x class="text-warning">Material superior.</x> Es una roca de color rosa brillante, que se encuentra como impurezas en los minerales más 
-                    comunes. Irradia un inusual calor, y es capaz de soportar el poder del Rubí.
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Luminita</h5>
-                    <x class="text-warning">Material superior.</x> Solo obtenible mediante los meteoritos, la Luminita, siendo una piedra gris con un leve 
-                    brillo azulado, capaz de aumentar el poder de los seres malditos, al ser portada por estos en equipamiento.
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Infernita</h5>
-                    <x class="text-warning">Material superior.</x> Llegó a la tierra por parte de la invasión de los demonios, explotando en muchos cometas 
-                    desde los portales, y uniéndose a otros materiales. Tiene una capacidad de generar calor aun mayor que la del Oricalco.
-                  </div>
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Platino</h5>
-                    <x class="text-warning">Material superior.</x> Por sí mismo, no tiene mucha utilidad, su verdadera capacidad se destaca al unirse con 
-                    otros materiales, para conformar aleaciones que potencian los materiales originales.
-                  </div>
-                </div>
-                <div class="col-md-12 row d-flex justify-content-center mt-4">
-                  <div class="col-md-3 text-center">
-                    <h5 class="text-warning">Druvix</h5>
-                    <x class="text-warning">Material divino.</x> Es el material que conforma las armaduras y armamento de los arcángeles, no se sabe cómo 
-                    este puede obtenerse, solo es conocido que su poder es mayor al que cualquier material común o platinado puede alcanzar.
+                  <div id="desplegables">
+                    <div id="jabali" class="collapse row col-md-12">
+                      <div style="box-sizing: border-box;" class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Apariencia</h5>
+                        <img style="width:250px; height:250px;" src="../files/img/bestiario/jabali.png">
+                        <p class="mt-4">La apariencia de estos siempre es igual, similar a la imagen referencial</p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Estadísticas</h5>
+                        <p>
+                          <x class="text-warning">Agilidad.</x> 3 puntos<br>
+                          <x class="text-warning">Combate.</x> 5 puntos<br>
+                          <x class="text-warning">Fuerza.</x> 8 puntos<br>
+                          <x class="text-warning">Percepción.</x> 5 puntos<br>
+                          <x class="text-warning">Resistencia.</x> 8 puntos<br>
+                          <x class="text-warning">Reducción de daño.</x> 25%<br>
+                        </p>
+                        <h5 class="text-info">Datos de batalla</h5>
+                        <p>
+                          <x class="text-warning">Nivel base.</x> 1<br>
+                          <x class="text-warning">Vida.</x> 20 + (3 por nivel)<br>
+                          <x class="text-warning">Acciones de ataque.</x> 3<br>
+                          <x class="text-warning">Acciones de movimiento.</x> 3<br>
+                        </p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-start">
+                        <h5 class="text-info text-center">Habilidades</h5>
+                        <p>
+                          <x class="text-warning">Pasiva. </x>Movimiento ligero<br>
+                          No gastan acciones de movimiento para moverse<br>
+                          <x class="text-warning">Cabezaso. </x>1d8 (Por nivel)+Fuerza<br>
+                          La habilidad tiene un 10% de probabilidad de causar derribo<br>
+                          <x class="text-warning">Golpe de cuerno. </x>[2d4]*4<br>
+                          La habilidad tiene un 10% de probabilidad de causar sangrado<br>
+                        </p>
+                        <h5 class="text-info text-center">Drops</h5>
+                        <p>
+                          <x class="text-warning">Cuero de jabalí. </x>1 unidad (2 con 4 o mas agilidad)<br>
+                          <x class="text-warning">Carne de jabalí. </x>1 unidad<br>
+                          <x class="text-warning">Alma de jabalí. </x><br>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="forja" class="collapse" data-bs-parent="#informacion">
+            <div id="L" class="collapse" data-bs-parent="#informacion">
               <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Forja</h2>
+                <h2 class="w-100 text-warning"></h2>
               </div>
               <div class="razamain row text-center">
-                <div class="col-1"></div>
-                <div class="row col-md-10 text-start">
-                  <p>
-                    La forja en tu mundo no es solo un oficio, es un arte y una ciencia que requiere precisión, paciencia y un profundo conocimiento de los materiales y técnicas. 
-                    Los herreros comienzan su camino trabajando con metales básicos, aprendiendo a calentar, moldear y templar el hierro y el cobre para crear herramientas 
-                    sencillas y armas rudimentarias. A medida que ganan experiencia y suben de nivel en su profesión, se desbloquean nuevos y exóticos materiales para trabajar, 
-                    desde el resistente hierro hasta metales mágicos que albergan propiedades únicas.
-                  </p>
-                  <p>
-                    Subir de nivel en la forja no es solo una cuestión de acumular horas de trabajo; es un proceso de aprendizaje constante y experimentación. Los herreros deben 
-                    dominar técnicas complejas, como el plegado de metales para aumentar su resistencia, o la infusión de elementos mágicos durante el proceso de forjado para 
-                    crear armas y armaduras imbuidas con hechizos protectores o destructivos. Cada nivel alcanzado permite al herrero trabajar con materiales más desafiantes y 
-                    realizar encargos más prestigiosos, abriendo las puertas a la creación de verdaderas obras maestras que son codiciadas por héroes y reyes por igual. La 
-                    forja es un camino de descubrimiento eterno, donde cada martillazo acerca al herrero a la perfección.
-                  </p>
-                  <div class="col-md-6">
-                    <p>
-                      <h5 class="text-warning text-center">Materiales trabajados por nivel en la profesión</h5>
-                      <ul>
-                        <li class="text-warning">Nivel 0. <x class="text-white">Cobre</x></li>
-                        <li class="text-warning">Nivel 1. <x class="text-white">Hierro</x></li>
-                        <li class="text-warning">Nivel 2. <x class="text-white">Plata y oro</x></li>
-                        <li class="text-warning">Nivel 3. <x class="text-white">Cuarzo</x></li>
-                        <li class="text-warning">Nivel 4. <x class="text-white">Basalto</x></li>
-                        <li class="text-warning">Nivel 5. <x class="text-white">Titanio</x></li>
-                        <li class="text-warning">Nivel 6. <x class="text-white">Cobalto</x></li>
-                        <li class="text-warning">Nivel 7. <x class="text-white">Oricalco e infernita</x></li>
-                        <li class="text-warning">Nivel 8. <x class="text-white">Platino</x></li>
-                        <li class="text-warning">Nivel 9. <x class="text-white">Luminita</x></li>
-                        <li class="text-warning">Nivel 10. <x class="text-white">Druvix</x></li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-1"></div>
-              </div>
-            </div>
-            <div id="herreria" class="collapse" data-bs-parent="#informacion">
-              <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Herreria</h2>
-              </div>
-              <div class="razamain row text-start">
-                <div style="box-sizing: border-box;" class="col-12 p-4">
-                  <p>
-                    <p>
-                      En tu mundo, la herrería es una disciplina venerada, amalgamando el dominio del fuego, el metal y la magia en un artefacto único de creación. No se limita a la mera fabricación de armas y armaduras; es una profunda expresión de la cultura, la historia y la identidad de un pueblo. Aquellos que se dedican a este oficio no son solo artesanos, sino también guardianes de antiguas tradiciones y exploradores en el vanguardismo de la innovación mágica y material.
-                    </p>
-                    <p>
-                      Los herreros en tu mundo empiezan su jornada aprendiendo a manipular los elementos básicos, forjando herramientas y simples piezas de armadura a partir de hierro y cobre. Con el tiempo, y conforme aumentan su destreza y conocimientos, acceden a materiales más exóticos y potentes, capaces de absorber y canalizar energías mágicas. Estos materiales incluyen metales infundidos con maná, aleaciones antiguas perdidas en el tiempo, y sustancias extraídas de los rincones más remotos y peligrosos del mundo.
-                    </p>
-                    <p>
-                      La herrería es tanto un proceso técnico como espiritual, implicando rituales que conectan al herrero con su trabajo, infundiéndolo con esencias mágicas. Los objetos forjados no son meras herramientas; son extensiones de la voluntad del portador, resonando con su espíritu y potenciando sus habilidades. Las armas y armaduras más legendarias tienen nombres propios y historias que las acompañan, pasando de generación en generación.
-                    </p>
-                    <p>
-                      Avanzar en la herrería implica no solo mejorar la habilidad para trabajar con materiales más desafiantes y realizar técnicas más complejas, sino también una profunda comprensión de la alquimia y la magia aplicada. Los maestros herreros son capaces de crear artefactos que contienen poderosos hechizos, protegen contra magias oscuras o mejoran las capacidades físicas y mágicas de quien las porta. La herrería, en tu mundo, es un camino de constante aprendizaje y descubrimiento, donde cada creación es un paso hacia la maestría definitiva del arte.
-                    </p>
-                  </p>
-                </div>
-                <div class="col-1"></div>
                 <div class="row col-md-12 text-start">
-                  <div class="col-md-6">
-                    <h5 class="text-warning">Platinado</h5>
-                    <p>A partir del Nivel 8, puedes empezar a platinar los materiales, para crear aleaciones mas fuertes. A este nuevo mineral, solo se le agregará el sufijo de "platinado",
-                      por ejemplo, "Lingote de oro platinado". Para crear lingotes platinados, se debe fundir un lingote de cualquier material (Excepto platino), con un lingote de platino.
-                    </p>
-                    <p>Las armas platinadas, contarán como armas de Nivel 5.</p>
-                    <p>Las armas creadas con Infernita, y Platino, requieren de una receta, y el Platino requiere de la receta específica de la creación del arma, y de la aleación.
-                    </p>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#leon" 
+                      data-bs-parent="desplegables" onclick="bugcoll('#desplegables')">
+                      <h5 class="text-warning m-auto">León</h5></button>
                   </div>
-                  <div class="col-md-6">
-                    <h5 class="text-warning">Requerimientos</h5>
-                    <p>Para poder fabricar objetos mediante herrería, se requiere un <b>equipo de herrería</b>, una <b>forja</b> (Instalable en una casa), y la profesión de herrero
-                      (Ver <a href="./profesiones.html">profesiones</a>).
-                    </p>
-                    <h5 class="text-warning">Reciclaje</h5>
-                    <p>Muchos objetos hechos con lingotes, pueden ser reciclados al volver a ser fundidos, recuperando asi, la mitad de los materiales (Redondeando hacia abajo). El platino, 
-                      nunca se recupera.</p>
-                    <p>Cuando un material se funde, tiene un 50% de probabilidad de dejar "Polvos" del material correspondiente, los cuales pueden ser utilizados para otras creaciones.</p>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#lobo" 
+                      data-bs-parent="desplegables" onclick="bugcoll('#desplegables')">
+                      <h5 class="text-warning m-auto">Lobo</h5></button>
                   </div>
-                </div>
-                <div class="row col-md-12 text-start">
-                  <table class="table table-striped table-dark">
-                    <thead>
-                      <th scope="col">Objeto</th>
-                      <th scope="col">Cantidad</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="text-warning" scope="row">Arma a una mano</th>
-                        <td class="text-warning">2 lingotes</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Arma a dos manos</th>
-                        <td class="text-warning">4 lingotes</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cota de malla</th>
-                        <td class="text-warning">5 lingotes</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Armadura (Peto)</th>
-                        <td class="text-warning">8 lingotes</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Yelmo o escudo</th>
-                        <td class="text-warning">3 lingotes</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Guantes</th>
-                        <td class="text-warning">2 lingotes</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Pantalones y botas</th>
-                        <td class="text-warning">6 lingotes</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Armadura de mascota (Tamaño perro)</th>
-                        <td class="text-warning">5 lingotes</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Armadura de mascota (Tamaño wyvern)</th>
-                        <td class="text-warning">15 lingotes</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="row col-md-12 text-start">
-                  <h5 class="text-warning">Mejora de equipamiento</h5>
-                  <p>Aqui se subirán los materiales requeridos por tipo de equipamiento, para mejorarlos, subiendolos de nivel. Para subir a un nivel alto, se debe de pasar por los anteriores.</p>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <p class="text-warning"><b>Armas de filo</b></p>
-                      <ul>
-                        <li class="text-warning">Nivel 1. <x class="text-white">2 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 2. <x class="text-white">4 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 3. <x class="text-white">6 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 4. <x class="text-white">Usar en el arma un <b>afilador especial</b></x></li>
-                        <li class="text-warning">Nivel 5. <x class="text-white">Colocar un encantamiento en el arma (Requiere Alquimia)</x></li>
-                        <li class="text-warning">Bono por nivel. <x class="text-white">Aumenta el daño del arma en 1 punto fijo, y el efecto en 5% por nivel</x></li>
-                      </ul>
+                  <div class="col-md-4">
+
+                  </div>
+                  <div id="desplegables">
+                    <div id="leon" class="collapse row col-md-12">
+                      <div style="box-sizing: border-box;" class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Apariencia</h5>
+                        <img style="width:250px; height:250px;" src="../files/img/bestiario/leon.png">
+                        <p class="mt-4">La apariencia de estos siempre es igual, similar a la imagen referencial</p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Estadísticas</h5>
+                        <p>
+                          <x class="text-warning">Agilidad.</x> 5 puntos<br>
+                          <x class="text-warning">Combate.</x> 6 puntos<br>
+                          <x class="text-warning">Fuerza.</x> 6 puntos<br>
+                          <x class="text-warning">Percepción.</x> 6 puntos<br>
+                          <x class="text-warning">Resistencia.</x> 4 puntos<br>
+                          <x class="text-warning">Reducción de daño.</x> 20%<br>
+                        </p>
+                        <h5 class="text-info">Datos de batalla</h5>
+                        <p>
+                          <x class="text-warning">Nivel base.</x> 2<br>
+                          <x class="text-warning">Vida.</x> 12 + (4 por nivel)<br>
+                          <x class="text-warning">Acciones de ataque.</x> 4<br>
+                          <x class="text-warning">Acciones de movimiento.</x> 1<br>
+                        </p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-start">
+                        <h5 class="text-info text-center">Habilidades</h5>
+                        <p>
+                          <x class="text-warning">Pasiva. </x>Movimiento ligero<br>
+                          No gastan acciones de movimiento para moverse<br>
+                          <x class="text-warning">Arañazo. </x>1d6 (Por nivel)+Fuerza<br>
+                          Las habilidades tienen un 20% de probabilidad de causar sangrado<br>
+                          <x class="text-warning">Mordisco. </x>[1d6+(1d4 por Nivel)]*4<br>
+                        </p>
+                        <h5 class="text-info text-center">Drops</h5>
+                        <p>
+                          <x class="text-warning">Cuero de león. </x>1 unidad (2 con 4 o mas agilidad)<br>
+                          <x class="text-warning">Carne de león. </x>1 unidad<br>
+                          <x class="text-warning">Alma de león. </x><br>
+                          <x class="text-warning">Alma del león alfa. </x>(10% de probabilidad que sea esta alma)<br>
+                        </p>
+                      </div>
                     </div>
-                    <div class="col-md-3">
-                      <p class="text-warning"><b>Armas contundentes</b></p>
-                      <ul>
-                        <li class="text-warning">Nivel 1. <x class="text-white">3 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 2. <x class="text-white">5 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 3. <x class="text-white">7 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 4. <x class="text-white">4 lingotes de distinto material (Igual o superior al del arma)</x></li>
-                        <li class="text-warning">Nivel 5. <x class="text-white">Colocar un encantamiento en el arma (Requiere Alquimia)</x></li>
-                        <li class="text-warning">Bono por nivel. <x class="text-white">Aumenta el daño del arma en 1 punto fijo, y el efecto en 5% por nivel</x></li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <p class="text-warning"><b>Protecciones</b></p>
-                      <ul>
-                        <li class="text-warning">Nivel 1. <x class="text-white">3 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 2. <x class="text-white">5 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 3. <x class="text-white">7 lingotes del mismo material</x></li>
-                        <li class="text-warning">Nivel 4. <x class="text-white">Utilizar un pulidor de armadura</x></li>
-                        <li class="text-warning">Nivel 5. <x class="text-white">10 lingotes del mismo material</x></li>
-                        <li class="text-warning">Bono por nivel. <x class="text-white">Aumenta la protección provista por la pieza en 1 por nivel</x></li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <p class="text-warning"><b>Armas especiales</b></p>
-                      <p>Las armas especiales pueden ser mejoradas con 10 veces mas los materiales requeridos por nivel (Excepto las armaduras, que requieren solo 5 veces mas).</p>
+                    <div id="lobo" class="collapse row col-md-12">
+                      <div style="box-sizing: border-box;" class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Apariencia</h5>
+                        <img style="width:250px; height:250px;" src="../files/img/bestiario/lobo.png">
+                        <p class="mt-4">La apariencia de estos variará según la zona, siendo blancos los de zonas nevadas, y marrones en el desierto. En los bosques y otras zonas, esta puede variar</p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Estadísticas</h5>
+                        <p>
+                          <x class="text-warning">Agilidad.</x> 6 puntos<br>
+                          <x class="text-warning">Combate.</x> 4 puntos<br>
+                          <x class="text-warning">Fuerza.</x> 5 puntos<br>
+                          <x class="text-warning">Percepción.</x> 8 puntos<br>
+                          <x class="text-warning">Resistencia.</x> 3 puntos<br>
+                          <x class="text-warning">Reducción de daño.</x> 20%<br>
+                        </p>
+                        <h5 class="text-info">Datos de batalla</h5>
+                        <p>
+                          <x class="text-warning">Nivel base.</x> 1<br>
+                          <x class="text-warning">Vida.</x> 10 + (4 por nivel)<br>
+                          <x class="text-warning">Acciones de ataque.</x> 3<br>
+                          <x class="text-warning">Acciones de movimiento.</x> 1<br>
+                        </p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-start">
+                        <h5 class="text-info text-center">Habilidades</h5>
+                        <p>
+                          <x class="text-warning">Pasiva. </x>Movimiento ligero<br>
+                          No gastan acciones de movimiento para moverse<br>
+                          <x class="text-warning">Arañazo. </x>1d6 (Por nivel)+Fuerza<br>
+                          Las habilidades tienen un 20% de probabilidad de causar sangrado<br>
+                          <x class="text-warning">Mordisco. </x>[1d4+(1d2 por Nivel)]*5<br>
+                        </p>
+                        <h5 class="text-info text-center">Drops</h5>
+                        <p>
+                          <x class="text-warning">Cuero de lobo. </x>1 unidad (2 con 4 o mas agilidad)<br>
+                          <x class="text-warning">Carne de lobo. </x>1 unidad<br>
+                          <x class="text-warning">Alma de lobo. </x><br>
+                          <x class="text-warning">Alma del lobo alfa. </x>(10% de probabilidad que sea esta alma)<br>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="alquimia" class="collapse" data-bs-parent="#informacion">
+            <div id="T" class="collapse" data-bs-parent="#informacion">
               <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Pociones y viales</h2>
+                <h2 class="w-100 text-warning"></h2>
               </div>
-              <div class="razamain row text-start">
-                <div style="box-sizing: border-box;" class="col-12 p-4">
-                  <p>
-                    La alquimia es un antiguo arte que combina la ciencia, la magia y la intuición para manipular las propiedades de los materiales y crear sustancias con efectos extraordinarios. Los alquimistas son exploradores del mundo natural y espiritual, buscando entender los secretos de la materia y del universo mismo.
-                  </p>
-                  <p>
-                    En el corazón de la alquimia se encuentran las pociones, brebajes mágicos que pueden otorgar poderes, curar heridas o alterar la realidad misma. Las pociones son el resultado de una combinación precisa de ingredientes, cuyo conocimiento es guardado celosamente por los alquimistas. Cada poción es única, y su efecto puede variar desde simples curaciones hasta transformaciones drásticas.
-                  </p>
-                  <p>
-                    La creación de pociones requiere habilidad, paciencia y un profundo entendimiento de las propiedades de los ingredientes utilizados. Los alquimistas pasan años estudiando hierbas, minerales, metales y otras sustancias, buscando las combinaciones perfectas que produzcan los efectos deseados. Además, la magia juega un papel crucial en el proceso, ya que los alquimistas invocan energías arcanas para potenciar y estabilizar las mezclas.
-                  </p>
-                  <p>
-                    Las pociones son ampliamente utilizadas en el mundo, tanto por aventureros en busca de poder y protección, como por sanadores que buscan aliviar el sufrimiento de los enfermos. Sin embargo, su fabricación no está exenta de peligros, ya que un error en las proporciones o en los ingredientes puede resultar en efectos no deseados o incluso catastróficos. Los alquimistas son guardianes de un conocimiento antiguo y poderoso, cuya sabiduría puede traer tanto bendiciones como maldiciones al mundo que los rodea.
-                  </p>
-                </div>
-                <div class="col-1"></div>
+              <div class="razamain row text-center">
                 <div class="row col-md-12 text-start">
-                  <div class="col-12">
-                    <h5 class="text-warning">Requerimientos</h5>
-                    <p>Para fabricar pociones y viales, se requiere un taller de alquimia, para mayores de nivel 1; para pociones de nivel 1, se puede utilizar un equipo
-                      portatil de alquimia. Para cada Nivel de alquimia, se requiere el libro correspondiente.
-                    </p>
-                    <h5 class="text-warning">Pociones por niveles</h5>
-                    <p>Las pociones tienen una serie de ingredientes para poder ser confeccionadas, para crear pociones de niveles mas altos, primero se debe colocar los ingredientes
-                      de las pociones de niveles anteriores, y agregar los siguientes en orden. Para crear pociones de niveles mas altos, se requiere un cierto nivel en alquimia,
-                      para conocer las cantidades correctas.
-                    </p>
-                    <h5 class="text-warning">Efectos por niveles</h5>
-                    <p>Los efectos de las pociones, se separan con barras <x class="text-warning">/</x>, separandolos en Nivel 1/Nivel 2/Nivel 3.</p>
-                    <h5 class="text-warning">Duración de efectos</h5>
-                    <p>Las pociones suelen durar una exploración completa (Incluidos los combates). Solo una poción que aumente estadísticas puede ser bebida durante una exploración.</p>
-                  </div>
-                </div>
-                <div class="row col-md-12 text-start">
-                  <h3 class="text-warning text-center">Materiales de pociones</h3>
                   <div class="col-md-4">
-                    <b class="text-warning">Agua destilada</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Regenera la salud en 1d4</x></li>
-                      <li class="text-warning">Obtención. <x class="text-white">Destilar agua con un equipo de alquimia</x></li>
-                    </ul>
+                    <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#tigre" 
+                      data-bs-parent="desplegables" onclick="bugcoll('#desplegables')">
+                      <h5 class="text-warning m-auto">Tigre</h5></button>
                   </div>
                   <div class="col-md-4">
-                    <b class="text-warning">Vial de sangre (roja)</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Regenera la salud en 1d4 (Solo vampiros)</x></li>
-                      <li class="text-warning">Obtención. <x class="text-white">Filtrarla de algunos cadáveres</x></li>
-                    </ul>
+
                   </div>
                   <div class="col-md-4">
-                    <b class="text-warning">Vial de sangre (azul)</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Elimina una carga de veneno (Solo vampiros)</x></li>
-                      <li class="text-warning">Obtención. <x class="text-white">Filtrarla de algunos cadáveres</x></li>
-                    </ul>
+
                   </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Vial de sangre (verde)</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Elimina los efectos de la transformación maldita (Solo vampiros)</x></li>
-                      <li class="text-warning">Obtención. <x class="text-white">Filtrarla de algunos cadáveres</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Fragmento de gemas</b>
-                    <ul>
-                      <li class="text-warning">Obtención. <x class="text-white">Quebrar una gema, te dará 1d4 fragmentos de la misma</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Hojas de sauce</b>
-                    <ul>
-                      <li class="text-warning">Obtención. <x class="text-white">Estos árboles de colores tienen algunas hojas mágicas,
-                        las cuales pueden ser recolectadas.
-                      </x></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row col-md-12 text-start">
-                  <h3 class="text-warning text-center">Listado de pociones</h3>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de vida</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Restaura la salud en 2d4/4d4/6d4 puntos. En caso de curar mas de la mitad de su valor,
-                        también cerrará heridas abiertas (Durante exploraciones)</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Rojo brillante</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (1) + Vial de sangre (2)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Hoja de sauce rojo (2)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Polvo de oro (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de maná</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Agrega 2/4/6 núcleos de maná a la reserva. Solo puede tomarse una por ronda, 
-                        o dará el debufo de <b>sobredosis de poción</b>; efecto que evita que otras pociones hagan efecto por el resto del combate.</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Azul brillante</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (1) + Hoja de sauce azul (2) + Fragmento de amatista (2)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Polvo de oro (2) + Vial de sangre azul (2)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Escama de Wyvern (5)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Antídoto</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Limpia 1/3/5 cargas de veneno</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Verde oscuro</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (1) + Hoja de sauce azul (2) + Fragmento de amatista (2)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Polvo de oro (2) + Vial de sangre azul (2)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Escama de Wyvern (5)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de musculatura</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Aumenta tu fuerza en 1/3/5 puntos durante una exploración</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Rojo oscuro</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (1) + Polvo de hierro (2) + Polvo de oro (2)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Hoja de sauce blanco (2)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Alma de orco (1)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de fortuna</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Aumenta tu suerte en 1/3/5 puntos durante una exploración</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Verde brillante</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (1) + Trebol de cuatro hojas (1)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Mariquita (2)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Hoja de sauce dorada (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de aura fénix</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Los enemigos que te ataquen, tienen un 10%/15%/20% de probabilidad de recibir <b>quemadura</b></x></li>
-                      <li class="text-warning">Color. <x class="text-white">Naranja brillante</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (1) + Pluma de fjereo (1) + Fragmento de rubí (2)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Hoja de sauce roja (3)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Polvo de basalto (3)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de puntería</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Aumenta tu puntería en 1/3/5 puntos durante una exploración</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Naranja oscuro</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (1) + Ojos de araña (10)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Polvo de plata (2)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Hoja de sauce dorada (1)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de desmaldecir</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Elimina los efectos de la transformación de un maldito</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Negro brillante</x></li>
-                      <li class="text-warning">Materiales. <x class="text-white">Agua destilada (1) + Vial de sangre verde (3) + Polvo de plata (1)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de subida de nivel</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Sube al jugador de nivel. Luego de nivel 10, solo dará la mitad de la experiencia restante para subir de nivel</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Dorado con toques naranjas</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de velocidad</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">En el orden de turnos, subes un turno</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Celeste</x></li>
-                      <li class="text-warning">Materiales. <x class="text-white">Agua destilada (2) + Hoja de sauce azul (2) + Hoja de sauce verde (2) + Escama de Wyvern (3)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de carisma</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Aumenta tu carisma en 1/3/5 puntos durante una exploración</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Verde con brillo azul</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (2) + Alma de capibara (1)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Alma de capibara (1)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Hoja de sauce dorada (1)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de aumento vital</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Aumenta tu vitalidad en 1/3/5 puntos durante una exploración</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Rojo con puntos negros flotando</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (1) + Polvo de oro (2) + Hoja de sauce verde (2)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Vial de sangre (2) + Vial de sangre verde (2)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Hoja de sauce dorada (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de karma</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Los efectos negativos del karma no surtirán efecto durante una exploración</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Negra espesa sin brillo</x></li>
-                      <li class="text-warning">Materiales. <x class="text-white">Agua destilada (3) + Hoja de sauce dorada (2) + Polvo de plata (5)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de sudoración</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Te vuelves inmune al efecto de quemadura durante el resto del combate</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Transparente, con burbujas rojas</x></li>
-                      <li class="text-warning">Materiales. <x class="text-white">Agua destilada (1) + Fragmento de rubí (3) + Fragmento de zafiro (3) + Hoja de sauce azul (3)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de criogenia</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Te vuelves inmune al efecto de congelación durante el resto del combate</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Rojo con puntos negros flotando</x></li>
-                      <li class="text-warning">Materiales. <x class="text-white">Agua destilada (2) + Fragmento de zafiro (3) + Hoja de sauce azul (3)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de muerte lenta</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Si el que la bebe no es lo suficientemente resistente, morirá. Recibe 1d20 de daño con ventaja.</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Negro con trazos rojos</x></li>
-                      <li class="text-warning">Materiales. <x class="text-white">Agua (2) + Fragmento de esmeralda (2) + Vial de sangre azul (2) + Polvo de titanio (1)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción desarma candados</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Destruye mecanismos de candados. Las de nivel 1 destruyen hasta hierro, nivel 2 hasta plata, y nivel 3 hasta oro</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Morado</x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Agua destilada (2) + Hoja de sauce verde (2) + Vial de slime (2)</x></li>
-                      <li class="text-warning">Nivel 2. <x class="text-white">Polvo de basalto (3)</x></li>
-                      <li class="text-warning">Nivel 3. <x class="text-white">Polvo de oricalco (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Solución hiper hidratante</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Permite al usuario, tener habilidades durante un combate, como si se encontrara bajo lluvia o una fuente de agua (Excepto para hechizos que requerian usar esa cantidad)</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Azul claro</x></li>
-                      <li class="text-warning">Materiales. <x class="text-white">Agua destilada (3) + Hoja de sauce azul (3) + Fragmento de zafiro (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Poción de energía</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Recupera todas las acciones de ataque</x></li>
-                      <li class="text-warning">Color. <x class="text-white">Verde lima</x></li>
-                      <li class="text-warning">Materiales. <x class="text-white">Solo es encontrable en cofres, se desconoce la forma de crearla</x></li>
-                    </ul>
-                  </div>
-                </div>
-                <hr>
-                <div class="row col-md-12 text-start">
-                  <h3 class="text-warning text-center">Viales de infusión</h3>
-                  <p>Los viales de infusión, son un tipo de poción que afecta a equipamiento, en lugar de al jugador. Al momento de este derramarlo
-                    sobre su equipo, estos obtendrán las propiedades mágicas correspondientes de esta poción. Su duración es de un combate, pero
-                    si se encuentra bajo la lluvia, sus efectos disminuirán, y solo durarán una ronda.
-                  </p>
-                  <div class="col-md-4">
-                    <b class="text-warning">Vial de afilación</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">Agrega 5 de daño fijo al arma, y cambia su efecto a <b>sangrado</b></x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Vial vacío (1) + Polvo de hierro (3) + Polvo de basalto (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Vial de ignición</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">El arma cambia a un naranja brillante, cambia su efecto por <b>quemadura</b></x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Vial vacío (1) + Polvo de hierro (3) + Fragmento de rubí (2) + Hoja de sauce rojo (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Vial de criogenia</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">El arma cambia a un celeste brillante, cambia su efecto por <b>congelación</b></x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Vial vacío (1) + Polvo de plata (3) + Fragmento de zafiro (2) + Hoja de sauce azul (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Vial de magnetismo</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">El arma cambia a un amarillo brillante, cambia su efecto por <b>estatizado</b></x></li>
-                      <li class="text-warning">Nivel 1. <x class="text-white">Vial vacío (1) + Polvo de oro (3) + Fragmento de berilio (2) + Hoja de sauce blanco (2)</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Vial de ectoplasma</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">El arma cambia a un celeste muy claro, cambia su efecto por <b>espectral</b>, por lo que puede dañar espectros</x></li>
-                      <li class="text-warning">Obtención. <x class="text-white">Los fantasmas lo liberan por donde pasan</x></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <b class="text-warning">Vial de brillos</b>
-                    <ul>
-                      <li class="text-warning">Efecto. <x class="text-white">El arma irradia luz, como si de una antorcha se tratase</x></li>
-                      <li class="text-warning">Obtención. <x class="text-white">Vial vacío (1) + Polvo de plata (2) + Fragmento de diamante (1)</x></li>
-                    </ul>
+                  <div id="desplegables">
+                    <div id="tigre" class="animal collapse row col-md-12">
+                      <div style="box-sizing: border-box;" class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Apariencia</h5>
+                        <img style="width:250px; height:250px;" src="../files/img/bestiario/tigre.png">
+                        <p class="mt-4">La apariencia de estos variará según la zona, siendo blancos los de zonas nevadas. En los bosques y otras zonas, esta puede variar.</p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Estadísticas</h5>
+                        <p>
+                          <x class="text-warning">Agilidad.</x> 7 puntos<br>
+                          <x class="text-warning">Combate.</x> 3 puntos<br>
+                          <x class="text-warning">Fuerza.</x> 6 puntos<br>
+                          <x class="text-warning">Percepción.</x> 6 puntos<br>
+                          <x class="text-warning">Resistencia.</x> 5 puntos<br>
+                          <x class="text-warning">Reducción de daño.</x> 20%<br>
+                        </p>
+                        <h5 class="text-info">Datos de batalla</h5>
+                        <p>
+                          <x class="text-warning">Nivel base.</x> 2<br>
+                          <x class="text-warning">Vida.</x> 12 + (5 por nivel)<br>
+                          <x class="text-warning">Acciones de ataque.</x> 3<br>
+                          <x class="text-warning">Acciones de movimiento.</x> 2<br>
+                        </p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-start">
+                        <h5 class="text-info text-center">Habilidades</h5>
+                        <p>
+                          <x class="text-warning">Pasiva. </x>Movimiento ligero<br>
+                          No gastan acciones de movimiento para moverse<br>
+                          <x class="text-warning">Arañazo. </x>1d6 (Por nivel)+Fuerza<br>
+                          Las habilidades tienen un 25% de probabilidad de causar sangrado<br>
+                          <x class="text-warning">Mordisco. </x>[1d5+(1d2 por Nivel)]*5<br>
+                        </p>
+                        <h5 class="text-info text-center">Drops</h5>
+                        <p>
+                          <x class="text-warning">Cuero de tigre. </x>1 unidad (2 con 4 o mas agilidad)<br>
+                          <x class="text-warning">Carne de tigre. </x>1 unidad<br>
+                          <x class="text-warning">Alma de tigre. </x><br>
+                          <x class="text-warning">Alma del tigre alfa. </x>(10% de probabilidad que sea esta alma)<br>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="armamentistica" class="collapse" data-bs-parent="#informacion">
-              <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Armas a distancia</h2>
-              </div>
-              <div class="razamain row text-start">
-                <div class="col-1"></div>
-                <div class="row col-md-12 text-start">
-                  <div class="col-md-12">
-                    <h5 class="text-warning text-center">Confección de arcos, ballestas y flechas</h5>
-                    <p>Para cualquier tipo de estas creaciones que requieran lingotes, se requiere una herrería. Para la madera o cuero, un taller, o un equipo de taller.</p>
-                    <table class="table table-striped table-dark">
-                      <thead>
-                        <th scope="col">Objeto</th>
-                        <th scope="col">Cantidad</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th class="text-warning" scope="row">Arco</th>
-                          <td class="text-warning">3 lingotes + 1 de Cuero</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Ballesta</th>
-                          <td class="text-warning">6 lingotes + 1 de Cuero + Mecanismo</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Mecanismo</th>
-                          <td class="text-warning">1 lingotes de hierro + 1 lingote de cobre (Requiere ingenieria)</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Flechas</th>
-                          <td class="text-warning">1 de madera (o 2 para flechas de madera) y 1 lingote (15 unidades serán creadas). En caso de ser un lingote, 
-                            requiere herrería del nivel correspondiente</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <h5 class="text-warning text-center">Confección de armas de fuego y empuñaduras</h5>
-                    <p>
-                      Para la confección de armas, se debe seguir la misma regla de materiales por nivel de profesión, además de necesitar el conocimiento de armamentística. 
-                      La mayoría de armas requieren de una receta para ser creadas, a excepción del <b class="text-warning">revólver</b>, que puede ser creado solo con el conocimiento de armamentística.
-                    </p>
-                    <p>
-                      Para crear un arma en específico, debes tener los materiales correspondientes, y una <b class="text-warning">empuñadora</b>, que se puede crear al tener 
-                      nivel 1 en talabartería (Para hacerla de cuero), o nivel 1 en carpintería (Para hacerla de madera). La empuñadura puede hacerse de metal, con herrería y 
-                      armamentística, del nivel suficiente.
-                    </p>
-                    <ul>
-                      <li class="text-info">Empuñadura de cuero. <x class="text-white">Aumenta la precisión en un punto</x></li>
-                      <li class="text-info">Empuñadura de madera. <x class="text-white">Aumenta el daño del arma en uno por nivel</x></li>
-                      <li class="text-info">Empuñadura de metal. <x class="text-white">No tiene efecto</x></li>
-                    </ul>
-                    <p>La empuñadura de las armas puede ser cambiada en cualquier momento, gastando una acción de movimiento, en caso de realizarlo en combate, teniendo las herramientas de herrería.</p>
-                    <p>Algunas armas pueden modificarse ligeramente a fin de modificar sus propiedades, como la escopeta, que puede recortarse, pero esto le quitará un dado de daño, a fin de hacerla a una mano, en lugar de a dos.</p>
-                  </div>
-                </div>
-                <div class="row col-md-12 text-start">
-                  <table class="table table-striped table-dark">
-                    <thead>
-                      <th scope="col">Objeto</th>
-                      <th scope="col">Cantidad</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="text-warning" scope="row">Balas</th>
-                        <td class="text-warning">1 piedra o madera, o 1 lingote (15 unidades). En caso de ser un lingote, requiere herrería del nivel correspondiente</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Revolver</th>
-                        <td class="text-warning">2 lingotes + Empuñadura</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cañón de mano</th>
-                        <td class="text-warning">4 lingotes + Empuñadura</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Rifle de precisión</th>
-                        <td class="text-warning">8 lingotes + Empuñadura</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Escopeta</th>
-                        <td class="text-warning">6 lingotes + Empuñadura</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="row col-md-12 text-start">
-                  <h5 class="text-warning text-center">Confección de municiones</h5>
-                  <p>Aqui se subirán los materiales requeridos por tipo de equipamiento, para mejorarlos, subiendolos de nivel. Para subir a un nivel alto, se debe de pasar por los anteriores.</p>
-                  <div class="row col-md-12 text-start">
-                    <table class="table table-striped table-dark">
-                      <thead>
-                        <th scope="col">Objeto</th>
-                        <th scope="col">Materiales</th>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th class="text-warning" scope="row">Pólvora (5 unidades)</th>
-                          <td class="text-warning">Polvo de hierro + Polvo de oro</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Metralla (5 unidades)</th>
-                          <td class="text-warning">Lingote de hierro + Polvo de hierro</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Casquillo/Cartucho vacío (2 unidades)</th>
-                          <td class="text-warning">1 Lingote, cada 2 cartuchos</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Municiones básicas (15 unidades)</th>
-                          <td class="text-warning">1 Munición vacía + 1 Lingote cualquiera + 3 de pólvora</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Municiones mágicas (15 unidades)</th>
-                          <td class="text-warning">1 Munición vacía + 3 de pólvora + 4 fragmentos de gema iguales</td>
-                        </tr>
-                        <tr>
-                          <td colspan="2">Los fragmentos harán que la bala aplique el efecto correspondiente al de la gema (Si no tiene efecto, solo cambiará el efecto por mágico)</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Municiones explosivas (3 unidades)</th>
-                          <td class="text-warning">1 Munición vacía + 2 de pólvora + 2 metralla + Fragmento de rubí + Polvo de plata</td>
-                        </tr>
-                        <tr>
-                          <td colspan="2">Causan 1d6 de daño por nivel en la clase de Ranger, a todos los seres a 5ft del objetivo</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Balas luminosas (5 unidades)</th>
-                          <td class="text-warning">1 Munición vacía + 1 de pólvora + 1 Polvo de plata</td>
-                        </tr>
-                        <tr>
-                          <th class="text-warning" scope="row">Balas fuerza cerraduras (1 unidad)</th>
-                          <td class="text-warning">1 Munición vacía + 5 de pólvora + 1 Fragmento de esmeralda + 2 hojas de sauce verde + 2 viales de sangre verde</td>
-                        </tr>
-                        <tr>
-                          <td colspan="2">Pueden romper cerraduras de puertas y cofres, hasta la plata, no pueden romper cerraduras de oro, o superior. Aplican veneno en combate con 5% de probabilidad</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="medicinas" class="collapse" data-bs-parent="#informacion">
-              <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Medicamentos</h2>
-              </div>
-              <div class="razamain row text-start">
-                <div class="col-1"></div>
-                <div class="row col-md-12 text-start">
-                  <p>Para crear medicamentos, se requiere del nivel correspondiente en la profesión de médico
-                    (Ver <a href="./profesiones.html">profesiones</a>), y un equipo portatil de alquimia.
-                  </p>
-                  <h3 class="text-warning text-center">Lista de medicamentos</h3>
-                  <div class="col-md-4">
-                    <ul>
-                      <h5 class="text-warning">Adrenalina</h5>
-                      <x class="text-white">Elimina el efecto de derribo, y te inmuniza a él por el resto del combate</x><br>
-                      <x class="text-warning">Materiales. <x class="text-white">Agua destilada (1) + Vial de sangre roja (1) +
-                        Hoja de sauce dorada (1)</x></x>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <ul>
-                      <h5 class="text-warning">Relajante</h5>
-                      <x class="text-white">Elimina el efecto de miedo, y te inmuniza a él por el resto del combate</x><br>
-                      <x class="text-warning">Materiales. <x class="text-white">Agua destilada (1) + Polvo de basalto (1) +
-                        Vial de sangre de lobo (1)</x></x>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <ul>
-                      <h5 class="text-warning">Antibiotico</h5>
-                      <x class="text-white">Elimina el efecto de veneno, y te inmuniza a él por el resto del combate</x><br>
-                      <x class="text-warning">Materiales. <x class="text-white">Agua destilada (1) + Vial de sangre azul (1) +
-                        Hoja de sauce (1)</x></x>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <ul>
-                      <h5 class="text-warning">Coagulante</h5>
-                      <x class="text-white">Elimina el efecto de sangrado, y te inmuniza a él por el resto del combate</x><br>
-                      <x class="text-warning">Materiales. <x class="text-white">Agua destilada (1) + Vial de sangre roja (3) +
-                        Hoja de sauce roja (2)</x></x>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <ul>
-                      <h5 class="text-warning">Antipsicótico</h5>
-                      <x class="text-white">Elimina el efecto de la magia mental, y te inmuniza a él por el resto del combate</x><br>
-                      <x class="text-warning">Materiales. <x class="text-white">Agua destilada (1) + Polvo de oro (2) +
-                        Fragmento de perla (2)</x></x>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="explosivos" class="collapse" data-bs-parent="#informacion">
-              <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Explosivos</h2>
-              </div>
-              <div class="razamain row text-start">
-                <div class="col-1"></div>
-                <div class="row col-md-12 text-start">
-                  <p>Los explosivos pueden ser creados en un taller, o en un equipo portátil de taller o de herrería.
-                  </p>
-                  <h3 class="text-warning text-center">Lista de explosivos</h3>
-                  <table class="table table-striped table-dark">
-                    <thead>
-                      <th scope="col">Objeto</th>
-                      <th scope="col">Materiales</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="text-warning" scope="row">Carcaza de bomba (1 unidad)</th>
-                        <td class="text-warning">Lingote cualquiera (Requiere crearse en forja)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Pólvora (5 unidades)</th>
-                        <td class="text-warning">Polvo de hierro + Polvo de oro</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Metralla (5 unidades)</th>
-                        <td class="text-warning">Lingote de hierro + Polvo de hierro</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Bomba explosiva</th>
-                        <td class="text-warning">Carcaza (1) + Metralla (1) + Pólvora (2)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Bomba de humo</th>
-                        <td class="text-warning">Carcaza (1) + Azúcar (1) + Pólvora (2) + Polvo de plata (1)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Bomba incendiaria</th>
-                        <td class="text-warning">Caracaza (1) + Pólvora (2) + Fragmento de rubí (2)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Bomba criogénica</th>
-                        <td class="text-warning">Caracaza (1) + Pólvora (2) + Fragmento de zafiro (2)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Bomba ponzoñosa</th>
-                        <td class="text-warning">Caracaza (1) + Pólvora (2) + Fragmento de esmeralda (2)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Bomba ácida</th>
-                        <td class="text-warning">Caracaza (1) + Pólvora (2) + Fragmento de esmeralda (2) + Vial de sangre azul (2) + Hoja de sauce verde (2)</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div id="almas" class="collapse" data-bs-parent="#informacion">
-              <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Equipamiento de almas</h2>
-              </div>
-              <div class="razamain row text-start">
-                <div class="row col-md-12 text-start">
-                  <p>Las armas de almas son artefactos místicos de gran poder, forjados a partir de la esencia misma de las 
-                    almas. Estas armas no son meras herramientas de combate, sino reliquias vivientes que encierran dentro de 
-                    sí las almas de seres que alguna vez caminaron por el mundo, ya sean criaturas mágicas, héroes caídos o 
-                    entidades de poder insondable. Al ser imbuidas con almas, estas armas poseen habilidades únicas y poderes 
-                    que reflejan las capacidades y la esencia de las almas que residen en su interior.
-                  </p>
-                  <h3 class="text-warning text-center mb-4">Lista de equipamiento de almas</h3>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Daga del colmillo gris</h5>
-                    <p>Los ataques realizados con esta arma al arrojarla, tendrán atine asegurado, pero no tienen escalado
-                      <br><x class="text-warning">Materiales.</x> Daga de oro + Jade + Alma de lobo
-                    </p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Espadón de fauces</h5>
-                    <p>El espadón se orientará solo a enemigos invisibles, o camuflados
-                      <br><x class="text-warning">Materiales.</x> Espadón de oro + Jade + Alma de perro
-                    </p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Máscara de falsa ilusión</h5>
-                    <p>Cuando mientes, obtienes dos puntos adicionales en la tirada de Carisma
-                      <br><x class="text-warning">Materiales.</x> Lingote de plata + Jade + Alma de zorro
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="talabarteria" class="collapse" data-bs-parent="#informacion">
-              <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Talabartería</h2>
-              </div>
-              <div class="razamain row text-start">
-                <div class="row col-md-12 text-start">
-                  <p>Para crear objetos con cuero, debes utilizar un equipo portatil de taller, o establecer un taller en tu casa.
-                    Puedes obtener cueros frescos al matar animales y remover sus cueros, luego de acabada esa exploración, pasará
-                    a ser un cuero común.
-                  </p>
-                  <p>A partir del Nivel 10, el talabartero puede agregar cueros de animales a las armaduras, para proveerlo de
-                    habilidades mágicas, y, a partir del Nivel 12, puede agregarle dos cueros.
-                  </p>
-                  <h3 class="text-warning text-center mb-4">Lista de creaciones con cuero</h3>
-                  <table class="table table-striped table-dark">
-                    <thead>
-                      <th scope="col">Objeto</th>
-                      <th scope="col">Materiales</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero fresco</th>
-                        <td class="text-warning">Cuero que acaba de ser removido de un animal</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero duro</th>
-                        <td class="text-warning">3 Cueros</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Yelmos y guantes</th>
-                        <td class="text-warning">1 Cuero + 1 Cuero duro</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Peto y pantalones</th>
-                        <td class="text-warning">1 Cuero + 3 Cueros duros</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Riñoneras y cinturones</th>
-                        <td class="text-warning">1 Cuero + 2 Cueros frescos</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Mejorar slot de mochila</th>
-                        <td class="text-warning">1 Cuero duro</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Funda extra</th>
-                        <td class="text-warning">3 Cueros frescos + 1 Cuero duro + 2 Cueros</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <h3 class="text-warning text-center mb-4">Cueros agregables a armaduras para agregar efectos</h3>
-                  <table class="table table-striped table-dark">
-                    <thead>
-                      <th scope="col">Objeto</th>
-                      <th scope="col">Materiales</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero de ciervo</th>
-                        <td class="text-warning">Los ataques cuerpo a cuerpo causarán un punto de daño fijo por cada pieza</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero de jabalí</th>
-                        <td class="text-warning">Aumenta en uno la protección de la armadura</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero de león</th>
-                        <td class="text-warning">Obtienes un punto en puntería (Que no sobrepasa el límite de 10 del jugador),
-                          y 1d6 de daño al atacar a felinos
-                        </td>
-                      </tr>
-                        <th class="text-warning" scope="row">Cuero de lobo</th>
-                        <td class="text-warning">Obtienes dos puntos de agilidad al esquivar (No acumulable)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero de perro</th>
-                        <td class="text-warning">Obtienes dos puntos en percepción (No acumulable)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero de puma</th>
-                        <td class="text-warning">Agrega un dado de daño contra felinos (Max. 2)</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero de serpiente</th>
-                        <td class="text-warning">Quien ataque al portador de esta armadura, tendrá un 5% de probabilidad de
-                          ser envenenado
-                        </td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero de tigre</th>
-                        <td class="text-warning">Aumenta la probabilidad de causar sangrado en 5%</td>
-                      </tr>
-                      <tr>
-                        <th class="text-warning" scope="row">Cuero de zorro</th>
-                        <td class="text-warning">Al abatir a un enemigo, obtendrás un ataque adicional sin costo, contra enemigos
-                          a 10ft o menos del objetivo abatido
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div id="armoresp" class="collapse" data-bs-parent="#informacion">
-              <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Armaduras especiales</h2>
-              </div>
-              <div class="razamain row text-start">
-                <div class="row col-md-12 text-start">
-                  <h3 class="text-warning text-center mb-4">Cueros agregables a armaduras para agregar efectos</h3>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Traje de comerciante (Extra)</h5>
-                    <p>Obtienes un 15% de aumento en tus ventas</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Traje de herrero (Extra)</h5>
-                    <p>Permite confeccionar objetos de herrería</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Traje de explorador (Extra)</h5>
-                    <p>Portarás brújula y mapa con este traje</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Ropa de bandido (Armadura)</h5>
-                    <p>Es un set completo de cuero, que puede ser obtenida de los bandidos.<br>
-                    <x class="text-warning">Bono por armadura completa.</x> Obtienes una parte del oro adicional al robar a
-                    enemigos abatidos (Una tirada ficticia del monto)</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="alimentos" class="collapse" data-bs-parent="#informacion">
-              <div class="razatitulo w-100 text-center">
-                <h2 class="w-100 text-warning">Alimentos</h2>
-              </div>
-              <div class="razamain row text-start">
-                <div class="row col-md-12 text-start">
-                  <p>Los alimentos proveen de un bufo temporal que duran una exploración. Solo un bono puede ser utilizado al
-                    mismo tiempo.
-                  </p>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Frutas</h5>
-                    <p>Fuera de combate, curan 5 puntos de vida; si ya se tiene la vida llena, agregan temporalmente 2 puntos
-                      de vitalidad, o hasta que tomen 4 puntos de daño.
-                    </p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Verduras</h5>
-                    <p>Obtienes temporalmente una acción de movimiento adicional</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Carne de equino o roedor</h5>
-                    <p>Obtienes temporalmente un punto de agilidad</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Carne de canino</h5>
-                    <p>Obtienes temporalmente un punto de fuerza</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Carne de ave</h5>
-                    <p>Obtienes temporalmente un punto de percepción</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Carne de felino</h5>
-                    <p>Obtienes temporalmente un punto de combate</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Carne de reptil o porcino</h5>
-                    <p>Obtienes temporalmente un punto de resistencia</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Carne de pez</h5>
-                    <p>Obtienes temporalmente un punto de vitalidad</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Mariquita o trebol de 4 hojas</h5>
-                    <p>Obtienes temporalmente un punto de suerte</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Fruto de ónix</h5>
-                    <p>Obtienes temporalmente un punto en todas tus estadísticas</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="text-warning">Fruto de raza</h5>
-                    Aplica uno de los siguientes efectos al ser consumido
-                    <ul>
-                      <li class="text-warning"><x class="text-white">Subir un punto de raza</x></li>
-                      <li class="text-warning"><x class="text-white">Desbloquear una habilidad de la raza principal, de nivel 4 o menor</x></li>
-                      <li class="text-warning"><x class="text-white">Desbloquear una habilidad de la raza secundaria, de nivel igual o
-                        inferior a tu nivel en raza</x></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
+
+            
 
           </div>
         </div>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#guia" aria-expanded="true" aria-controls="guia"
-        onclick="window.location.href='#skipto'">
-          <div class="card-header align-self-center">Minerales y lingotes</div>
-          <img class="card-img-top" src="../files/img/creacion/minerales.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Descripción de los tipos de minerales
-            </p>
-          </div>
+        <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#J" aria-expanded="true" aria-controls="J"
+        onclick="window.location.href='#skipto'; bugcoll('#informacion');">
+          <div class="card-header align-self-center">J</div>
         </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#forja" aria-expanded="true" aria-controls="forja"
-        onclick="window.location.href='#skipto'; bugcoll('#desplegables');">
-          <div class="card-header align-self-center">Forja</div>
-          <img class="card-img-top" src="../files/img/creacion/fundidora.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Reglas generales de creación con minerales y lingotes
-            </p>
-          </div>
+        <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#L" aria-expanded="true" aria-controls="L"
+        onclick="window.location.href='#skipto'; bugcoll('#informacion');">
+          <div class="card-header align-self-center">L</div>
         </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#herreria" aria-expanded="true" aria-controls="herreria"
-        onclick="window.location.href='#skipto'">
-          <div class="card-header align-self-center">Herrería</div>
-          <img class="card-img-top" src="../files/img/creacion/herreria.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Objetos creados mediante la profesión de herrero y la <b class="text-warning">mejora de equipamiento</b>
-            </p>
-          </div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#armamentistica" aria-expanded="true" aria-controls="armamentistica"
-        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
-          <div class="card-header align-self-center">Armas de fuego, arcos y flechas</div>
-          <img class="card-img-top" src="../files/img/profesiones/armero.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Creación de armas de fuego, y municiones especiales, asi como arcos, ballestas y flechas
-            </p>
-          </div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#alquimia" aria-expanded="true" aria-controls="alquimia"
-        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
-          <div class="card-header align-self-center">Pociones y viales</div>
-          <img class="card-img-top" src="../files/img/profesiones/alquimista.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Creación de pociones y viales para aplicar bufos a equipamiento
-          </div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#medicinas" aria-expanded="true" aria-controls="medicinas"
-        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
-          <div class="card-header align-self-center">Medicamentos</div>
-          <img class="card-img-top" src="../files/img/creacion/medicina.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Medicinas, antidotos, y otros tipos de curas no mágicas
-            </p>
-          </div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#explosivos" aria-expanded="true" aria-controls="explosivos"
-        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
-          <div class="card-header align-self-center">Explosivos</div>
-          <img class="card-img-top" src="../files/img/creacion/explosivos.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Creación de explosivos estilo bombas
-            </p>
-          </div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#almas" aria-expanded="true" aria-controls="almas"
-        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
-          <div class="card-header align-self-center">Herrería de almas</div>
-          <img class="card-img-top" src="../files/img/creacion/herreria de almas.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Creación de armas y armaduras, hechas mediante la magia de almas
-            </p>
-          </div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#talabarteria" aria-expanded="true" aria-controls="talabarteria"
-        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
-          <div class="card-header align-self-center">Talabartería</div>
-          <img class="card-img-top" src="../files/img/creacion/talabarteria.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Creación y mejora de armaduras mediante cueros
-            </p>
-          </div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#armoresp" aria-expanded="true" aria-controls="armoresp"
-        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
-          <div class="card-header align-self-center">Equipo especial</div>
-          <img class="card-img-top" src="../files/img/creacion/armadurasespeciales.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Armaduras, piezas de armadura, joyas y armas que proveen habilidades especiales a quien la porte
-            </p>
-          </div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#alimentos" aria-expanded="true" aria-controls="alimentos"
-        onclick="window.location.href='#skipto'; bugcoll('#desparmor');">
-          <div class="card-header align-self-center">Alimentos</div>
-          <img class="card-img-top" src="../files/img/creacion/alimentos.png" alt="Card image cap" />
-          <div class="card-body text-white">
-            <p class="card-text">
-              Listado de diferentes comidas, y los bonos que estos dan
-            </p>
-          </div>
+        <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#T" aria-expanded="true" aria-controls="T"
+        onclick="window.location.href='#skipto'; bugcoll('#informacion');">
+          <div class="card-header align-self-center">T</div>
         </button>
 
       </div>
