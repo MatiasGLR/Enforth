@@ -270,6 +270,67 @@
                 </div>
               </div>
             </div>
+            <div id="S" class="collapse" data-bs-parent="#informacion">
+              <div class="razatitulo w-100 text-center">
+                <h2 class="w-100 text-warning"></h2>
+              </div>
+              <div class="razamain row text-center">
+                <div class="row col-md-12 text-start">
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#serpiente" 
+                      data-bs-parent="desplegables" onclick="bugcoll('#desplegables')">
+                      <h5 class="text-warning m-auto">Serpiente</h5></button>
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                  <div id="desplegables">
+                    <div id="serpiente" class="animal collapse row col-md-12">
+                      <div style="box-sizing: border-box;" class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Apariencia</h5>
+                        <img style="width:250px; height:250px;" src="../files/img/bestiario/serpiente.png">
+                        <p class="mt-4">La apariencia de estos variará en colores y tamaños.</p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-center">
+                        <h5 class="text-info">Estadísticas</h5>
+                        <p>
+                          <x class="text-warning">Agilidad.</x> 8 puntos<br>
+                          <x class="text-warning">Combate.</x> 2 puntos<br>
+                          <x class="text-warning">Fuerza.</x> 1 puntos<br>
+                          <x class="text-warning">Percepción.</x> 5 puntos<br>
+                          <x class="text-warning">Resistencia.</x> 2 puntos<br>
+                          <x class="text-warning">Reducción de daño.</x> 0%<br>
+                        </p>
+                        <h5 class="text-info">Datos de batalla</h5>
+                        <p>
+                          <x class="text-warning">Nivel base.</x> 1<br>
+                          <x class="text-warning">Vida.</x> 10 + (2 por nivel)<br>
+                          <x class="text-warning">Acciones de ataque.</x> 2<br>
+                          <x class="text-warning">Acciones de movimiento.</x> 4<br>
+                        </p>
+                      </div>
+                      <div class="col-md-4 pt-4 text-start">
+                        <h5 class="text-info text-center">Habilidades</h5>
+                        <p>
+                          <x class="text-warning">Pasiva. </x>Movimiento ligero<br>
+                          No gastan acciones de movimiento para moverse<br>
+                          <x class="text-warning">Mordisco. </x>[1d4+(1d2 por Nivel)]*4<br>
+                          Probabilidad de 25% de causar envenenamiento<br>
+                        </p>
+                        <h5 class="text-info text-center">Drops</h5>
+                        <p>
+                          <x class="text-warning">Piel de serpiente. </x>1 unidad<br>
+                          <x class="text-warning">Alma de serpiente. </x><br>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div id="T" class="collapse" data-bs-parent="#informacion">
               <div class="razatitulo w-100 text-center">
                 <h2 class="w-100 text-warning"></h2>
@@ -335,9 +396,6 @@
               </div>
             </div>
             
-
-            
-
           </div>
         </div>
         <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
@@ -349,6 +407,11 @@
         data-bs-toggle="collapse" data-bs-target="#L" aria-expanded="true" aria-controls="L"
         onclick="window.location.href='#skipto'; bugcoll('#informacion');">
           <div class="card-header align-self-center">L</div>
+        </button>
+        <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#S" aria-expanded="true" aria-controls="S"
+        onclick="window.location.href='#skipto'; bugcoll('#informacion');">
+          <div class="card-header align-self-center">S</div>
         </button>
         <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
         data-bs-toggle="collapse" data-bs-target="#T" aria-expanded="true" aria-controls="T"
