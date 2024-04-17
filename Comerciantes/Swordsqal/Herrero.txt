@@ -1,0 +1,10 @@
+Nombre: Einar Grendel
+Raza: Orcos
+Profesión: Herrero
+Nivel de Profesión: 8
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Terak
+Maldición: Ninguna
+Género: Masculino
+Orientación Sexual: Bisexual
