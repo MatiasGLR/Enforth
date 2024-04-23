@@ -1,0 +1,4 @@
+Version 4.06
+- Información sobre las carretas y funcionamiento, en la sección de Inventario del jugador
+Version 4.05
+- Cambiamos de manual en PDF, a manual interactivo
