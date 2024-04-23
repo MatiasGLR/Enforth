@@ -1,4 +1,14 @@
++ Agregados
+- Eliminados
+
+(+) Bufos
+(-) Nerfeos
+
 Version 4.06
-- Información sobre las carretas y funcionamiento, en la sección de Inventario del jugador
++ Información sobre las carretas y funcionamiento, en la sección de Inventario del jugador<br>
++ Descargar historial de versiones mediante el botón de abajo<br>
++ Listado de joyas pendiente
+(-) Daño del Druvix baja de 1d20 a 1d14
+
 Version 4.05
-- Cambiamos de manual en PDF, a manual interactivo
++ Cambiamos de manual en PDF, a manual interactivo
