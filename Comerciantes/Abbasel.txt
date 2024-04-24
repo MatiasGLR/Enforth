@@ -1,0 +1,118 @@
+Nombre: Thorvald Eriksson
+Raza: Shira
+Profesión: Mercader General
+Nivel de Profesión: 8
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Bisexual
+
+
+Nombre: Isla Fenwick
+Raza: Lhanie
+Profesión: Cantinero
+Nivel de Profesión: 7
+Clase: Bardo
+Nivel de Clase: 2
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Homosexual
+
+
+Nombre: Garrick Stone
+Raza: Humano
+Profesión: Guardia
+Nivel de Profesión: 9
+Clase: Guerrero
+Nivel de Clase: 5
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Anouk Rousseau
+Raza: Fjereo
+Profesión: Alquimista
+Nivel de Profesión: 6
+Clase: Mago
+Nivel de Clase: 3
+Idiomas: Revent, Liven
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Asexual
+
+
+Nombre: Ciaran O'Sullivan
+Raza: Sarka
+Profesión: Carpintero
+Nivel de Profesión: 5
+Clase: Ingeniero
+Nivel de Clase: 4
+Idiomas: Revent, Esder
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Evelyn Moorwood
+Raza: Turbe
+Profesión: Médico
+Nivel de Profesión: 7
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Koi
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Pansexual
+
+
+Nombre: Ronan Blackthorn
+Raza: Humano
+Profesión: Armero
+Nivel de Profesión: 8
+Clase: Artificero
+Nivel de Clase: 4
+Idiomas: Revent, Selga
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Yvette Clairmont
+Raza: Demonio
+Profesión: Religioso
+Nivel de Profesión: 4
+Clase: Clerigo
+Nivel de Clase: 3
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Fergus McEwan
+Raza: Lhanie
+Profesión: Granjero
+Nivel de Profesión: 5
+Clase: Luchador
+Nivel de Clase: 2
+Idiomas: Revent
+Maldición: Bestia (Oso)
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Elodie Beaumont
+Raza: Naturis
+Profesión: Domador
+Nivel de Profesión: 6
+Clase: Ranger
+Nivel de Clase: 3
+Idiomas: Naturis, Revent
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual

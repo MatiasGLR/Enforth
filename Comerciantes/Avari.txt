@@ -1,0 +1,130 @@
+Nombre: Eloise Corrington
+Raza: Humana
+Profesión: Cantinera
+Nivel de Profesión: 5
+Clase: Bardo
+Nivel de Clase: 2
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Lesbiana
+
+
+Nombre: Magnus Frostbeard
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 8
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Thalia Quickpaw
+Raza: Turbe
+Profesión: Mercader General
+Nivel de Profesión: 7
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Koi
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Cedric Hollowshade
+Raza: Sarka
+Profesión: Alquimista
+Nivel de Profesión: 6
+Clase: Mago
+Nivel de Clase: 3
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Ivy Wren
+Raza: Fjereo
+Profesión: Médico
+Nivel de Profesión: 4
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Esder
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Pansexual
+
+
+Nombre: Rowan Craghart
+Raza: Lhanie
+Profesión: Herrero
+Nivel de Profesión: 9
+Clase: Artificero
+Nivel de Clase: 5
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Aleric Sunscale
+Raza: Demonio
+Profesión: Ingeniero
+Nivel de Profesión: 6
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Asexual
+
+
+Nombre: Kaela Moonriver
+Raza: Naturis
+Profesión: Carpintero
+Nivel de Profesión: 5
+Clase: Ranger
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Eirik Stonehand
+Raza: Orco
+Profesión: Armero
+Nivel de Profesión: 7
+Clase: Luchador
+Nivel de Clase: 4
+Idiomas: Revent
+Maldición: Bestia (lobo)
+Género: Hombre
+Orientación Sexual: Bisexual
+
+
+Nombre: Orlaith Swiftwind
+Raza: Humana
+Profesión: Noble
+Nivel de Profesión: 5
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Liven
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Finnian Ashgrove
+Raza: Sarka
+Profesión: Religioso
+Nivel de Profesión: 4
+Clase: Clerigo
+Nivel de Clase: 3
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
