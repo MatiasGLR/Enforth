@@ -3,6 +3,9 @@
 (+) Bufos
 (-) Nerfeos
 
+Versión 4.07.1 - 24/4/24
+(+) Habilidad Protección del Clérigo pasa de 25%, a variar por niveles, y agregar protecciones
+
 Version 4.07 - 24/4/24
 + Listado de joyas
 + Pergamino de estudio en profesión
@@ -12,7 +15,7 @@ Version 4.07 - 24/4/24
 (+) Habilidad Tramposo del Sarka ya no consume acciones
 (+) Habilidad Ráfaga de Anguila del Sarka pasa de aplicar su efecto de 40% a 50%
 (+) Habilidad Rompecascos del Orco ahora también funciona con ataque desarmado
-(+) Habilidad pasiva del Naturis ya no restringe subida de Fuerza y Combate
+(+) Habilidad pasiva del Naturis ya no restringe subida de Fuerza y combate
 
 Version 4.06 - 23/4/24
 + Informacion sobre las carretas y funcionamiento, en la seccion de Inventario del jugador
