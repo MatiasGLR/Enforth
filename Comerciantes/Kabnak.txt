@@ -1,0 +1,82 @@
+Nombre: Soren Icewalker
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 6
+Clase: Guerrero
+Nivel de Clase: 3
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Ffion Starfeather
+Raza: Fjereo
+Profesión: Cantinero
+Nivel de Profesión: 5
+Clase: Bardo
+Nivel de Clase: 2
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Thorne Greenleaf
+Raza: Naturis
+Profesión: Alquimista
+Nivel de Profesión: 9
+Clase: Mago
+Nivel de Clase: 4
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: No binario
+Orientación Sexual: Pansexual
+
+
+Nombre: Rhys Quickshadow
+Raza: Lhanie
+Profesión: Ladrón
+Nivel de Profesión: 8
+Clase: Picaro
+Nivel de Clase: 5
+Idiomas: Revent, Selga
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Asexual
+
+
+Nombre: Meredith Silverstream
+Raza: Humano
+Profesión: Médico
+Nivel de Profesión: 7
+Clase: Clerigo
+Nivel de Clase: 3
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Bran Oakenshield
+Raza: Naturis
+Profesión: Carpintero
+Nivel de Profesión: 6
+Clase: Ingeniero
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Homosexual
+
+
+Nombre: Angharad Brightscale
+Raza: Sarka
+Profesión: Mercader General
+Nivel de Profesión: 4
+Clase: Picaro
+Nivel de Clase: 1
+Idiomas: Revent, Koi
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual

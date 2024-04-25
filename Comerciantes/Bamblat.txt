@@ -1,0 +1,130 @@
+Nombre: Seraphine Woodland
+Raza: Naturis
+Profesión: Cantinera
+Nivel de Profesión: 6
+Clase: Bardo
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Thorne Barkskin
+Raza: Naturis
+Profesión: Guardia
+Nivel de Profesión: 7
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Asexual
+
+
+Nombre: Linden Rootwhisper
+Raza: Naturis
+Profesión: Mercader General
+Nivel de Profesión: 8
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Rowan Leafwind
+Raza: Naturis
+Profesión: Médico
+Nivel de Profesión: 5
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Ivy Greenbloom
+Raza: Naturis
+Profesión: Alquimista
+Nivel de Profesión: 4
+Clase: Mago
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Pansexual
+
+
+Nombre: Fergus Ironhand
+Raza: Shira
+Profesión: Herrero
+Nivel de Profesión: 9
+Clase: Luchador
+Nivel de Clase: 4
+Idiomas: Revent, Ledusval
+Maldición: Bestia (oso)
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Ayla Swiftstream
+Raza: Lhanie
+Profesión: Joyero
+Nivel de Profesión: 6
+Clase: Artificero
+Nivel de Clase: 3
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Cedric Nightwing
+Raza: Fjereo
+Profesión: Explorador
+Nivel de Profesión: 4
+Clase: Ranger
+Nivel de Clase: 2
+Idiomas: Revent, Esder
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Bisexual
+
+
+Nombre: Helga Stonefist
+Raza: Orco
+Profesión: Granjero
+Nivel de Profesión: 3
+Clase: Guerrero
+Nivel de Clase: 1
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Eirik Frostbrew
+Raza: Shira
+Profesión: Noble
+Nivel de Profesión: 5
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Sorin Blackscale
+Raza: Sarka
+Profesión: Talabartero
+Nivel de Profesión: 6
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Koi
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual

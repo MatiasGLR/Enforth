@@ -1,0 +1,82 @@
+Nombre: Casper Hawkridge
+Raza: Humano
+Profesión: Cantinero
+Nivel de Profesión: 5
+Clase: Picaro
+Nivel de Clase: 2
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Elin Frostvein
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 6
+Clase: Guerrero
+Nivel de Clase: 3
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Myron Pebblepaw
+Raza: Turbe
+Profesión: Ingeniero
+Nivel de Profesión: 7
+Clase: Artificero
+Nivel de Clase: 4
+Idiomas: Revent, Koi
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Sienna Skyfeather
+Raza: Fjereo
+Profesión: Mercader general
+Nivel de Profesión: 3
+Clase: Clerigo
+Nivel de Clase: 1
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Gerrick Scalebound
+Raza: Sarka
+Profesión: Alquimista
+Nivel de Profesión: 8
+Clase: Mago
+Nivel de Clase: 3
+Idiomas: Revent, Terak
+Maldición: Bestia (lagarto)
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Thalia Greenroot
+Raza: Naturis
+Profesión: Religioso
+Nivel de Profesión: 4
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Asexual
+
+
+Nombre: Blaze Underfire
+Raza: Demonio
+Profesión: Mercenario
+Nivel de Profesión: 9
+Clase: Luchador
+Nivel de Clase: 4
+Idiomas: Revent, Selga
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Pansexual

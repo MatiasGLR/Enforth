@@ -1,8 +1,0 @@
-Raza: Fjereo
-Nombre: Alaric Thornhart
-Profesión: Talabartero, Nivel 7
-Clase: Artificero, Nivel 3
-Idiomas: Revent, Esder
-Maldición: Ninguna
-Género: Masculino
-Orientación Sexual: Bisexual

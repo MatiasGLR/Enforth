@@ -1,0 +1,82 @@
+Nombre: Beornhard Stoneshield
+Raza: Shira
+Profesión: Cantinero
+Nivel de Profesión: 8
+Clase: Luchador
+Nivel de Clase: 3
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Elara Swiftwind
+Raza: Fjereo
+Profesión: Guardia
+Nivel de Profesión: 5
+Clase: Ranger
+Nivel de Clase: 2
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Bramble Knotwood
+Raza: Turbe
+Profesión: Carpintero
+Nivel de Profesión: 6
+Clase: Artificero
+Nivel de Clase: 4
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Sariel Thorne
+Raza: Lhanie
+Profesión: Alquimista
+Nivel de Profesión: 7
+Clase: Mago
+Nivel de Clase: 3
+Idiomas: Revent, Liven
+Maldición: Vampiro
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Garrick Silverscale
+Raza: Sarka
+Profesión: Joyero
+Nivel de Profesión: 4
+Clase: Picaro
+Nivel de Clase: 2
+Idiomas: Revent, Selga
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Asexual
+
+
+Nombre: Thalassa Moonsong
+Raza: Demonio
+Profesión: Bardo
+Nivel de Profesión: 9
+Clase: Clerigo
+Nivel de Clase: 4
+Idiomas: Revent, Esder
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Pansexual
+
+
+Nombre: Linus Greenbark
+Raza: Naturis
+Profesión: Granjero
+Nivel de Profesión: 3
+Clase: Guerrero
+Nivel de Clase: 1
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual

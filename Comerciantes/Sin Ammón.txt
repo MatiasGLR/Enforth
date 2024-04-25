@@ -1,0 +1,130 @@
+Nombre: Malphas Darkwing
+Raza: Demonio puro
+Profesión: Cantinero
+Nivel de Profesión: 6
+Clase: Bardo
+Nivel de Clase: 3
+Idiomas: Revent, Esder
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Ragnara Fireblade
+Raza: Demonio híbrido (Shira)
+Profesión: Guardia
+Nivel de Profesión: 8
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Ledusval
+Maldición: Vampiro
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Corvus Nightstalker
+Raza: Demonio híbrido (Fjereo)
+Profesión: Ladrón
+Nivel de Profesión: 4
+Clase: Picaro
+Nivel de Clase: 2
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Aethelwynn Moonshadow
+Raza: Demonio puro
+Profesión: Mercader general
+Nivel de Profesión: 7
+Clase: Mago
+Nivel de Clase: 3
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Asexual
+
+
+Nombre: Silvanus Greenthorn
+Raza: Demonio híbrido (Sarka)
+Profesión: Alquimista
+Nivel de Profesión: 5
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Pansexual
+
+
+Nombre: Lyra Silversong
+Raza: Demonio híbrido (Lhanie)
+Profesión: Médico
+Nivel de Profesión: 6
+Clase: Clerigo
+Nivel de Clase: 3
+Idiomas: Revent, Liven
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Ignatius Forgeheart
+Raza: Demonio puro
+Profesión: Herrero
+Nivel de Profesión: 7
+Clase: Artificero
+Nivel de Clase: 4
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Eirlys Frostfeather
+Raza: Fjereo
+Profesión: Joyero
+Nivel de Profesión: 8
+Clase: Mago
+Nivel de Clase: 4
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Bran Thornroot
+Raza: Naturis
+Profesión: Carpintero
+Nivel de Profesión: 6
+Clase: Artificero
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Bisexual
+
+
+Nombre: Gaius Blackmantle
+Raza: Demonio puro
+Profesión: Noble
+Nivel de Profesión: 9
+Clase: Clerigo
+Nivel de Clase: 5
+Idiomas: Revent, Selga
+Maldición: Bestia (pantera)
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Seraphine Lightfeather
+Raza: Fjereo
+Profesión: Religioso
+Nivel de Profesión: 7
+Clase: Clerigo
+Nivel de Clase: 4
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Pansexual

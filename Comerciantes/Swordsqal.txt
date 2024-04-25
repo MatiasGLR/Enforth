@@ -1,0 +1,142 @@
+Nombre: Arvid Frostmane
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 8
+Clase: Guerrero
+Nivel de Clase: 3
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Lysandra Clearwing
+Raza: Fjereo
+Profesión: Mercader general
+Nivel de Profesión: 6
+Clase: Mago
+Nivel de Clase: 2
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Asexual
+
+
+Nombre: Jorund Ironside
+Raza: Orco
+Profesión: Cantinero
+Nivel de Profesión: 4
+Clase: Luchador
+Nivel de Clase: 1
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Bisexual
+
+
+Nombre: Elara Moonfeather
+Raza: Sarka
+Profesión: Joyero
+Nivel de Profesión: 7
+Clase: Picaro
+Nivel de Clase: 4
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Basil Hawthorn
+Raza: Naturis
+Profesión: Carpintero
+Nivel de Profesión: 5
+Clase: Artificero
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Tiberius Blackquill
+Raza: Lhanie
+Profesión: Ladrón
+Nivel de Profesión: 2
+Clase: Picaro
+Nivel de Clase: 1
+Idiomas: Revent
+Maldición: Bestia (halcón)
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Corrine Silverstream
+Raza: Turbe
+Profesión: Alquimista
+Nivel de Profesión: 8
+Clase: Mago
+Nivel de Clase: 5
+Idiomas: Revent, Koi
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Lesbiana
+
+
+Nombre: Ivar Gloomblade
+Raza: Demonio
+Profesión: Mercenario
+Nivel de Profesión: 7
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Selga
+Maldición: Vampiro
+Género: Hombre
+Orientación Sexual: Bisexual
+
+
+Nombre: Myranda Hearthstone
+Raza: Humano
+Profesión: Médico
+Nivel de Profesión: 6
+Clase: Clerigo
+Nivel de Clase: 3
+Idiomas: Revent, Liven
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Finan Shadowmark
+Raza: Demonio
+Profesión: Herrero
+Nivel de Profesión: 9
+Clase: Luchador
+Nivel de Clase: 5
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Lilith Fairbreeze
+Raza: Fjereo
+Profesión: Religioso
+Nivel de Profesión: 4
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Pansexual
+
+
+Nombre: Bramble Oakenshield
+Raza: Naturis
+Profesión: Talabartero
+Nivel de Profesión: 5
+Clase: Luchador
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual

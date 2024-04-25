@@ -1,0 +1,82 @@
+Nombre: Arwen Stormwatch
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 8
+Clase: Guerrero
+Nivel de Clase: 5
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Ivor Nightbreeze
+Raza: Fjereo
+Profesión: Cantinero
+Nivel de Profesión: 4
+Clase: Bardo
+Nivel de Clase: 2
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Briar Leafsong
+Raza: Naturis
+Profesión: Alquimista
+Nivel de Profesión: 7
+Clase: Mago
+Nivel de Clase: 4
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Pansexual
+
+
+Nombre: Magnus Ironpaw
+Raza: Lhanie
+Profesión: Herrero
+Nivel de Profesión: 6
+Clase: Artificero
+Nivel de Clase: 3
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Elodie Starfire
+Raza: Humano
+Profesión: Médico
+Nivel de Profesión: 8
+Clase: Clerigo
+Nivel de Clase: 5
+Idiomas: Revent, Selga
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Homosexual
+
+
+Nombre: Root Willowshaper
+Raza: Naturis
+Profesión: Granjero
+Nivel de Profesión: 5
+Clase: Luchador
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Asexual
+
+
+Nombre: Sylas Greentail
+Raza: Sarka
+Profesión: Joyero
+Nivel de Profesión: 3
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual

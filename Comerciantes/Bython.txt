@@ -1,0 +1,82 @@
+Nombre: Magnus Stoneheart
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 8
+Clase: Guerrero
+Nivel de Clase: 5
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Elowen Featherlight
+Raza: Fjereo
+Profesión: Cantinero
+Nivel de Profesión: 6
+Clase: Bardo
+Nivel de Clase: 3
+Idiomas: Revent, Esder
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Cedric Shadeclaw
+Raza: Sarka
+Profesión: Alquimista
+Nivel de Profesión: 7
+Clase: Mago
+Nivel de Clase: 4
+Idiomas: Revent, Koi
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Asexual
+
+
+Nombre: Isolde Brightgem
+Raza: Lhanie
+Profesión: Joyero
+Nivel de Profesión: 5
+Clase: Artificero
+Nivel de Clase: 2
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Bran Copperforge
+Raza: Humano
+Profesión: Herrero
+Nivel de Profesión: 9
+Clase: Luchador
+Nivel de Clase: 3
+Idiomas: Revent
+Maldición: Bestia (lobo)
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Aelwyn Greenbriar
+Raza: Naturis
+Profesión: Carpintero
+Nivel de Profesión: 4
+Clase: Ingeniero
+Nivel de Clase: 1
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Lesbiana
+
+
+Nombre: Thaddeus Blackwind
+Raza: Turbe
+Profesión: Mercader General
+Nivel de Profesión: 6
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Liven
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Bisexual

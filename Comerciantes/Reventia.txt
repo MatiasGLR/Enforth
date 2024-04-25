@@ -1,0 +1,82 @@
+Nombre: Aldric Stormcaller
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 8
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Fiona Greenleaf
+Raza: Fjereo
+Profesión: Cantinero
+Nivel de Profesión: 7
+Clase: Bardo
+Nivel de Clase: 3
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Byron Thistlewood
+Raza: Naturis
+Profesión: Alquimista
+Nivel de Profesión: 6
+Clase: Mago
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Marla Sharptooth
+Raza: Lhanie
+Profesión: Herrero
+Nivel de Profesión: 9
+Clase: Artificero
+Nivel de Clase: 5
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Julian Starfire
+Raza: Humano
+Profesión: Médico
+Nivel de Profesión: 5
+Clase: Clerigo
+Nivel de Clase: 3
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Tilia Vinehart
+Raza: Naturis
+Profesión: Granjero
+Nivel de Profesión: 7
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Lysander Icegaze
+Raza: Sarka
+Profesión: Joyero
+Nivel de Profesión: 4
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual

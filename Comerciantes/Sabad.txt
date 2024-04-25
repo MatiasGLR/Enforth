@@ -1,0 +1,82 @@
+Nombre: Gwendolyn Frostmane
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 7
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Cedric Vineleaf
+Raza: Fjereo
+Profesión: Cantinero
+Nivel de Profesión: 6
+Clase: Bardo
+Nivel de Clase: 3
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Homosexual
+
+
+Nombre: Elysia Woodstrider
+Raza: Naturis
+Profesión: Alquimista
+Nivel de Profesión: 5
+Clase: Mago
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Asexual
+
+
+Nombre: Torben Clawmark
+Raza: Lhanie
+Profesión: Herrero
+Nivel de Profesión: 8
+Clase: Artificero
+Nivel de Clase: 5
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Bisexual
+
+
+Nombre: Isolde Brightwater
+Raza: Humano
+Profesión: Médico
+Nivel de Profesión: 7
+Clase: Clerigo
+Nivel de Clase: 3
+Idiomas: Revent, Selga
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Bramble Knotwood
+Raza: Naturis
+Profesión: Granjero
+Nivel de Profesión: 6
+Clase: Luchador
+Nivel de Clase: 2
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Zephyr Scaleskin
+Raza: Sarka
+Profesión: Joyero
+Nivel de Profesión: 4
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual

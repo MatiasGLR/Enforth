@@ -1,0 +1,82 @@
+Nombre: Elowen Starbranch
+Raza: Naturis
+Profesión: Cantinero
+Nivel de Profesión: 5
+Clase: Bardo
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Argus Ironhide
+Raza: Orco
+Profesión: Guardia
+Nivel de Profesión: 8
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Nils Frostmane
+Raza: Shira
+Profesión: Mercader general
+Nivel de Profesión: 7
+Clase: Picaro
+Nivel de Clase: 2
+Idiomas: Revent, Ledusval
+Maldición: Bestia (oso polar)
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Ivy Quickpaw
+Raza: Turbe
+Profesión: Ladrón
+Nivel de Profesión: 3
+Clase: Ranger
+Nivel de Clase: 1
+Idiomas: Revent, Liven
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Asexual
+
+
+Nombre: Cedric Windweaver
+Raza: Naturis
+Profesión: Carpintero
+Nivel de Profesión: 6
+Clase: Artificero
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Alaric Shadowleap
+Raza: Sarka
+Profesión: Ingeniero
+Nivel de Profesión: 4
+Clase: Picaro
+Nivel de Clase: 2
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Pansexual
+
+
+Nombre: Brialla Silvermist
+Raza: Fjereo
+Profesión: Joyero
+Nivel de Profesión: 9
+Clase: Mago
+Nivel de Clase: 5
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual

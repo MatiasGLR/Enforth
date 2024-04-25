@@ -1,0 +1,82 @@
+Nombre: Anselm Greylore
+Raza: Humano
+Profesión: Cantinero
+Nivel de Profesión: 3
+Clase: Luchador
+Nivel de Clase: 2
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Eira Snowfall
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 7
+Clase: Guerrero
+Nivel de Clase: 4
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Lesbiana
+
+
+Nombre: Kaelan Riverwind
+Raza: Lhanie
+Profesión: Joyero
+Nivel de Profesión: 6
+Clase: Artificero
+Nivel de Clase: 3
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Bisexual
+
+
+Nombre: Sylvie Leaflight
+Raza: Fjereo
+Profesión: Médico
+Nivel de Profesión: 5
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Orrin Scalesmith
+Raza: Sarka
+Profesión: Herrero
+Nivel de Profesión: 8
+Clase: Luchador
+Nivel de Clase: 3
+Idiomas: Revent, Terak
+Maldición: Bestia (serpiente)
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Faelen Woodwhisper
+Raza: Naturis
+Profesión: Carpintero
+Nivel de Profesión: 4
+Clase: Artificero
+Nivel de Clase: 1
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Asexual
+
+
+Nombre: Darius Emberfist
+Raza: Demonio
+Profesión: Mercader general
+Nivel de Profesión: 6
+Clase: Picaro
+Nivel de Clase: 3
+Idiomas: Revent, Selga
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Pansexual

@@ -1,0 +1,82 @@
+Nombre: Einar Blackforge
+Raza: Shira
+Profesión: Guardia
+Nivel de Profesión: 7
+Clase: Luchador
+Nivel de Clase: 4
+Idiomas: Revent, Ledusval
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Mira Swiftwind
+Raza: Fjereo
+Profesión: Cantinero
+Nivel de Profesión: 6
+Clase: Bardo
+Nivel de Clase: 2
+Idiomas: Revent, Emión
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Bisexual
+
+
+Nombre: Tegan Clearwater
+Raza: Naturis
+Profesión: Alquimista
+Nivel de Profesión: 5
+Clase: Mago
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Garwyn Ironhand
+Raza: Lhanie
+Profesión: Herrero
+Nivel de Profesión: 8
+Clase: Artificero
+Nivel de Clase: 4
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
+
+
+Nombre: Selena Moonbeam
+Raza: Humano
+Profesión: Médico
+Nivel de Profesión: 4
+Clase: Clerigo
+Nivel de Clase: 2
+Idiomas: Revent
+Maldición: Sin maldición
+Género: Mujer
+Orientación Sexual: Heterosexual
+
+
+Nombre: Cedric Vinegrower
+Raza: Naturis
+Profesión: Granjero
+Nivel de Profesión: 6
+Clase: Guerrero
+Nivel de Clase: 3
+Idiomas: Revent, Naturis
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Gay
+
+
+Nombre: Idris Coldscale
+Raza: Sarka
+Profesión: Joyero
+Nivel de Profesión: 3
+Clase: Picaro
+Nivel de Clase: 2
+Idiomas: Revent, Terak
+Maldición: Sin maldición
+Género: Hombre
+Orientación Sexual: Heterosexual
