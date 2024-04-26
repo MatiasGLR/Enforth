@@ -1,0 +1,68 @@
+Nombre: Emrys Caulfield
+Raza: Shira
+Profesión: Cantinero, Nivel 6
+Clase: Picaro, Nivel 3
+Idioma: Revent, Ledusval
+Maldición: Sin alma
+Género: Masculino
+Orientación sexual: Heterosexual
+
+
+Nombre: Alaric Vossen
+Raza: Lhanie
+Profesión: Guardia, Nivel 8
+Clase: Guerrero, Nivel 4
+Idioma: Revent
+Maldición: Ninguna
+Género: Masculino
+Orientación sexual: Bisexual
+
+
+Nombre: Freyja Grimmsdotter
+Raza: Turbe
+Profesión: Alquimista, Nivel 4
+Clase: Mago, Nivel 2
+Idioma: Revent, Koi
+Maldición: Ninguna
+Género: Femenino
+Orientación sexual: Asexual
+
+
+Nombre: Silas Thorne
+Raza: Sarka
+Profesión: Joyero, Nivel 7
+Clase: Artificero, Nivel 2
+Idioma: Revent, Terak
+Maldición: Ninguna
+Género: Masculino
+Orientación sexual: Homosexual
+
+
+Nombre: Evelina Ruskin
+Raza: Fjereo
+Profesión: Herrero, Nivel 5
+Clase: Luchador, Nivel 3
+Idioma: Revent, Esder
+Maldición: Bestia (halcón)
+Género: Femenino
+Orientación sexual: Pansexual
+
+
+Nombre: Lysander Crowe
+Raza: Humano
+Profesión: Médico, Nivel 6
+Clase: Clerigo, Nivel 1
+Idioma: Revent, Selga
+Maldición: Ninguna
+Género: Masculino
+Orientación sexual: Heterosexual
+
+
+Nombre: Merewen Lightfoot
+Raza: Demonio
+Profesión: Explorador, Nivel 5
+Clase: Ranger, Nivel 2
+Idioma: Revent, Emión
+Maldición: Ninguna
+Género: Femenino
+Orientación sexual: Bisexual

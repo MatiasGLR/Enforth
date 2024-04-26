@@ -3,6 +3,9 @@
 (+) Bufos
 (-) Nerfeos
 
+Version 4.08 - 26/4/24
+(+) A partir de Nivel 1 de ladrón, podrán llevar 1 ganzúa en los collares (Solo una por collar)
+
 Versión 4.07.1 - 24/4/24
 (+) Habilidad Protección del Clérigo pasa de 25%, a variar por niveles, y agregar protecciones
 

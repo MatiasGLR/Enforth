@@ -48,7 +48,7 @@ Orientación Sexual: Bisexual
 
 Nombre: Garrick Silverscale
 Raza: Sarka
-Profesión: Joyero
+Profesión: Médico
 Nivel de Profesión: 4
 Clase: Picaro
 Nivel de Clase: 2

@@ -24,7 +24,7 @@ Orientación Sexual: Heterosexual
 
 Nombre: Briar Leafsong
 Raza: Naturis
-Profesión: Alquimista
+Profesión: Talabartero
 Nivel de Profesión: 7
 Clase: Mago
 Nivel de Clase: 4
@@ -36,7 +36,7 @@ Orientación Sexual: Pansexual
 
 Nombre: Magnus Ironpaw
 Raza: Lhanie
-Profesión: Herrero
+Profesión: Carpintero
 Nivel de Profesión: 6
 Clase: Artificero
 Nivel de Clase: 3
@@ -60,7 +60,7 @@ Orientación Sexual: Homosexual
 
 Nombre: Root Willowshaper
 Raza: Naturis
-Profesión: Granjero
+Profesión: Herrero
 Nivel de Profesión: 5
 Clase: Luchador
 Nivel de Clase: 2
@@ -72,7 +72,7 @@ Orientación Sexual: Asexual
 
 Nombre: Sylas Greentail
 Raza: Sarka
-Profesión: Joyero
+Profesión: Domador
 Nivel de Profesión: 3
 Clase: Picaro
 Nivel de Clase: 3

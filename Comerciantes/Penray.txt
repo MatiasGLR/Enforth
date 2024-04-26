@@ -24,7 +24,7 @@ Orientación Sexual: Gay
 
 Nombre: Siân Leafshade
 Raza: Naturis
-Profesión: Carpintero
+Profesión: Alquimista
 Nivel de Profesión: 6
 Clase: Ingeniero
 Nivel de Clase: 3
@@ -48,7 +48,7 @@ Orientación Sexual: Heterosexual
 
 Nombre: Evie Quickwater
 Raza: Humano
-Profesión: Médico
+Profesión: Ingeniero
 Nivel de Profesión: 4
 Clase: Clerigo
 Nivel de Clase: 1
@@ -60,7 +60,7 @@ Orientación Sexual: Heterosexual
 
 Nombre: Bryn Greenroots
 Raza: Naturis
-Profesión: Alquimista
+Profesión: Domador
 Nivel de Profesión: 8
 Clase: Mago
 Nivel de Clase: 4
@@ -72,7 +72,7 @@ Orientación Sexual: Asexual
 
 Nombre: Llewelyn Brightscale
 Raza: Sarka
-Profesión: Joyero
+Profesión: Armero
 Nivel de Profesión: 3
 Clase: Artificero
 Nivel de Clase: 2

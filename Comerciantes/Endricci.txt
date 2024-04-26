@@ -1,0 +1,108 @@
+Nombre: Catherine Strada
+Raza: Humana
+Profesión: Guardia, Nivel 7
+Clase: Guerrero, Nivel 5
+Idioma: Revent
+Maldición: Ninguna
+Género: Femenino
+Orientación sexual: Heterosexual
+
+
+Nombre: Ivar Leifsson
+Raza: Shira
+Profesión: Cantinero, Nivel 4
+Clase: Picaro, Nivel 2
+Idioma: Revent, Ledusval
+Maldición: Ninguna
+Género: Masculino
+Orientación sexual: Bisexual
+
+
+Nombre: Arthur D'Aliani
+Raza: Humano
+Profesión: Alquimista, Nivel 8
+Clase: Mago, Nivel 4 (Almas)
+Idioma: Revent, Esder
+Maldición: Ninguna
+Género: Masculino
+Orientación sexual: Asexual
+
+
+Nombre: Kim Leleu
+Raza: Humano
+Profesión: Artificiero, Nivel 6
+Clase: Artificero, Nivel 2
+Idioma: Revent, Terak
+Maldición: Ninguna
+Género: Femenino
+Orientación sexual: Homosexual
+
+
+Nombre: Farrow
+Raza: Lhanie (Gato)
+Profesión: Bibliotecaria, Nivel 5
+Clase: Clerigo y Mago, Nivel 5
+Idioma: Revent, Koi
+Maldición: Bestia (Kyubi)
+Género: Femenino
+Orientación sexual: Pansexual
+
+
+Nombre: Brünhilde Moserratt
+Raza: Humano
+Profesión: Herrera, Nivel 8
+Clase: Luchador, Nivel 5
+Idioma: Revent, Liven
+Maldición: Ninguna
+Género: Femenino
+Orientación sexual: Heterosexual
+
+
+Nombre: Malachai Vex
+Raza: Demonio
+Profesión: Mercader general, Nivel 7
+Clase: Picaro, Nivel 2
+Idioma: Revent, Emión
+Maldición: Ninguna
+Género: Masculino
+Orientación sexual: Bisexual
+
+
+Nombre: Ansel Meadowbrook
+Raza: Turbe
+Profesión: Carpintero, Nivel 4
+Clase: Artificero, Nivel 1
+Idioma: Revent, Koi
+Maldición: Ninguna
+Género: Masculino
+Orientación sexual: Heterosexual
+
+
+Nombre: Seraphine Lux
+Raza: Orcos
+Profesión: Joyero, Nivel 6
+Clase: Picaro, Nivel 3
+Idioma: Revent
+Maldición: Vampiro
+Género: Femenino
+Orientación sexual: Heterosexual
+
+
+Nombre: Kael Thornwood
+Raza: Orcos
+Profesión: Ingeniero, Nivel 3
+Clase: Luchador, Nivel 1
+Idioma: Revent, Ledusval
+Maldición: Ninguna
+Género: Masculino
+Orientación sexual: Homosexual
+
+
+Nombre: Lilith Moondown
+Raza: Humano
+Profesión: Religioso, Nivel 5
+Clase: Clerigo, Nivel 2
+Idioma: Revent, Selga
+Maldición: Ninguna
+Género: Femenino
+Orientación sexual: Bisexual
