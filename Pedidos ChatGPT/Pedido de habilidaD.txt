@@ -1,0 +1,3 @@
+En mi mundo, las tácticas consumen acciones, tienes acciones de movimiento, que sirven para hacer uso de objetos en inventario, y para moverse. También están las acciones de ataque, que sirven para atacar. Otros tipos de costos serían núcleos de maná, para los magos, o núcleos de sangre para vampiros (Solo vampiros). Otro costo podría ser pagar vida, como lo veas conveniente.
+
+Dame una habilidad de pistolero.
