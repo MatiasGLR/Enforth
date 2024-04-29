@@ -3,6 +3,11 @@
 (+) Bufos
 (-) Nerfeos
 
+Version 4.09 - 29/4/24
++ Efectos agregados a las estadísticas al tener 12 puntos (Inicio + Raza)
+(+) Mejora al bono por set completo de Cobalto, ahora tiene mas efectos
+(+) Mejora al bono por set completo de Oricalco, ahora aplica a todas las armas, no solo las cuerpo a cuerpo        
+
 Version 4.08 - 26/4/24
 (+) A partir de Nivel 1 de ladrón, podrán llevar 1 ganzúa en los collares (Solo una por collar)
 
