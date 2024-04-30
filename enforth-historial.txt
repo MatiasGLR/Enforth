@@ -3,6 +3,11 @@
 (+) Bufos
 (-) Nerfeos
 
+Version 4.1 - 30/4/24
++ Agregado Collar de aliento gélido
++ Agregado Collar de poder del trueno
++ Agregado Colgante de cosecha espectral
+
 Version 4.09 - 29/4/24
 + Efectos agregados a las estadísticas al tener 12 puntos (Inicio + Raza)
 (+) Mejora al bono por set completo de Cobalto, ahora tiene mas efectos
