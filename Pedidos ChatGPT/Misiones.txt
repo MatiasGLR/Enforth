@@ -1,0 +1,25 @@
+Los npcs de cada ciudad/pueblo son:
+Abbasel: Mercader, Cantinero, Guardia, Alquimista, Carpintero, Médico, Armero, Religioso, Granjero y Domador.
+Arakdasht: Cantinero, Guardia, Médico, Mercader, Herrero, Carpintero, Alquimista.
+Avari: Cantinera, Guardia, Mercader, Alquimista, Médico, Herrero, Ingeniero, Carpintero, Armero, Noble, Religioso.
+Bamblat: Cantinera, Guardia, Mercader, Médico, Alquimista, Herrero, Joyero, Explotador, Granjero, Noble y Talabartero.
+Bython: Guardia, Cantinero, Alquimista, Joyero, Herrero, Carpintero, Mercader
+Dastgerd: Cantinero, Guardia, Alquimista, Joyero, Herrero, Médico, Explorador.
+Endricci: Guardia, Cantinero, Alquimista, Artificiero, Bibliotecaria, Herrera, Mercader, Carpintero, Joyero, Ingeniero, Religioso.
+Hasshire: Guardia, Cantinero, Alquimista, Joyero, Herrero, Carpintero, Mercader.
+Kabnak: Guardia, Cantinero, Alquimista, Ladrón, Médico, Carpintero, Mercader.
+Nayan: Guardia, Cantinero, Carpintero, Mercader, Médico, Alquimista, Joyero.
+Penray: Guardia, Cantinero, Alquimista, Mercader, Ingeniero, Domador, Armero.
+Qodslan: Guardia, Cantinero, Alquimista, Herrero, Médico, Granjero, Joyero.
+Reventia: Guardia, Cantinero, Mercader, Ingeniero, Bardo, Minero, Médico.
+Sabad: Guardia, Cantinero, Talabartero, Igeniero, Mercader, Médico, Explorador.
+Shahr: Guardia, Cantinero, Talabartero, Carpintero, Médico, Herrero, Domador.
+Shiruzful: Guardia, Cantinero, Carpintero, Médico, Talabartero, Mercader, Ingeniero.
+Sidbury: Cantinero, Guardia, Mercader, Ladrón, Carpintero, Ingeniero, Joyero.
+Sin Ammón: Cantinero, Guardia, Ladrón, Mercader, Alquimista, Médico, Herrero, Joyero, Carpintero, Noble, Religioso.
+Swordsqal: Guardia, Cantinero, Mercader, Joyero, Carpintero, Ladrón, Alquimista, Mercenario, Médico, Herrero, Religioso, Talabartero.
+Terán: Cantinero, Guardia, Ingeniero, Médico, Herrero, Carpintero, Mercader.
+Yajaraverey: Cantinero, Guarida, Ingeniero, Mercader, Alquimista, Religioso, Mercenario.
+Zarand: Cantinero, Guardia, Carpintero, Alquimista, Médico, Bardo, Granjero.
+
+En base a estos datos, dame 10 de estos comerciantes que den una misión, y que misión sería, debe ser algo simple como entregar algún producto, o ir a buscar materias primas, poca posibilidad de que sea algo muy importante y de buen pago.
