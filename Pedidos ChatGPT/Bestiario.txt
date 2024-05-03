@@ -1,0 +1,6 @@
+Las estadísticas (de 2 a 10) de las criaturas en el mundo son: Agilidad, Combate (puntería), Fuerza, Percepción, Resistencia, Reducción de daño (Cuanta vida absorben luego de la resistencia, en porcentaje múltiplo de 10, lo normal es 10% o 20%).
+Nivel de Peligro (del 1 al 10), es el que tan difíciles son de vencer, por ejemplo, un lobo sería de nivel 2. 
+Tienen un nivel base, que es con lo que va aumentando el daño, el cuál debe escalar en dados por nivel. La vida, que tienen una vida base, mas un aumento fijo por nivel (Ejemplo, +3 por nivel).
+Una cantidad de acciones de ataque, y acciones de movimiento (Ambas en números), habilidades correspondientes al animal, y por último, lo que pueden soltar al morir, como su piel, carne, cuernos, etc.
+
+Necesito que me des un
