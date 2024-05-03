@@ -3,6 +3,11 @@
 (+) Bufos
 (-) Nerfeos
 
+Versión 4.12 - 3/5/24
++ Agregado encantamiento de intercambio
++ Agregada a la tienda, el precio del nuevo encantamiento y la absorción de encantamientos
+(+) Cambio en la mejora de armas, ahora para subir armas a nivel 5, ya no se requieren encantamientos, y los encantamientos pueden ponerse en cualquier momento
+
 Versión 4.11 - 2/5/24
 + Agregado reglamento del juego
 
