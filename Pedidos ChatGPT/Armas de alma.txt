@@ -1,0 +1,3 @@
+Cobre, Hierro, Plata, Oro, Titanio (Las armas hechas de titanio aplican veneno), Cobalto (Las armas hechas de cobalto aplican estatizado), Cuarzo (El cuarzo es inmune a la magia), Oricalco (Las armas hechas de oricalco aplican quemadura), Basalto (Es fácilmente rompible). Están ordenados de menor a mayor.
+
+Dame un equipamiento creado a base del alma de un orco, con alguno de los materiales anteriores, y que efecto tendría.
