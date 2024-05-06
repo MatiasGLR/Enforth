@@ -22,12 +22,14 @@
     <link rel="stylesheet" href="../files/css/main.css">
   </head>
   <script>
+    /*
     window.onload = function() {
       if(!isAdmin()) { 
         window.location.replace("../index.html");
         alert('No eres administrador, no puedes entrar aqui');
       }
     };
+    */
   </script>
   <body>
     <header>
@@ -99,30 +101,22 @@
             }
           </style>
           <div id="informacion">
-            
+            <h5 class="text-warning">Listado de criaturas normales</h5>
+            <ul>
+              <li><a href="./bestiario/caballo.html">Caballo</a></li>
+              <li><a href="./bestiario/lobo.html">Lobo</a></li>
+              <li><a href="./bestiario/tigre.html">Tigre</a></li>
+            </ul>
+            <h5 class="text-warning">Listado de criaturas raras</h5>
+            <ul>
+              <li></li>
+            </ul>
+            <h5 class="text-warning">Listado de criaturas muy raras</h5>
+            <ul>
+              <li></li>
+            </ul>
           </div>
         </div>
-        <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#J" aria-expanded="true" aria-controls="J"
-        onclick="window.location.href='#skipto'; bugcoll('#informacion');">
-          <div class="card-header align-self-center">J</div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#L" aria-expanded="true" aria-controls="L"
-        onclick="window.location.href='#skipto'; bugcoll('#informacion');">
-          <div class="card-header align-self-center">L</div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#S" aria-expanded="true" aria-controls="S"
-        onclick="window.location.href='#skipto'; bugcoll('#informacion');">
-          <div class="card-header align-self-center">S</div>
-        </button>
-        <button type="button" class="card mb-3 text-center m-1 bg-warning text-dark" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#T" aria-expanded="true" aria-controls="T"
-        onclick="window.location.href='#skipto'; bugcoll('#informacion');">
-          <div class="card-header align-self-center">T</div>
-        </button>
-
       </div>
     </main>
     <footer></footer>
