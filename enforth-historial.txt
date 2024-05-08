@@ -3,6 +3,9 @@
 (+) Bufos
 (-) Nerfeos
 
+Versión 4.13 - 8/5/24
++ Agregada nueva raza, los Automatas
+
 Versión 4.12 - 3/5/24
 + Agregado encantamiento de intercambio
 + Agregada a la tienda, el precio del nuevo encantamiento y la absorción de encantamientos
