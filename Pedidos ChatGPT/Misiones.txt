@@ -22,4 +22,5 @@ Terán: Cantinero, Guardia, Ingeniero, Médico, Herrero, Carpintero, Mercader.
 Yajaraverey: Cantinero, Guarida, Ingeniero, Mercader, Alquimista, Religioso, Mercenario.
 Zarand: Cantinero, Guardia, Carpintero, Alquimista, Médico, Bardo, Granjero.
 
-En base a estos datos, dame 10 de estos comerciantes que den una misión, y que misión sería, debe ser algo simple como entregar algún producto, o ir a buscar materias primas, poca posibilidad de que sea algo muy importante y de buen pago.
+En base a estos datos, dame 10 de estos comerciantes que den una misión, y que misión sería, debe ser algo simple como 
+entregar algún producto, o ir a buscar materias primas, poca posibilidad de que sea algo muy importante y de buen pago.
