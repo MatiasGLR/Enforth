@@ -3,6 +3,10 @@
 (+) Bufos
 (-) Nerfeos
 
+Versión 4.15 - 22/5/24
+(+) Bono por armadura completa platinada de cobre mejorado
+(+) Bono por armadura completa de hierro mejorado
+
 Versión 4.14 - 14/5/24
 + Nueva poción agregada, Poción de mejora
 (-) Ya no se ganan puntos de mejora luego del Nivel 5 (No incluido)
