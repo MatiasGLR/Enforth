@@ -3,6 +3,11 @@
 (+) Bufos
 (-) Nerfeos
 
+Version 4.2 - 10/6/24
+(-) Habilidad "Parry" de la clase Guerrero, ahora requiere tirar puntería para el contra ataque
+(-) El máximo de puntos que se pueden tener con la suma de todas las estadísticas (Inicio) será de 40 (Sube a 50 al Nivel 10)
+(+) Al llegar a Nivel 5, se pierde la norma de no poder repetir mejoras hasta subir de nivel, mediante los puntos de mejora
+
 Versión 4.15 - 22/5/24
 (+) Bono por armadura completa platinada de cobre mejorado
 (+) Bono por armadura completa de hierro mejorado
