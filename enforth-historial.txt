@@ -3,6 +3,10 @@
 (+) Bufos
 (-) Nerfeos
 
+Version 4.21 - 11/6/24
++ Nueva raza, Draieach.
+(-) Agregado efecto "Sobredosis de poción" para algunas pociones
+
 Version 4.2 - 10/6/24
 (-) Habilidad "Parry" de la clase Guerrero, ahora requiere tirar puntería para el contra ataque
 (-) El máximo de puntos que se pueden tener con la suma de todas las estadísticas (Inicio) será de 40 (Sube a 50 al Nivel 10)
