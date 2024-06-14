@@ -3,6 +3,11 @@
 (+) Bufos
 (-) Nerfeos
 
+Version 4.22 - 14/6/24
+(+) Recetas agregadas a la profesión de Granjero (Café, Harina, Cacao y Azúcar)
+(+) Recetas agregadas a la profesión de Cantinero (Pasteles, Tartas, Emparedado y Pan)
++ Materias primas creadas por Granjero, agregadas a la Tienda
+
 Version 4.21 - 11/6/24
 + Nueva raza, Draieach.
 (-) Agregado efecto "Sobredosis de poción" para algunas pociones
