@@ -1,0 +1,415 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div style="height:30px;" class="bg-white row">
+    <div class="justify-content-center">
+        <span><input type="checkbox" class="sheet-toggle-show-datos"/>Datos (Mostrar)</span>
+        <span><input type="checkbox" class="sheet-toggle-hide-datos"/>Datos (Ocultar)</span>
+    </div>
+</div>
+
+<div id="general_div">
+    <div class="datos_collap">
+        <div style="text-align: center;">
+            <h2>Datos</h2><br>
+            <div class="row">
+                <p class="col-sm-4">Nombre:  <br><input style="width:70%" type="text" name="attr_nombre" placeholder="Nombre y apellido"></p>
+                <p class="col-sm-4">Sexo:  <br>
+                    <select id="sexos" name="attr_sexo" style="width:70%">
+                        <option value="Elegir sexo" selected>Elegir sexo</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Mujer T">Mujer T</option>
+                        <option value="Hombre T">Hombre T</option>
+                    </select>
+                </p>
+                <p class="col-sm-4">Edad:  <br><input style="width:20%" type="number" name="attr_edad" value="0"></p>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-sm-4">Experiencia:  <input style="width:50%" type="number" name="attr_exp" value="0" min="0"></p>
+                <p class="col-sm-4"><input type="hidden" name="attr_foo_nivel" value="0">Nivel:  <input style="width:50%" type="number" name="attr_nivel" value="@{foo_nivel}" disabled="true"></p>
+                <p class="col-sm-4"><input type="hidden" name="attr_foo_falta" value="15">Falta para subir:  <input style="width:50%" type="number" name="attr_falta" value="@{foo_falta}" disabled="true"></p>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-sm-12">Raza: 
+                    <select id="razas" style="width:80%" name="attr_raza">
+                        <option value="Elegir raza">Elegir raza</option>
+                        <option value="Humano">Humano</option>
+                        <option value="Orco">Orco</option>
+                        <option value="Lhanie">Lhanie</option>
+                        <option value="Turbe">Turbe</option>
+                        <option value="Shira">Shira</option>
+                        <option value="Sarka">Sarka</option>
+                        <option value="Fjereo">Fjereo</option>
+                        <option value="Draieach">Draieach</option>
+                        <option value="Naturis">Naturis</option>
+                        <option value="Demonio">Demonio</option>
+                        <option value="Automatas">Automatas</option>
+                    </select>
+                </p>
+                <p class="col-sm-12">Hibrido: 
+                    <select id="razas" style="width:80%" name="attr_hibrido">
+                        <option value="Elegir raza">Elegir hibrido</option>
+                        <option value="Humano">Humano</option>
+                        <option value="Orco">Orco</option>
+                        <option value="Lhanie">Lhanie</option>
+                        <option value="Turbe">Turbe</option>
+                        <option value="Shira">Shira</option>
+                        <option value="Sarka">Sarka</option>
+                        <option value="Fjereo">Fjereo</option>
+                        <option value="Draieach">Draieach</option>
+                        <option value="Naturis">Naturis</option>
+                        <option value="Demonio">Demonio</option>
+                        <option value="Automatas">Automatas</option>
+                    </select>
+                </p>
+                <p class="col-sm-12">
+                    Nivel de raza: 
+                    <input style="width:20%" type="number" name="attr_razanivel" value="0">
+                    Doble herencia:
+                    <select name="attr_dobleher">
+                        <option value="No">No</option>
+                        <option value="Si">Si</option>
+                    </select>
+                </p>
+                
+            </div>
+            <hr>
+            <div class="row">
+                <p class="col-sm-12 d-flex">Clase: <input style="width: 70%" type="text" list="clases" name="attr_clase1" placeholder="Sin clase"><input type="number" name="attr_clase1lv" value="0"></p>
+                <p class="col-sm-12 d-flex">Clase: <input style="width: 70%" type="text" list="clases" name="attr_clase2" placeholder="Sin clase"><input type="number" name="attr_clase2lv" value="0"></p>
+                <p class="col-sm-12 d-flex">Clase: <input style="width: 70%" type="text" list="clases" name="attr_clase3" placeholder="Sin clase"><input type="number" name="attr_clase3lv" value="0"></p>
+                <datalist id="clases">
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Senescal">Senescal</option>
+                    <option value="Samurai">Samurai</option>
+                    <option value="Picaro">Picaro</option>
+                    <option value="Asesino">Asesino</option>
+                    <option value="Asesino sombrío">Asesino sombrío</option>
+                    <option value="Clérigo">Clérigo</option>
+                    <option value="Curandero">Curandero</option>
+                    <option value="Paladin">Paladin</option>
+                    <option value="Ranger">Ranger</option>
+                    <option value="Pistolero">Pistolero</option>
+                    <option value="Arquero">Arquero</option>
+                    <option value="Luchador">Luchador</option>
+                    <option value="Shaolin">Shaolin</option>
+                    <option value="Tortuga marcial">Tortuga marcial</option>
+                    <option value="Arcanomante">Arcanomante</option>
+                    <option value="Piromante">Piromante</option>
+                    <option value="Ciromante">Ciromante</option>
+                    <option value="Electromante">Electromante</option>
+                    <option value="Lumimante">Lumimante</option>
+                    <option value="Noctomante">Noctomante</option>
+                    <option value="Espirimante">Espirimante</option>
+                    <option value="Psicomante">Psicomante</option>
+                    <option value="Ophimante">Ophimante</option>
+                    <option value="Hemomante">Hemomante</option>
+                    <option value="Artificiero">Artificiero</option>
+                </datalist>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: auto; width: 100%;">
+            <h2>Estadísticas</h2><br>
+            <table class="table">
+                <tr>
+                    <td scope="row">Agilidad:  </td>
+                    <td><input type="number" name="attr_agilidad" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_agilidad_raza" value="0">Raza:  <input type="number" name="attr_agilidad_raza" disabled="true" value="@{foo_agilidad_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_agilidad_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_agilidad_temp" value="0"></td>
+                    <td><button type="roll" value='Agilidad [[1d20+@{agilidad}+@{agilidad_raza}+@{agilidad_perm}+@{agilidad_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+                <tr>
+                    <td scope="row">Carisma:  </td>
+                    <td><input type="number" name="attr_carisma" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_carisma_raza" value="0">Raza:  <input type="number" name="attr_carisma_raza" disabled="true" value="@{foo_carisma_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_carisma_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_carisma_temp" value="0"></td>
+                    <td><button type="roll" value='Carisma [[1d20+@{carisma}+@{carisma_raza}+@{carisma_perm}+@{carisma_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+                <tr>
+                    <td scope="row">Combate:  </td>
+                    <td><input type="number" name="attr_combate" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_combate_raza" value="0">Raza:  <input type="number" name="attr_combate_raza" disabled="true" value="@{foo_combate_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_combate_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_combate_temp" value="0"></td>
+                    <td><button type="roll" value='Combate [[1d20+@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+                <tr>
+                    <td scope="row">Fuerza:  </td>
+                    <td><input type="number" name="attr_fuerza" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_fuerza_raza" value="0">Raza:  <input type="number" name="attr_fuerza_raza" disabled="true" value="@{foo_fuerza_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_fuerza_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_fuerza_temp" value="0"></td>
+                    <td><button type="roll" value='Fuerza [[1d20+@{fuerza}+@{fuerza_raza}+@{fuerza_perm}+@{fuerza_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+                <tr>
+                    <td scope="row">Inteligencia:  </td>
+                    <td><input type="number" name="attr_inteligencia" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_inteligencia_raza" value="0">Raza:  <input type="number" name="attr_inteligencia_raza" disabled="true" value="@{foo_inteligencia_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_inteligencia_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_inteligencia_temp" value="0"></td>
+                    <td><button type="roll" value='Inteligencia [[1d20+@{inteligencia}+@{inteligencia_raza}+@{inteligencia_perm}+@{inteligencia_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+                <tr>
+                    <td scope="row">Percepción:  </td>
+                    <td><input type="number" name="attr_percepción" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_percepción_raza" value="0">Raza:  <input type="number" name="attr_percepción_raza" disabled="true" value="@{foo_percepción_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_percepción_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_percepción_temp" value="0"></td>
+                    <td><button type="roll" value='Percepción [[1d20+@{percepción}+@{percepción_raza}+@{percepción_perm}+@{percepción_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+                <tr>
+                    <td scope="row">Resistencia:  </td>
+                    <td><input type="number" name="attr_resistencia" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_resistencia_raza" value="0">Raza:  <input type="number" name="attr_resistencia_raza" disabled="true" value="@{foo_resistencia_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_resistencia_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_resistencia_temp" value="0"></td>
+                    <td><button type="roll" value='Resistencia [[1d20+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+                <tr>
+                    <td scope="row">Vitalidad:  </td>
+                    <td><input type="number" name="attr_vitalidad" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_vitalidad_raza" value="0">Raza:  <input type="number" name="attr_vitalidad_raza" disabled="true" value="@{foo_vitalidad_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_vitalidad_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_vitalidad_temp" value="0"></td>
+                    <td><button type="roll" value='Vitalidad [[1d20+@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+                <tr>
+                    <td scope="row">Suerte:  </td>
+                    <td><input type="number" name="attr_suerte" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_suerte_raza" value="0">Raza:  <input type="number" name="attr_suerte_raza" disabled="true" value="@{foo_suerte_raza}"></td>
+                    <td>Perm:  <input type="number" name="attr_suerte_perm" value="0"></td>
+                    <td>Temp:  <input type="number" name="attr_suerte_temp" value="0"></td>
+                    <td><button type="roll" value='Suerte [[1d20+@{suerte}+@{suerte_raza}+@{suerte_perm}+@{suerte_temp}]]' name'roll_strCheck'></button></td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin: auto; width: 100%;">
+            <h2>Combate</h2><br>
+            <h5>Protección</h5><br>
+            <table class="table">
+                <tr>
+                    <td scope="row"><input type="hidden" name="attr_foo_natural" value="0">Armadura natural: <input type="number" name="attr_natural" value="@{foo_natural}" disabled="true"></td>
+                    <td>Mágica: <input type="number" name="attr_magica" value="0"></td>
+                    <td><input type="hidden" name="attr_foo_escudo" value="0">Escudo: <input type="number" name="attr_escudo" value="@{foo_escudo}" disabled="true"></td>
+                    <td><input type="hidden" name="attr_foo_armadura" value="0">Armadura: <input type="number" name="attr_armadura" value="@{foo_armadura}" disabled="true"></td>
+                    <td>Resistencia: <input type="number" name="attr_restotal" value="[[@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}]]" disabled="true" ></td>
+                    <td><input type="hidden" name="attr_foo_armaduratotal" value="[[@{foo_armadura}+@{foo_escudo}+@{foo_natural}+@{magica}+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}]]">Total: <input type="number" name="attr_armaduratotal" value="@{foo_armaduratotal}" disabled="true"></td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/worker">
+    on('change:exp sheet:opened', function (eventInfo){
+        getAttrs(["exp"], function(values) {
+            var exp_actual, var_lv, var_falta;
+            exp_actual = values.exp;
+            if(exp_actual >= 600) {
+                var_lv = Math.floor((exp_actual-400)/200)+5;
+                var_falta = ((200*var_lv)-400)-exp_actual;
+            }
+            else if(exp_actual >= 400) {
+                var_lv = 5;
+                var_falta = 600-exp_actual;
+            }
+            else if(exp_actual >= 250) {
+                var_lv = 4;
+                var_falta = 400-exp_actual;
+            }
+            else if(exp_actual >= 100) {
+                var_lv = 3;
+                var_falta = 250-exp_actual;
+            }
+            else if(exp_actual >= 50) {
+                var_lv = 2;
+                var_falta = 100-exp_actual;
+            }
+            else if(exp_actual >= 15) {
+                var_lv = 1;
+                var_falta = 50-exp_actual;
+            }
+            else {
+                var_lv = 0;
+                var_falta = 15-exp_actual;
+            }
+            setAttrs({
+                foo_nivel: var_lv, 
+                foo_falta: var_falta
+            });
+        });
+    });
+
+    on('add:character', function (eventInfo) {
+        getAttrs(["nombre","sexo","edad"], function(values) {
+            setAttrs({
+                attr_nombre: "", 
+                attr_sexo: "Elegir sexo", 
+                attr_edad: 0, 
+                attr_exp: 0, 
+                attr_foo_nivel: 0, 
+                attr_nivel: 0,
+                attr_foo_falta: 0, 
+                attr_falta: 0, 
+                attr_raza: "Elegir racza", 
+                attr_hibrido: "Elegir hibrido",
+                attr_razanivel: 0, 
+                attr_dobleher: "No",
+                attr_clase1: "Sin clase",
+                attr_clase2: "Sin clase",
+                attr_clase3: "Sin clase",
+                attr_clase1lv: 0, 
+                attr_clase2lv: 0, 
+                attr_clase3lv: 0, 
+                attr_agilidad: 0, 
+                attr_foo_agilidad_raza: 0,
+                attr_agilidad_raza: 0, 
+                attr_agilidad_perm: 0, 
+                attr_carisma: 0, 
+                attr_foo_carisma_raza: 0, 
+                attr_carisma_raza: 0,
+                attr_carisma_perm: 0, 
+                attr_carisma_temp: 0, 
+                attr_combate: 0, 
+                attr_foo_combate_raza: 0, 
+                attr_combate_raza: 0,
+                attr_combate_perm: 0, 
+                attr_combate_temp: 0, 
+                attr_fuerza: 0, 
+                attr_foo_fuerza_raza: 0, 
+                attr_fuerza_raza: 0,
+                attr_fuerza_perm: 0, 
+                attr_fuerza_temp: 0, 
+                attr_inteligencia: 0, 
+                attr_foo_inteligencia_raza: 0, 
+                attr_inteligencia_raza: 0, 
+                attr_inteligencia_perm: 0, 
+                attr_inteligencia_temp: 0, 
+                attr_percepcion: 0,
+                attr_foo_percepcion_raza: 0, 
+                attr_percepcion_raza: 0, 
+                attr_percepcion_perm: 0, 
+                attr_percepcion_temp: 0,
+                attr_resistencia: 0, 
+                attr_foo_resistencia_raza: 0, 
+                attr_resistencia_raza: 0,
+                attr_resistencia_perm: 0,
+                attr_resistencia_temp: 0,
+                attr_vitalidad: 0,
+                attr_foo_vitalidad_raza: 0,
+                attr_vitalidad_raza: 0,
+                attr_vitalidad_perm: 0,
+                attr_vitalidad_temp: 0,
+                attr_suerte: 0,
+                attr_foo_suerte_raza: 0,
+                attr_suerte_raza: 0,
+                attr_suerte_perm: 0,
+                attr_suerte_temp: 0,
+                attr_foo_natural: 0,
+                attr_natural: 0,
+                attr_magica: 0,
+                attr_foo_escudo: 0,
+                attr_escudo: 0,
+                attr_foo_armadura: 0,
+                attr_armadura: 0,
+                attr_restotal: 0,
+                attr_foo_armaduratotal: 0,
+                attr_armaduratotal: 0
+            });
+        });
+    });
+
+    on('change:dobleher change:raza change:hibrido sheet:opened', function (eventInfo){
+        getAttrs(["dobleher", "raza", "hibrido"], function(values) {
+            var ag=0,ca=0,co=0,fu=0; 
+            var inte=0,pe=0,re=0,vi=0,su=0;
+            if(values["raza"] == "Humano" || (values["hibrido"] == "Humano" && values["dobleher"] == "Si")){ag+=2; inte+=2; su+=1;}
+            if(values["raza"] == "Orco" || (values["hibrido"] == "Orco" && values["dobleher"] == "Si")){fu+=2; re+=2;}
+            if(values["raza"] == "Shira" || (values["hibrido"] == "Shira" && values["dobleher"] == "Si")){re+=2; vi+=2; co+=1;}
+            if(values["raza"] == "Lhanie" || (values["hibrido"] == "Lhanie" && values["dobleher"] == "Si")){ag+=2; ca+=2;}
+            if(values["raza"] == "Turbe" || (values["hibrido"] == "Turbe" && values["dobleher"] == "Si")){ag+=2; inte+=3; su+=-1;}
+            if(values["raza"] == "Fjereo" || (values["hibrido"] == "Fjereo" && values["dobleher"] == "Si")){ag+=2; pe+=2;}
+            if(values["raza"] == "Sarka" || (values["hibrido"] == "Sarka" && values["dobleher"] == "Si")){fu+=2; ca+=2; re+=1;}
+            if(values["raza"] == "Demonio" || (values["hibrido"] == "Demonio" && values["dobleher"] == "Si")){fu+=2; co+=2;}
+            if(values["raza"] == "Naturis" || (values["hibrido"] == "Naturis" && values["dobleher"] == "Si")){ca+=2; inte+=2;}
+            if(values["raza"] == "Automatas" || (values["hibrido"] == "Automatas" && values["dobleher"] == "Si")){fu+=2; inte+=2;}
+            if(values["raza"] == "Draieach" || (values["hibrido"] == "Draieach" && values["dobleher"] == ""Si")){fu+=1; re+=1; inte+=2;}
+            setAttrs({
+                foo_agilidad_raza: ag,
+                foo_carisma_raza: ca,
+                foo_combate_raza: co,
+                foo_fuerza_raza: fu,
+                foo_inteligencia_raza: inte,
+                foo_percepción_raza: pe,
+                foo_resistencia_raza: re,
+                foo_vitalidad_raza: vi,
+                foo_suerte_raza: su,
+                foo_natural: RazaNatural(values["raza"], values["hibrido"])
+            });
+        });
+    });
+
+    function RazaNatural(raza, hibrido) {
+        var n_raza=0, n_hibrido=0;
+        if(raza == "Humano" || hibrido == "Humano") {
+            if(raza == "Humano") n_raza = 2;
+            if(hibrido == "Humano") n_hibrido = 2;
+        }
+        if(raza == "Orco" || hibrido == "Orco") {
+            if(raza == "Orco") n_raza = 4;
+            if(hibrido == "Orco") n_hibrido = 4;
+        }
+        if(raza == "Shira" || hibrido == "Shira") {
+            if(raza == "Shira") n_raza = 4;
+            if(hibrido == "Shira") n_hibrido = 4;
+        }
+        if(raza == "Lhanie" || hibrido == "Lhanie") {
+            if(raza == "Lhanie") n_raza = 3;
+            if(hibrido == "Lhanie") n_hibrido = 3;
+        }
+        if(raza == "Turbe" || hibrido == "Turbe") {
+            if(raza == "Turbe") n_raza = 1;
+            if(hibrido == "Turbe") n_hibrido = 1;
+        }
+        if(raza == "Sarka" || hibrido == "Sarka") {
+            if(raza == "Sarka") n_raza = 3;
+            if(hibrido == "Sarka") n_hibrido = 3;
+        }
+        if(raza == "Demonio" || hibrido == "Demonio") {
+            if(raza == "Demonio") n_raza = 2;
+            if(hibrido == "Demonio") n_hibrido = 2;
+        }
+        if(raza == "Naturis" || hibrido == "Naturis") {
+            if(raza == "Naturis") n_raza = 5;
+            if(hibrido == "Naturis") n_hibrido = 5;
+        }
+        if(raza == "Automatas" || hibrido == "Automatas") {
+            if(raza == "Automatas") n_raza = 5;
+            if(hibrido == "Automatas") n_hibrido = 5;
+        }
+        if(raza == "Draieach" || hibrido == "Draieach") {
+            if(raza == "Draieach") n_raza = 6;
+            if(hibrido == "Draieach") n_hibrido = 6;
+        }
+
+        if(raza == hibrido) n_hibrido = 0;
+        return n_raza+n_hibrido;
+    }
+
+    function collapseGrid(id) {
+        var me = document.getElementByClass(id);
+        me.style.display = me.style.display == "none" ? "block" : "none";
+    }
+    
+</script>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" type="text/javascript"></script>
