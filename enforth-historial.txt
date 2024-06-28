@@ -6,6 +6,9 @@
 Version 4.23 - 28/6/24
 + Tirada de salvaciones antes del inicio de cada turno 
 + Fruto de raza dorado agregado
+(-) Puntería pasa a ser un promedio entre Combate y Percepción
+(+) Percepción podrá usarse para realizar una tirada de "Búsqueda de acceso", por lo que, al sacar 15 o mas en percepción, tu siguiente ataque tendrá 25% de probabilidad adicional de meter critico y efecto. 
+(+) Vitalidad ahora da 3 puntos de vida por punto, en lugar de 2
 
 Version 4.22 - 14/6/24
 (+) Recetas agregadas a la profesión de Granjero (Café, Harina, Cacao y Azúcar)
