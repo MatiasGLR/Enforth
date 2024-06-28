@@ -3,6 +3,10 @@
 (+) Bufos
 (-) Nerfeos
 
+Version 4.23 - 28/6/24
++ Tirada de salvaciones antes del inicio de cada turno 
++ Fruto de raza dorado agregado
+
 Version 4.22 - 14/6/24
 (+) Recetas agregadas a la profesión de Granjero (Café, Harina, Cacao y Azúcar)
 (+) Recetas agregadas a la profesión de Cantinero (Pasteles, Tartas, Emparedado y Pan)
