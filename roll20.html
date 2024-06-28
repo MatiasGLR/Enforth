@@ -3,6 +3,11 @@
 <div id="general_div">
     <div class="datos_collap">
         <div style="text-align: center;">
+            <div class="row">
+                <p class="col-sm-4">Vida: <input type="number" name="attr_vida"> / <input type="number" name="attr_vida_max" disabled="true" value="(5+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}+(@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp})*3)"></p>
+                <p class="col-sm-4">Acciones de ataque: <input type="number" name="attr_acatq" disabled="true" value="(floor((@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})/2)+1)" max="(floor((@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})/2)+1)"></p>
+                <p class="col-sm-4">Acciones de movimiento: <input type="number" name="attr_acmov" disabled="true" value="(floor((@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})/2)+1)" max="(floor((@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})/2)+1)"></p>
+            </div><br>
             <h2>Datos</h2><br>
             <div class="row">
                 <p class="col-sm-4">Nombre:  <br><input style="width:70%" type="text" name="attr_nombre" placeholder="Nombre y apellido"></p>
@@ -22,11 +27,6 @@
                 <p class="col-sm-4">Experiencia:  <input style="width:50%" type="number" name="attr_exp" value="0" min="0"></p>
                 <p class="col-sm-4"><input type="hidden" name="attr_foo_nivel">Nivel:  <input style="width:50%" type="number" name="attr_nivel" value="@{foo_nivel}" disabled="true"></p>
                 <p class="col-sm-4"><input type="hidden" name="attr_foo_falta">Falta para subir:  <input style="width:50%" type="number" name="attr_falta" value="@{foo_falta}" disabled="true"></p>
-            </div>
-            <div class="row">
-                <p class="col-sm-4">Vida: <input type="number" name="attr_vida"> / <input type="number" name="attr_vida_max" disabled="true" value="(5+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}+(@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp})*3)"></p>
-                <p class="col-sm-4">Acciones de ataque: <input type="number" name="attr_acatq" disabled="true" value="(floor((@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})/2)+1)" max="(floor((@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})/2)+1)"></p>
-                <p class="col-sm-4">Acciones de movimiento: <input type="number" name="attr_acmov" disabled="true" value="(floor((@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})/2)+1)" max="(floor((@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})/2)+1)"></p>
             </div>
             
             <div class="row">
@@ -65,7 +65,7 @@
                 </p>
                 <p class="col-sm-12">Hibrido: 
                     <select id="razas" style="width:80%" name="attr_hibrido">
-                        <option value="Elegir raza"selected="selected">Elegir hibrido</option>
+                        <option value="Elegir raza" selected="selected">Elegir hibrido</option>
                         <option value="Humano">Humano</option>
                         <option value="Orco">Orco</option>
                         <option value="Lhanie">Lhanie</option>
@@ -92,37 +92,105 @@
             </div>
             <hr>
             <div class="row">
-                <p class="col-sm-12 d-flex">Clase: <input style="width: 70%" type="text" list="clases" name="attr_clase1" placeholder="Sin clase"><input type="number" name="attr_clase1lv" value="0"></p>
-                <p class="col-sm-12 d-flex">Clase: <input style="width: 70%" type="text" list="clases" name="attr_clase2" placeholder="Sin clase"><input type="number" name="attr_clase2lv" value="0"></p>
-                <p class="col-sm-12 d-flex">Clase: <input style="width: 70%" type="text" list="clases" name="attr_clase3" placeholder="Sin clase"><input type="number" name="attr_clase3lv" value="0"></p>
-                <datalist id="clases">
-                    <option value="Guerrero">Guerrero</option>
-                    <option value="Senescal">Senescal</option>
-                    <option value="Samurai">Samurai</option>
-                    <option value="Picaro">Picaro</option>
-                    <option value="Asesino">Asesino</option>
-                    <option value="Asesino sombrío">Asesino sombrío</option>
-                    <option value="Clérigo">Clérigo</option>
-                    <option value="Curandero">Curandero</option>
-                    <option value="Paladin">Paladin</option>
-                    <option value="Ranger">Ranger</option>
-                    <option value="Pistolero">Pistolero</option>
-                    <option value="Arquero">Arquero</option>
-                    <option value="Luchador">Luchador</option>
-                    <option value="Shaolin">Shaolin</option>
-                    <option value="Tortuga marcial">Tortuga marcial</option>
-                    <option value="Arcanomante">Arcanomante</option>
-                    <option value="Piromante">Piromante</option>
-                    <option value="Ciromante">Ciromante</option>
-                    <option value="Electromante">Electromante</option>
-                    <option value="Lumimante">Lumimante</option>
-                    <option value="Noctomante">Noctomante</option>
-                    <option value="Espirimante">Espirimante</option>
-                    <option value="Psicomante">Psicomante</option>
-                    <option value="Ophimante">Ophimante</option>
-                    <option value="Hemomante">Hemomante</option>
-                    <option value="Artificiero">Artificiero</option>
-                </datalist>
+                <p class="col-sm-12 d-flex">
+                    Clase: 
+                    <select name="attr_clase1">
+                        <option value="Elegir clase" selected="selected"></option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Senescal">Senescal</option>
+                        <option value="Samurai">Samurai</option>
+                        <option value="Picaro">Picaro</option>
+                        <option value="Asesino">Asesino</option>
+                        <option value="Asesino sombrío">Asesino sombrío</option>
+                        <option value="Clérigo">Clérigo</option>
+                        <option value="Curandero">Curandero</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Pistolero">Pistolero</option>
+                        <option value="Arquero">Arquero</option>
+                        <option value="Luchador">Luchador</option>
+                        <option value="Shaolin">Shaolin</option>
+                        <option value="Tortuga marcial">Tortuga marcial</option>
+                        <option value="Arcanomante">Arcanomante</option>
+                        <option value="Piromante">Piromante</option>
+                        <option value="Ciromante">Ciromante</option>
+                        <option value="Electromante">Electromante</option>
+                        <option value="Lumimante">Lumimante</option>
+                        <option value="Noctomante">Noctomante</option>
+                        <option value="Espirimante">Espirimante</option>
+                        <option value="Psicomante">Psicomante</option>
+                        <option value="Ophimante">Ophimante</option>
+                        <option value="Hemomante">Hemomante</option>
+                        <option value="Artificiero">Artificiero</option>
+                    </select>
+                    <input type="number" name="attr_clase1lv" min="0" value="0">
+                </p>
+                <p class="col-sm-12 d-flex">
+                    Clase: 
+                    <select name="attr_clase2">
+                        <option value="Elegir clase" selected="selected"></option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Senescal">Senescal</option>
+                        <option value="Samurai">Samurai</option>
+                        <option value="Picaro">Picaro</option>
+                        <option value="Asesino">Asesino</option>
+                        <option value="Asesino sombrío">Asesino sombrío</option>
+                        <option value="Clérigo">Clérigo</option>
+                        <option value="Curandero">Curandero</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Pistolero">Pistolero</option>
+                        <option value="Arquero">Arquero</option>
+                        <option value="Luchador">Luchador</option>
+                        <option value="Shaolin">Shaolin</option>
+                        <option value="Tortuga marcial">Tortuga marcial</option>
+                        <option value="Arcanomante">Arcanomante</option>
+                        <option value="Piromante">Piromante</option>
+                        <option value="Ciromante">Ciromante</option>
+                        <option value="Electromante">Electromante</option>
+                        <option value="Lumimante">Lumimante</option>
+                        <option value="Noctomante">Noctomante</option>
+                        <option value="Espirimante">Espirimante</option>
+                        <option value="Psicomante">Psicomante</option>
+                        <option value="Ophimante">Ophimante</option>
+                        <option value="Hemomante">Hemomante</option>
+                        <option value="Artificiero">Artificiero</option>
+                    </select>
+                    <input type="number" name="attr_clase2lv" min="0" value="0">
+                </p>
+                <p class="col-sm-12 d-flex">
+                    Clase: 
+                    <select name="attr_clase3">
+                        <option value="Elegir clase" selected="selected"></option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Senescal">Senescal</option>
+                        <option value="Samurai">Samurai</option>
+                        <option value="Picaro">Picaro</option>
+                        <option value="Asesino">Asesino</option>
+                        <option value="Asesino sombrío">Asesino sombrío</option>
+                        <option value="Clérigo">Clérigo</option>
+                        <option value="Curandero">Curandero</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Pistolero">Pistolero</option>
+                        <option value="Arquero">Arquero</option>
+                        <option value="Luchador">Luchador</option>
+                        <option value="Shaolin">Shaolin</option>
+                        <option value="Tortuga marcial">Tortuga marcial</option>
+                        <option value="Arcanomante">Arcanomante</option>
+                        <option value="Piromante">Piromante</option>
+                        <option value="Ciromante">Ciromante</option>
+                        <option value="Electromante">Electromante</option>
+                        <option value="Lumimante">Lumimante</option>
+                        <option value="Noctomante">Noctomante</option>
+                        <option value="Espirimante">Espirimante</option>
+                        <option value="Psicomante">Psicomante</option>
+                        <option value="Ophimante">Ophimante</option>
+                        <option value="Hemomante">Hemomante</option>
+                        <option value="Artificiero">Artificiero</option>
+                    </select>
+                    <input type="number" name="attr_clase3lv" min="0" value="0">
+                </p>
             </div>
         </div>
 
@@ -231,7 +299,6 @@
                 <tr>
                     <td scope="row">Arma izq. <input type="number" value="5">%</td>
                     <td>Arma der. <input type="number" value="5">%</td>
-                    <td>Clase <input type="number" value="0">%</td>
                     <td>Clase <input type="number" value="0">%</td>
                 </tr>
             </table>
