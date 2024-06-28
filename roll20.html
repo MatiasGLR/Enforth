@@ -1,12 +1,5 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<div style="height:30px;" class="bg-white row">
-    <div class="justify-content-center">
-        <span><input type="checkbox" class="sheet-toggle-show-datos"/>Datos (Mostrar)</span>
-        <span><input type="checkbox" class="sheet-toggle-hide-datos"/>Datos (Ocultar)</span>
-    </div>
-</div>
-
 <div id="general_div">
     <div class="datos_collap">
         <div style="text-align: center;">
@@ -27,14 +20,36 @@
             <hr>
             <div class="row">
                 <p class="col-sm-4">Experiencia:  <input style="width:50%" type="number" name="attr_exp" value="0" min="0"></p>
-                <p class="col-sm-4"><input type="hidden" name="attr_foo_nivel" value="0">Nivel:  <input style="width:50%" type="number" name="attr_nivel" value="@{foo_nivel}" disabled="true"></p>
-                <p class="col-sm-4"><input type="hidden" name="attr_foo_falta" value="15">Falta para subir:  <input style="width:50%" type="number" name="attr_falta" value="@{foo_falta}" disabled="true"></p>
+                <p class="col-sm-4"><input type="hidden" name="attr_foo_nivel">Nivel:  <input style="width:50%" type="number" name="attr_nivel" value="@{foo_nivel}" disabled="true"></p>
+                <p class="col-sm-4"><input type="hidden" name="attr_foo_falta">Falta para subir:  <input style="width:50%" type="number" name="attr_falta" value="@{foo_falta}" disabled="true"></p>
+            </div>
+            <div class="row">
+                <p class="col-sm-4">Vida: <input type="number" name="attr_vida"> / <input type="number" name="attr_vida_max" disabled="true" value="(5+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}+(@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp})*3)"></p>
+                <p class="col-sm-4">Acciones de ataque: <input type="number" name="attr_acatq" disabled="true" value="(floor((@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})/2)+1)" max="(floor((@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})/2)+1)"></p>
+                <p class="col-sm-4">Acciones de movimiento: <input type="number" name="attr_acmov" disabled="true" value="(floor((@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})/2)+1)" max="(floor((@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})/2)+1)"></p>
+            </div>
+            
+            <div class="row">
+                <p class="col-sm-3">Dios: 
+                    <select name="attr_dios" style="width:40%">
+                        <option value="Elegir dios" selected>Elegir dios</option>
+                        <option value="Sol">Sol</option>
+                        <option value="Luna">Luna</option>
+                        <option value="Combate">Combate</option>
+                        <option value="Miseria">Miseria</option>
+                        <option value="Muerte">Muerte</option>
+                        <option value="Sin alma">Sin alma</option>
+                    </select>
+                </p>
+                <p class="col-sm-3">Karma +: <input type="number" name="attr_kmas" value="0"></p>
+                <p class="col-sm-3">Karma -: <input type="number" name="attr_kmenos" value="0"></p>
+                <p class="col-sm-3">Karma: <input type="number" name="attr_karma" disabled="true" value="(@{kmas}-@{kmenos})"></p>
             </div>
             <hr>
             <div class="row">
                 <p class="col-sm-12">Raza: 
                     <select id="razas" style="width:80%" name="attr_raza">
-                        <option value="Elegir raza">Elegir raza</option>
+                        <option value="Elegir raza" selected="selected">Elegir raza</option>
                         <option value="Humano">Humano</option>
                         <option value="Orco">Orco</option>
                         <option value="Lhanie">Lhanie</option>
@@ -50,7 +65,7 @@
                 </p>
                 <p class="col-sm-12">Hibrido: 
                     <select id="razas" style="width:80%" name="attr_hibrido">
-                        <option value="Elegir raza">Elegir hibrido</option>
+                        <option value="Elegir raza"selected="selected">Elegir hibrido</option>
                         <option value="Humano">Humano</option>
                         <option value="Orco">Orco</option>
                         <option value="Lhanie">Lhanie</option>
@@ -120,7 +135,8 @@
                     <td><input type="hidden" name="attr_foo_agilidad_raza" value="0">Raza:  <input type="number" name="attr_agilidad_raza" disabled="true" value="@{foo_agilidad_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_agilidad_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_agilidad_temp" value="0"></td>
-                    <td><button type="roll" value='Agilidad [[1d20+@{agilidad}+@{agilidad_raza}+@{agilidad_perm}+@{agilidad_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_agilidad_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Agilidad [[(@{agilidad_vent}+1)d20dl@{agilidad_vent}+@{agilidad}+@{agilidad_raza}+@{agilidad_perm}+@{agilidad_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
                     <td scope="row">Carisma:  </td>
@@ -128,7 +144,8 @@
                     <td><input type="hidden" name="attr_foo_carisma_raza" value="0">Raza:  <input type="number" name="attr_carisma_raza" disabled="true" value="@{foo_carisma_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_carisma_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_carisma_temp" value="0"></td>
-                    <td><button type="roll" value='Carisma [[1d20+@{carisma}+@{carisma_raza}+@{carisma_perm}+@{carisma_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_carisma_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Carisma [[(@{carisma_vent}+1)d20dl@{carisma_vent}+@{carisma}+@{carisma_raza}+@{carisma_perm}+@{carisma_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
                     <td scope="row">Combate:  </td>
@@ -136,7 +153,8 @@
                     <td><input type="hidden" name="attr_foo_combate_raza" value="0">Raza:  <input type="number" name="attr_combate_raza" disabled="true" value="@{foo_combate_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_combate_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_combate_temp" value="0"></td>
-                    <td><button type="roll" value='Combate [[1d20+@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_combate_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Combate [[(@{combate_vent}+1)d20dl@{combate_vent}+@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
                     <td scope="row">Fuerza:  </td>
@@ -144,7 +162,8 @@
                     <td><input type="hidden" name="attr_foo_fuerza_raza" value="0">Raza:  <input type="number" name="attr_fuerza_raza" disabled="true" value="@{foo_fuerza_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_fuerza_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_fuerza_temp" value="0"></td>
-                    <td><button type="roll" value='Fuerza [[1d20+@{fuerza}+@{fuerza_raza}+@{fuerza_perm}+@{fuerza_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_fuerza_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Fuerza [[(@{fuerza_vent}+1)d20dl@{fuerza_vent}+@{fuerza}+@{fuerza_raza}+@{fuerza_perm}+@{fuerza_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
                     <td scope="row">Inteligencia:  </td>
@@ -152,7 +171,8 @@
                     <td><input type="hidden" name="attr_foo_inteligencia_raza" value="0">Raza:  <input type="number" name="attr_inteligencia_raza" disabled="true" value="@{foo_inteligencia_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_inteligencia_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_inteligencia_temp" value="0"></td>
-                    <td><button type="roll" value='Inteligencia [[1d20+@{inteligencia}+@{inteligencia_raza}+@{inteligencia_perm}+@{inteligencia_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_inteligencia_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Inteligencia [[(@{inteligencia_vent}+1)d20dl@{inteligencia_vent}+@{inteligencia}+@{inteligencia_raza}+@{inteligencia_perm}+@{inteligencia_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
                     <td scope="row">Percepción:  </td>
@@ -160,7 +180,8 @@
                     <td><input type="hidden" name="attr_foo_percepción_raza" value="0">Raza:  <input type="number" name="attr_percepción_raza" disabled="true" value="@{foo_percepción_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_percepción_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_percepción_temp" value="0"></td>
-                    <td><button type="roll" value='Percepción [[1d20+@{percepción}+@{percepción_raza}+@{percepción_perm}+@{percepción_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_percepción_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Percepción [[(@{percepción_vent}+1)d20dl@{percepción_vent}+@{percepción}+@{percepción_raza}+@{percepción_perm}+@{percepción_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
                     <td scope="row">Resistencia:  </td>
@@ -168,7 +189,8 @@
                     <td><input type="hidden" name="attr_foo_resistencia_raza" value="0">Raza:  <input type="number" name="attr_resistencia_raza" disabled="true" value="@{foo_resistencia_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_resistencia_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_resistencia_temp" value="0"></td>
-                    <td><button type="roll" value='Resistencia [[1d20+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_resistencia_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Resistencia [[(@{resistencia_vent}+1)d20dl@{resistencia_vent}+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
                     <td scope="row">Vitalidad:  </td>
@@ -176,7 +198,8 @@
                     <td><input type="hidden" name="attr_foo_vitalidad_raza" value="0">Raza:  <input type="number" name="attr_vitalidad_raza" disabled="true" value="@{foo_vitalidad_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_vitalidad_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_vitalidad_temp" value="0"></td>
-                    <td><button type="roll" value='Vitalidad [[1d20+@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_vitalidad_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Vitalidad [[(@{vitalidad_vent}+1)d20dl@{vitalidad_vent}+@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
                     <td scope="row">Suerte:  </td>
@@ -184,7 +207,8 @@
                     <td><input type="hidden" name="attr_foo_suerte_raza" value="0">Raza:  <input type="number" name="attr_suerte_raza" disabled="true" value="@{foo_suerte_raza}"></td>
                     <td>Perm:  <input type="number" name="attr_suerte_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_suerte_temp" value="0"></td>
-                    <td><button type="roll" value='Suerte [[1d20+@{suerte}+@{suerte_raza}+@{suerte_perm}+@{suerte_temp}]]' name'roll_strCheck'></button></td>
+                    <td>Ven:  <input type="number" name="attr_suerte_vent" min="0" value="0"></td>
+                    <td><button type="roll" value='Suerte [[(@{suerte_vent}+1)20dl@{vitalidad_vent}+@{suerte}+@{suerte_raza}+@{suerte_perm}+@{suerte_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
             </table>
         </div>
@@ -198,8 +222,17 @@
                     <td>Mágica: <input type="number" name="attr_magica" value="0"></td>
                     <td><input type="hidden" name="attr_foo_escudo" value="0">Escudo: <input type="number" name="attr_escudo" value="@{foo_escudo}" disabled="true"></td>
                     <td><input type="hidden" name="attr_foo_armadura" value="0">Armadura: <input type="number" name="attr_armadura" value="@{foo_armadura}" disabled="true"></td>
-                    <td>Resistencia: <input type="number" name="attr_restotal" value="[[@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}]]" disabled="true" ></td>
-                    <td><input type="hidden" name="attr_foo_armaduratotal" value="[[@{foo_armadura}+@{foo_escudo}+@{foo_natural}+@{magica}+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}]]">Total: <input type="number" name="attr_armaduratotal" value="@{foo_armaduratotal}" disabled="true"></td></td>
+                    <td>Resistencia: <input type="number" name="attr_restotal" value="(@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})" disabled="true" ></td>
+                    <td><input type="hidden" name="attr_foo_armaduratotal" value="(@{foo_armadura}+@{foo_escudo}+@{foo_natural}+@{magica}+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})">Total: <input type="number" name="attr_armaduratotal" value="(@{foo_armaduratotal})" disabled="true"></td></td>
+                </tr>
+            </table>
+            <h5>Efecto</h5><br>
+            <table class="table">
+                <tr>
+                    <td scope="row">Arma izq. <input type="number" value="5">%</td>
+                    <td>Arma der. <input type="number" value="5">%</td>
+                    <td>Clase <input type="number" value="0">%</td>
+                    <td>Clase <input type="number" value="0">%</td>
                 </tr>
             </table>
         </div>
@@ -207,8 +240,8 @@
 </div>
 
 <script type="text/worker">
-    on('change:exp sheet:opened', function (eventInfo){
-        getAttrs(["exp"], function(values) {
+    on('change:exp', function (eventInfo){
+        getAttrs(["exp","foo_nivel","foo_falta"], function(values) {
             var exp_actual, var_lv, var_falta;
             exp_actual = values.exp;
             if(exp_actual >= 600) {
@@ -249,97 +282,97 @@
     on('add:character', function (eventInfo) {
         getAttrs(["nombre","sexo","edad"], function(values) {
             setAttrs({
-                attr_nombre: "", 
-                attr_sexo: "Elegir sexo", 
-                attr_edad: 0, 
-                attr_exp: 0, 
-                attr_foo_nivel: 0, 
-                attr_nivel: 0,
-                attr_foo_falta: 0, 
-                attr_falta: 0, 
-                attr_raza: "Elegir racza", 
-                attr_hibrido: "Elegir hibrido",
-                attr_razanivel: 0, 
-                attr_dobleher: "No",
-                attr_clase1: "Sin clase",
-                attr_clase2: "Sin clase",
-                attr_clase3: "Sin clase",
-                attr_clase1lv: 0, 
-                attr_clase2lv: 0, 
-                attr_clase3lv: 0, 
-                attr_agilidad: 0, 
-                attr_foo_agilidad_raza: 0,
-                attr_agilidad_raza: 0, 
-                attr_agilidad_perm: 0, 
-                attr_carisma: 0, 
-                attr_foo_carisma_raza: 0, 
-                attr_carisma_raza: 0,
-                attr_carisma_perm: 0, 
-                attr_carisma_temp: 0, 
-                attr_combate: 0, 
-                attr_foo_combate_raza: 0, 
-                attr_combate_raza: 0,
-                attr_combate_perm: 0, 
-                attr_combate_temp: 0, 
-                attr_fuerza: 0, 
-                attr_foo_fuerza_raza: 0, 
-                attr_fuerza_raza: 0,
-                attr_fuerza_perm: 0, 
-                attr_fuerza_temp: 0, 
-                attr_inteligencia: 0, 
-                attr_foo_inteligencia_raza: 0, 
-                attr_inteligencia_raza: 0, 
-                attr_inteligencia_perm: 0, 
-                attr_inteligencia_temp: 0, 
-                attr_percepcion: 0,
-                attr_foo_percepcion_raza: 0, 
-                attr_percepcion_raza: 0, 
-                attr_percepcion_perm: 0, 
-                attr_percepcion_temp: 0,
-                attr_resistencia: 0, 
-                attr_foo_resistencia_raza: 0, 
-                attr_resistencia_raza: 0,
-                attr_resistencia_perm: 0,
-                attr_resistencia_temp: 0,
-                attr_vitalidad: 0,
-                attr_foo_vitalidad_raza: 0,
-                attr_vitalidad_raza: 0,
-                attr_vitalidad_perm: 0,
-                attr_vitalidad_temp: 0,
-                attr_suerte: 0,
-                attr_foo_suerte_raza: 0,
-                attr_suerte_raza: 0,
-                attr_suerte_perm: 0,
-                attr_suerte_temp: 0,
-                attr_foo_natural: 0,
-                attr_natural: 0,
-                attr_magica: 0,
-                attr_foo_escudo: 0,
-                attr_escudo: 0,
-                attr_foo_armadura: 0,
-                attr_armadura: 0,
-                attr_restotal: 0,
-                attr_foo_armaduratotal: 0,
-                attr_armaduratotal: 0
+                nombre: "", 
+                sexo: "Elegir sexo", 
+                edad: 0, 
+                exp: 0, 
+                foo_nivel: 0, 
+                nivel: 0,
+                foo_falta: 0, 
+                falta: 0, 
+                raza: "Elegir raza", 
+                hibrido: "Elegir hibrido",
+                razanivel: 0, 
+                dobleher: "No",
+                clase1: "Sin clase",
+                clase2: "Sin clase",
+                clase3: "Sin clase",
+                clase1lv: 0, 
+                clase2lv: 0, 
+                clase3lv: 0, 
+                agilidad: 0, 
+                foo_agilidad_raza: 0,
+                agilidad_raza: 0, 
+                agilidad_perm: 0, 
+                carisma: 0, 
+                foo_carisma_raza: 0, 
+                carisma_raza: 0,
+                carisma_perm: 0, 
+                carisma_temp: 0, 
+                combate: 0, 
+                foo_combate_raza: 0, 
+                combate_raza: 0,
+                combate_perm: 0, 
+                combate_temp: 0, 
+                fuerza: 0, 
+                foo_fuerza_raza: 0, 
+                fuerza_raza: 0,
+                fuerza_perm: 0, 
+                fuerza_temp: 0, 
+                inteligencia: 0, 
+                foo_inteligencia_raza: 0, 
+                inteligencia_raza: 0, 
+                inteligencia_perm: 0, 
+                inteligencia_temp: 0, 
+                percepcion: 0,
+                foo_percepcion_raza: 0, 
+                percepcion_raza: 0, 
+                percepcion_perm: 0, 
+                percepcion_temp: 0,
+                resistencia: 0, 
+                foo_resistencia_raza: 0, 
+                resistencia_raza: 0,
+                resistencia_perm: 0,
+                resistencia_temp: 0,
+                vitalidad: 0,
+                foo_vitalidad_raza: 0,
+                vitalidad_raza: 0,
+                vitalidad_perm: 0,
+                vitalidad_temp: 0,
+                suerte: 0,
+                foo_suerte_raza: 0,
+                suerte_raza: 0,
+                suerte_perm: 0,
+                suerte_temp: 0,
+                foo_natural: 0,
+                natural: 0,
+                magica: 0,
+                foo_escudo: 0,
+                escudo: 0,
+                foo_armadura: 0,
+                armadura: 0,
+                restotal: 0,
+                foo_armaduratotal: 0,
+                armaduratotal: 0
             });
         });
     });
 
-    on('change:dobleher change:raza change:hibrido sheet:opened', function (eventInfo){
+    on('change:dobleher change:raza change:hibrido', function (eventInfo){
         getAttrs(["dobleher", "raza", "hibrido"], function(values) {
             var ag=0,ca=0,co=0,fu=0; 
             var inte=0,pe=0,re=0,vi=0,su=0;
-            if(values["raza"] == "Humano" || (values["hibrido"] == "Humano" && values["dobleher"] == "Si")){ag+=2; inte+=2; su+=1;}
-            if(values["raza"] == "Orco" || (values["hibrido"] == "Orco" && values["dobleher"] == "Si")){fu+=2; re+=2;}
-            if(values["raza"] == "Shira" || (values["hibrido"] == "Shira" && values["dobleher"] == "Si")){re+=2; vi+=2; co+=1;}
-            if(values["raza"] == "Lhanie" || (values["hibrido"] == "Lhanie" && values["dobleher"] == "Si")){ag+=2; ca+=2;}
-            if(values["raza"] == "Turbe" || (values["hibrido"] == "Turbe" && values["dobleher"] == "Si")){ag+=2; inte+=3; su+=-1;}
-            if(values["raza"] == "Fjereo" || (values["hibrido"] == "Fjereo" && values["dobleher"] == "Si")){ag+=2; pe+=2;}
-            if(values["raza"] == "Sarka" || (values["hibrido"] == "Sarka" && values["dobleher"] == "Si")){fu+=2; ca+=2; re+=1;}
-            if(values["raza"] == "Demonio" || (values["hibrido"] == "Demonio" && values["dobleher"] == "Si")){fu+=2; co+=2;}
-            if(values["raza"] == "Naturis" || (values["hibrido"] == "Naturis" && values["dobleher"] == "Si")){ca+=2; inte+=2;}
-            if(values["raza"] == "Automatas" || (values["hibrido"] == "Automatas" && values["dobleher"] == "Si")){fu+=2; inte+=2;}
-            if(values["raza"] == "Draieach" || (values["hibrido"] == "Draieach" && values["dobleher"] == ""Si")){fu+=1; re+=1; inte+=2;}
+            if(values["raza"] == "Humano" || (values["hibrido"] == "Humano" && values["dobleher"] == "Si")){ag=ag+2; inte=inte+2; su=su+1;}
+            if(values["raza"] == "Orco" || (values["hibrido"] == "Orco" && values["dobleher"] == "Si")){fu=fu+2; re=re+2;}
+            if(values["raza"] == "Shira" || (values["hibrido"] == "Shira" && values["dobleher"] == "Si")){re=re+2; vi=vi+2; co=co+1;}
+            if(values["raza"] == "Lhanie" || (values["hibrido"] == "Lhanie" && values["dobleher"] == "Si")){ag=ag+2; ca=ca+2;}
+            if(values["raza"] == "Turbe" || (values["hibrido"] == "Turbe" && values["dobleher"] == "Si")){ag=g+2; inte=inte+3; su=su-1;}
+            if(values["raza"] == "Fjereo" || (values["hibrido"] == "Fjereo" && values["dobleher"] == "Si")){ag=ag+2; pe=pe+2;}
+            if(values["raza"] == "Sarka" || (values["hibrido"] == "Sarka" && values["dobleher"] == "Si")){fu=fu+2; ca=ca+2; re=re+1;}
+            if(values["raza"] == "Demonio" || (values["hibrido"] == "Demonio" && values["dobleher"] == "Si")){fu=fu+2; co=co+2;}
+            if(values["raza"] == "Naturis" || (values["hibrido"] == "Naturis" && values["dobleher"] == "Si")){ca=ca+2; inte=inte+2;}
+            if(values["raza"] == "Automatas" || (values["hibrido"] == "Automatas" && values["dobleher"] == "Si")){fu=fu+2; inte=inte+2;}
+            if(values["raza"] == "Draieach" || (values["hibrido"] == "Draieach" && values["dobleher"] == "Si")){fu=fu+1; re=re+1; inte=inte+2;}
             setAttrs({
                 foo_agilidad_raza: ag,
                 foo_carisma_raza: ca,
@@ -400,11 +433,6 @@
 
         if(raza == hibrido) n_hibrido = 0;
         return n_raza+n_hibrido;
-    }
-
-    function collapseGrid(id) {
-        var me = document.getElementByClass(id);
-        me.style.display = me.style.display == "none" ? "block" : "none";
     }
     
 </script>
