@@ -4,7 +4,8 @@
     <div class="datos_collap">
         <div style="text-align: center;">
             <div class="row">
-                <p class="col-sm-4">Vida: <input type="number" name="attr_vida"> / <input type="number" name="attr_vida_max" disabled="true" value="(5+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}+(@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp})*3)"></p>
+                <input name="attr_vidafix" type="hidden" value="0">
+                <p class="col-sm-4">Vida: <input type="number" name="attr_vida"> / <input type="number" name="attr_vida_max" disabled="true" value="(5+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}+(@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp})*3-@{vidafix})"></p>
                 <p class="col-sm-4">Acciones de ataque: <input type="number" name="attr_acatq" disabled="true" value="(floor((@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})/2)+1)" max="(floor((@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})/2)+1)"></p>
                 <p class="col-sm-4">Acciones de movimiento: <input type="number" name="attr_acmov" disabled="true" value="(floor((@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})/2)+1)" max="(floor((@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})/2)+1)"></p>
             </div><br>
@@ -193,7 +194,15 @@
                 </p>
             </div>
         </div>
-
+        <div style="text-align: center; margin: auto; width: 100%;">
+            <h2>Tiradas</h2>
+            <table class="tabla">
+                <td scope="row">Puntería:  </td>
+                <td><button type="roll" value='Puntería (Ef:[[@{efdado}]])->[[1d20]] + [[(ceil((@{combatetotal}+@{percepcióntotal})/2))]]' name'roll_strCheck'></button></td>
+                <td>Forzar cerradura:  </td>
+                <td><button type="roll" value='Forzar cerraduras [[{1d20+ceil((@{combatetotal}+@{percepcióntotal}+@{agilidadtotal})/3)}>15]]' name'roll_strCheck'></button></td>
+            </table>
+        </div>
         <div style="text-align: center; margin: auto; width: 100%;">
             <h2>Estadísticas</h2><br>
             <table class="table">
@@ -204,6 +213,7 @@
                     <td>Perm:  <input type="number" name="attr_agilidad_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_agilidad_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_agilidad_vent" min="0" value="0"></td>
+                    <td><input type="number" name="attr_agilidadtotal" value='(@{agilidad}+@{agilidad_raza}+@{agilidad_perm}+@{agilidad_temp})' disabled="true"></td>
                     <td><button type="roll" value='Agilidad [[(@{agilidad_vent}+1)d20dl@{agilidad_vent}+@{agilidad}+@{agilidad_raza}+@{agilidad_perm}+@{agilidad_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
@@ -213,6 +223,7 @@
                     <td>Perm:  <input type="number" name="attr_carisma_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_carisma_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_carisma_vent" min="0" value="0"></td>
+                    <td><input type="number" name="attr_carismatotal" value="(@{carisma}+@{carisma_raza}+@{carisma_perm}+@{carisma_temp})" disabled="true"></td>
                     <td><button type="roll" value='Carisma [[(@{carisma_vent}+1)d20dl@{carisma_vent}+@{carisma}+@{carisma_raza}+@{carisma_perm}+@{carisma_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
@@ -222,6 +233,7 @@
                     <td>Perm:  <input type="number" name="attr_combate_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_combate_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_combate_vent" min="0" value="0"></td>
+                    <td><input type="number" name="attr_combatetotal" value="(@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp})" disabled="true"></td>
                     <td><button type="roll" value='Combate [[(@{combate_vent}+1)d20dl@{combate_vent}+@{combate}+@{combate_raza}+@{combate_perm}+@{combate_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
@@ -231,6 +243,7 @@
                     <td>Perm:  <input type="number" name="attr_fuerza_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_fuerza_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_fuerza_vent" min="0" value="0"></td>
+                    <td><input type="number" name="attr_fuerzatotal" value="(@{fuerza}+@{fuerza_raza}+@{fuerza_perm}+@{fuerza_temp})" disabled="true"></td>
                     <td><button type="roll" value='Fuerza [[(@{fuerza_vent}+1)d20dl@{fuerza_vent}+@{fuerza}+@{fuerza_raza}+@{fuerza_perm}+@{fuerza_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
@@ -240,6 +253,7 @@
                     <td>Perm:  <input type="number" name="attr_inteligencia_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_inteligencia_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_inteligencia_vent" min="0" value="0"></td>
+                    <td><input type="number" name="attr_inteligenciatotal" value="(@{inteligencia}+@{inteligencia_raza}+@{inteligencia_perm}+@{inteligencia_temp})" disabled="true"></td>
                     <td><button type="roll" value='Inteligencia [[(@{inteligencia_vent}+1)d20dl@{inteligencia_vent}+@{inteligencia}+@{inteligencia_raza}+@{inteligencia_perm}+@{inteligencia_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
@@ -249,6 +263,7 @@
                     <td>Perm:  <input type="number" name="attr_percepción_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_percepción_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_percepción_vent" min="0" value="0"></td>
+                    <td><input type="number" name="attr_percepcióntotal" value="(@{percepción}+@{percepción_raza}+@{percepción_perm}+@{percepción_temp})" disabled="true"></td>
                     <td><button type="roll" value='Percepción [[(@{percepción_vent}+1)d20dl@{percepción_vent}+@{percepción}+@{percepción_raza}+@{percepción_perm}+@{percepción_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
@@ -258,6 +273,7 @@
                     <td>Perm:  <input type="number" name="attr_resistencia_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_resistencia_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_resistencia_vent" min="0" value="0"></td>
+                    <td><input type="number" name="attr_resistenciatotal" value="(@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp})" disabled="true"></td>
                     <td><button type="roll" value='Resistencia [[(@{resistencia_vent}+1)d20dl@{resistencia_vent}+@{resistencia}+@{resistencia_raza}+@{resistencia_perm}+@{resistencia_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
@@ -267,6 +283,7 @@
                     <td>Perm:  <input type="number" name="attr_vitalidad_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_vitalidad_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_vitalidad_vent" min="0" value="0"></td>
+                    <td><input type="number" name="attr_vitalidadtotal" value="(@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp})" disabled="true"></td>
                     <td><button type="roll" value='Vitalidad [[(@{vitalidad_vent}+1)d20dl@{vitalidad_vent}+@{vitalidad}+@{vitalidad_raza}+@{vitalidad_perm}+@{vitalidad_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
                 <tr>
@@ -276,7 +293,8 @@
                     <td>Perm:  <input type="number" name="attr_suerte_perm" value="0"></td>
                     <td>Temp:  <input type="number" name="attr_suerte_temp" value="0"></td>
                     <td>Ven:  <input type="number" name="attr_suerte_vent" min="0" value="0"></td>
-                    <td><button type="roll" value='Suerte [[(@{suerte_vent}+1)20dl@{vitalidad_vent}+@{suerte}+@{suerte_raza}+@{suerte_perm}+@{suerte_temp}]]' name'roll_strCheck'></button></td>
+                    <td><input type="number" name="attr_suertetotal" value="(@{suerte}+@{suerte_raza}+@{suerte_perm}+@{suerte_temp})" disabled="true"></td>
+                    <td><button type="roll" value='Suerte [[(@{suerte_vent}+1)20dl@{suerte_vent}+@{suerte}+@{suerte_raza}+@{suerte_perm}+@{suerte_temp}]]' name'roll_strCheck'></button></td>
                 </tr>
             </table>
         </div>
@@ -297,16 +315,171 @@
             <h5>Efecto</h5><br>
             <table class="table">
                 <tr>
-                    <td scope="row">Arma izq. <input type="number" value="5">%</td>
-                    <td>Arma der. <input type="number" value="5">%</td>
-                    <td>Clase <input type="number" value="0">%</td>
+                    <td scope="row">Arma izq. <input type="number" name="attr_efarmaizq" value="5">%</td>
+                    <td>Arma der. <input type="number" name="attr_efarmader" value="5">%</td>
+                    <td>Clase <input type="number" name="attr_efclase" value="0">%</td>
+                    <td>Total <input type="number" name="attr_eftotal" max="50" disabled="true" value="(@{efarmaizq}+@{efarmader}+@{efclase})">%</td>
+                    <td>Dado minimo <input type="number" name="attr_efdado" disabled="true" value="(20-((@{eftotal}/100)*20)+1)"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="text-align: center; margin: auto; width: 100%;">
+            <h2>Inventario</h2>
+            <table class="table" style="width:100%">
+                <tr>
+                    <td scope="row">
+                        Tiene riñonera:
+                        <select name="attr_tieneri">
+                            <option value="No" selected="selected">No</option>
+                            <option value="Si">Si</option>
+                        </select>
+                    </td>
+                    <td scope="row">
+                        Tiene cinturón:
+                        <select name="attr_tieneci">
+                            <option value="No" selected="selected">No</option>
+                            <option value="Si">Si</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table style="width:100%">
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv1"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv1q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv2"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv2q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv3"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv3q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv4"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv4q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv5"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv5q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv6"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv6q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv7"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv7q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv8"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv8q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv9"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv9q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv10" placeholder="Solo disponible con Don de la Carga"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv10q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv11" placeholder="Solo disponible con Don de la Carga"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv11q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv12" placeholder="Solo disponible con Don de la Carga"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv12q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv13" placeholder="Solo disponible con Don de la Carga"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv13q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Mochila:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_inv14" placeholder="Solo disponible con Don de la Carga"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_inv14q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Riñonera:</td>
+                    <td colspan="4"><input type="text" class="riñonera" style="width:100%" name="attr_ri1" placeholder="Solo disponible con Riñonera"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_ri1q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Riñonera:</td>
+                    <td colspan="4"><input type="text" class="riñonera" style="width:100%" name="attr_ri2" placeholder="Solo disponible con Riñonera"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_ri2q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Riñonera:</td>
+                    <td colspan="4"><input type="text" class="riñonera" style="width:100%" name="attr_ri3" placeholder="Solo disponible con Riñonera"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_ri3q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Riñonera:</td>
+                    <td colspan="4"><input type="text" class="riñonera" style="width:100%" name="attr_ri4" placeholder="Solo disponible con Riñonera"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_ri4q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Cinturón:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_ci1" placeholder="Solo disponible con Cinturón"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_ci1q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Cinturón:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_ci2" placeholder="Solo disponible con Cinturón"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_ci2q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Cinturón:</td>
+                    <td colspan="4"><input type="text" style="width:100%" name="attr_ci3" placeholder="Solo disponible con Cinturón"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_ci3q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Funda extra:</td>
+                    <td colspan="4"><input type="text" name="attr_fuex1tipo" placeholder="Tipo de objeto"><input type="text" style="width:50%" name="attr_fuex1" placeholder="Solo disponible con funda extra"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_fuex1q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Funda extra:</td>
+                    <td colspan="4"><input type="text" name="attr_fuex2tipo" placeholder="Tipo de objeto"><input type="text" style="width:50%" name="attr_fuex2" placeholder="Solo disponible con funda extra"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_fuex2q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Funda extra:</td>
+                    <td colspan="4"><input type="text" name="attr_fuex3tipo" placeholder="Tipo de objeto"><input type="text" style="width:50%" name="attr_fuex3" placeholder="Solo disponible con funda extra"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_fuex3q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Funda extra:</td>
+                    <td colspan="4"><input type="text" name="attr_fuex4tipo" placeholder="Tipo de objeto"><input type="text" style="width:50%" name="attr_fuex4" placeholder="Solo disponible con funda extra"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_fuex4q"></td>
+                </tr>
+                <tr>
+                    <td scope="row">Funda extra:</td>
+                    <td colspan="4"><input type="text" name="attr_fuex5tipo" placeholder="Tipo de objeto"><input type="text" style="width:50%" name="attr_fuex5" placeholder="Solo disponible con funda extra"></td>
+                    <td>Cantidad: <input type="number" min="0" name="attr_fuex5q"></td>
                 </tr>
             </table>
         </div>
     </div>
 </div>
 
-<script type="text/worker">
+<script>
     on('change:exp', function (eventInfo){
         getAttrs(["exp","foo_nivel","foo_falta"], function(values) {
             var exp_actual, var_lv, var_falta;
@@ -425,21 +598,22 @@
         });
     });
 
-    on('change:dobleher change:raza change:hibrido', function (eventInfo){
-        getAttrs(["dobleher", "raza", "hibrido"], function(values) {
+    on('change:dobleher change:raza change:hibrido change:vida_max', function (eventInfo){
+        getAttrs(["dobleher", "raza", "hibrido", "vida_max", "resistencia", "resistencia_raza", "resistencia_perm", "resistencia_temp"], function(values) {
             var ag=0,ca=0,co=0,fu=0; 
-            var inte=0,pe=0,re=0,vi=0,su=0;
+            var inte=0,pe=0,re=0,vi=0,su=0,vida_fix=0;
             if(values["raza"] == "Humano" || (values["hibrido"] == "Humano" && values["dobleher"] == "Si")){ag=ag+2; inte=inte+2; su=su+1;}
             if(values["raza"] == "Orco" || (values["hibrido"] == "Orco" && values["dobleher"] == "Si")){fu=fu+2; re=re+2;}
             if(values["raza"] == "Shira" || (values["hibrido"] == "Shira" && values["dobleher"] == "Si")){re=re+2; vi=vi+2; co=co+1;}
             if(values["raza"] == "Lhanie" || (values["hibrido"] == "Lhanie" && values["dobleher"] == "Si")){ag=ag+2; ca=ca+2;}
             if(values["raza"] == "Turbe" || (values["hibrido"] == "Turbe" && values["dobleher"] == "Si")){ag=g+2; inte=inte+3; su=su-1;}
-            if(values["raza"] == "Fjereo" || (values["hibrido"] == "Fjereo" && values["dobleher"] == "Si")){ag=ag+2; pe=pe+2;}
+            if(values["raza"] == "Fjereo" || (values["hibrido"] == "Fjereo" && values["dobleher"] == "Si")){ag=ag+2; pe=pe+2; }
             if(values["raza"] == "Sarka" || (values["hibrido"] == "Sarka" && values["dobleher"] == "Si")){fu=fu+2; ca=ca+2; re=re+1;}
             if(values["raza"] == "Demonio" || (values["hibrido"] == "Demonio" && values["dobleher"] == "Si")){fu=fu+2; co=co+2;}
             if(values["raza"] == "Naturis" || (values["hibrido"] == "Naturis" && values["dobleher"] == "Si")){ca=ca+2; inte=inte+2;}
             if(values["raza"] == "Automatas" || (values["hibrido"] == "Automatas" && values["dobleher"] == "Si")){fu=fu+2; inte=inte+2;}
             if(values["raza"] == "Draieach" || (values["hibrido"] == "Draieach" && values["dobleher"] == "Si")){fu=fu+1; re=re+1; inte=inte+2;}
+            if(values["raza"] == "Fjereo" || values["hibrido"] == "Fjereo") vida_fix = values["resistencia"]+values["resistencia_raza"]+values["resistencia_perm"]+values["resistencia_temp"];
             setAttrs({
                 foo_agilidad_raza: ag,
                 foo_carisma_raza: ca,
@@ -450,11 +624,12 @@
                 foo_resistencia_raza: re,
                 foo_vitalidad_raza: vi,
                 foo_suerte_raza: su,
-                foo_natural: RazaNatural(values["raza"], values["hibrido"])
+                foo_natural: RazaNatural(values["raza"], values["hibrido"]),
+                vidafix: vida_fix
             });
         });
     });
-
+    
     function RazaNatural(raza, hibrido) {
         var n_raza=0, n_hibrido=0;
         if(raza == "Humano" || hibrido == "Humano") {
