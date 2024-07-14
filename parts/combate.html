@@ -162,9 +162,8 @@
                   <p>El daño que causas, será la suma del daño de tu arma (y los dados agregados por habilidades), o daño del
                     hechizo utilizado, con la estadística de escalado correspondiente, ya sea Fuerza o Combate, dependiendo del
                     escalado de arma cuerpo a cuerpo, o la Inteligencia, para los hechizos. Las ballestas, armas de fuego, arcos,
-                    e instrumentos, no tienen un escalado. El total de la tirada de estos daños, se restará a la Defensa total del
-                    objetivo (Ver la zona de Protección, en la <a href="../index.html">Guía de funcionamiento de la ficha</a>), y
-                    ese será el daño que el objetivo recibirá.
+                    e instrumentos, no tienen un escalado. El total de la tirada de estos daños, se restará a una tirada de resistencia del 
+                    enemigo, y ese será el daño que el objetivo recibirá.
                   </p>
                   <p>En caso de que el ataque haya sido esquivado, y el ataque fuera dado con un proyectil, todos los objetivos que
                     se encuentren dentro de la distancia limite, y en la trayectoria de ese proyectil, deberán esquivarlo como si se
@@ -444,7 +443,7 @@
                       <h5 class="text-warning">Efectos físicos</h5>
                       <div style="box-sizing: border-box;" class="listado m-2">
                         <ul>
-                          <li class="text-info">Sangrado. <x class="text-white">Causa 1d4 de daño al final del turno del afectado, por 
+                          <li class="text-info">Sangrado. <x class="text-white">Causa 1d8 de daño al final del turno del afectado, por 
                             cada carga, cada carga puede ser eliminada con un vendaje. Si se tienen 3 o mas cargas de sangrado, uno no
                             puede levantarse al estar abatido, por si mismo, y si se obtienen 10 cargas de sangrado, se es abatido
                             directamente.
@@ -480,7 +479,7 @@
                       <h5 class="text-warning">Efectos mágicos</h5>
                       <div style="box-sizing: border-box;" class="listado m-2">
                         <ul>
-                          <li class="text-info">Quemadura. <x class="text-white">Causa 1d4 de daño al final del turno del afectado.
+                          <li class="text-info">Quemadura. <x class="text-white">Causa 1d10 de daño al final del turno del afectado.
                             Todas las cargas pueden ser eliminadas con una fuente de agua.
                           </x></li>
                           <li class="text-info">Congelamiento. <x class="text-white">Todo lo que consuma acciones, consumirá una
@@ -492,7 +491,7 @@
                             ni atacar con armas de metal.
                           </x></li>
                           <li class="text-info">Envenenado. <x class="text-white">Te dará desventaja al apuntar y esquivar, por cada
-                            carga de envenenamiento (Max. 3). A partir de las 3 cargas, además, causa 1d3 de daño por carga. Se pueden
+                            carga de envenenamiento (Max. 3). A partir de las 3 cargas, además, causa 1d10 de daño por carga. Se pueden
                             eliminar cargas, por cada 10 sacados en una tirada de Vitalidad.
                           </x></li>
                           <li class="text-info">Absorción. <x class="text-white">Te cura parte del daño causado. Si el portador es
@@ -501,121 +500,94 @@
                           <li class="text-info">Saqueo. <x class="text-white">Roba parte del alma del atacado con 5% de probabilidad (
                             No escalable normalmente con aumentos de efecto, solo los que afecten especialmente al robo de almas).
                           </x></li>
-                          <li class="text-info">Oscuridad. <x class="text-white">No causas daño. Quita un punto de vida máxima al
-                            enemigo. Al quitarle la mitad de su vida máxima, mata al enemigo (La cantidad de vida eliminada debe,
-                            minimamente, ser de 5 para aplicar esto último).
+                          <li class="text-info">Oscuridad. <x class="text-white">No causas daño. Agrega una carga de oscuridad al enemigo (No aumentable).
+                            Al agregarle 10 cargas, mata al enemigo.
                           </x></li>
-                          <li class="text-info">Quemadura helada. <x class="text-white">Causa 1d4 de daño al final del turno del afectado.
+                          <li class="text-info">Quemadura helada. <x class="text-white">Causa 1d20 de daño al final del turno del afectado.
                             Si quien tenga una quemadura helada, ataca a quien se la provocó, perderá una acción de movimiento, y, en caso
                             de que su ataque no surta efecto (Causar daño o aplicar efecto), explotará las cargas, 
-                            causando 1d4 de daño al momento, en caso contrario, se eliminará una carga. Se pueden eliminar con temperaturas
+                            causando 1d20 de daño al momento, en caso contrario, se eliminará una carga. Se pueden eliminar con temperaturas
                             altas.
                         </ul>
                       </div>
                     </div>
                     <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#dccm" 
                     data-bs-parent="desplegadaño" onclick="bugcoll('#desplegadaño')">
-                    <h5 class="text-warning m-auto">Daños y efectos de las armas cuerpo a cuerpo por material</h5></button>
+                    <h5 class="text-warning m-auto">Daños y efectos de las armas cuerpo a cuerpo</h5></button>
                     <div id="dccm" style="box-sizing: border-box;" class="row collapse m-2 w-100">
                       <table class="table table-striped table-dark">
                         <thead>
                           <th scope="col">Material</th>
-                          <th scope="col">Una mano</th>
-                          <th scope="col">Dos manos</th>
                         </thead>
                         <tbody>
                           <tr>
                             <th class="text-warning" scope="row">Cobre</th>
-                            <td class="text-warning">1d3</td>
-                            <td class="text-warning">2d3+1</td>
                           </tr>
                           <tr>
                             <td colspan="3">Sin efecto por material</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Hierro</th>
-                            <td class="text-warning">1d4</td>
-                            <td class="text-warning">2d4+2</td>
                           </tr>
                           <tr>
                             <td colspan="3">Sangrado</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Plata</th>
-                            <td class="text-warning">1d6</td>
-                            <td class="text-warning">2d6+2</td>
                           </tr>
                           <tr>
-                            <td colspan="3">En caso de que el arma esté platinada, cambia el dado por 1d12 (en ambos casos), y agrega un dado adicional de daño contra malditos</td>
+                            <td colspan="3">En caso de que el arma esté platinada, agrega dos dados de daño general (No acumulable)</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Oro</th>
-                            <td class="text-warning">1d6+2</td>
-                            <td class="text-warning">2d6+4</td>
                           </tr>
                           <tr>
                             <td colspan="3">Sin efecto por material</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Cuarzo</th>
-                            <td class="text-warning">1d8</td>
-                            <td class="text-warning">2d8+2</td>
                           </tr>
                           <tr>
                             <td colspan="3">Obtienes un dado adicional de daño contra seres hechos de magia e invocaciones</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Basalto</th>
-                            <td class="text-warning">1d12</td>
-                            <td class="text-warning">2d12+2</td>
                           </tr>
                           <tr>
                             <td colspan="3">Tiene un 25% de probabilidad de romperse al impactar</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Titanio</th>
-                            <td class="text-warning">1d10</td>
-                            <td class="text-warning">2d10+2</td>
                           </tr>
                           <tr>
                             <td colspan="3">Envenenamiento</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Cobalto</th>
-                            <td class="text-warning">1d12</td>
-                            <td class="text-warning">2d12+2</td>
                           </tr>
                           <tr>
                             <td colspan="3">Estatizado</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Infernita</th>
-                            <td class="text-warning">1d12</td>
-                            <td class="text-warning">2d12+2</td>
                           </tr>
                           <tr>
                             <td colspan="3">Doble quemadura</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Oricalco</th>
-                            <td class="text-warning">1d12+3</td>
-                            <td class="text-warning">2d12+6</td>
                           </tr>
                           <tr>
                             <td colspan="3">Quemadura</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Luminita</th>
-                            <td class="text-warning">1d12+3</td>
-                            <td class="text-warning">2d12+6</td>
                           </tr>
                           <tr>
                             <td colspan="3">Agrega un dado adicional de daño si el portador es maldito</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Druvix</th>
-                            <td class="text-warning">1d14</td>
-                            <td class="text-warning">2d14+2</td>
                           </tr>
                           <tr>
                             <td colspan="3">Los báculos, instrumentos y varitas, pueden
@@ -930,7 +902,7 @@
                             <td class="text-warning">3 bloques</td>
                           </tr>
                           <tr>
-                            <td colspan="2">Si el arco está platinado, agrega 2d10 de daño a la flecha si impacta contra un maldito</td>
+                            <td colspan="2">Si el arco está platinado, agrega 2d8 de daño a la flecha si impacta contra un maldito</td>
                           </tr>
                           <tr>
                             <th class="text-warning" scope="row">Oro</th>
@@ -971,7 +943,7 @@
                             <td class="text-warning">18 bloques</td>
                           </tr>
                           <tr>
-                            <td colspan="2">Agrega 2d6 de daño a la flecha, si quien dispara es maldito; si el arco está platinado
+                            <td colspan="2">Agrega 2d8 de daño a la flecha, si quien dispara es maldito; si el arco está platinado
                               agrega 1d6 adicional por cada nivel en la maldición</td>
                           </tr>
                           <tr>
@@ -1461,8 +1433,7 @@
                           </tr>
                           <tr>
                             <td colspan="3"><x class="text-info">Bono. </x>Inmunidad al efecto de estatizado y al daño eléctrico. Si tu arma tiene daño de electricidad, agrega
-                              un dado de daño. Agrega 1d4 de daño a hechizos de electricidad, por cada pieza de armadura de Cobalto (
-                                Incluye escudo).
+                              un dado de daño. Agrega 1d10 de daño a hechizos de electricidad, por cada pieza de armadura de Cobalto (Incluye escudo).
                             </td>
                           </tr>
                           <tr>
@@ -1482,7 +1453,7 @@
                           </tr>
                           <tr>
                             <td colspan="3"><x class="text-info">Bono. </x>Inmunidad al daño de fuego. Si tu arma tiene daño de fuego, agrega
-                              un dado de daño. Agrega 1d4 de daño a hechizos de fuego, por cada pieza de armadura de Oricalco (
+                              un dado de daño. Agrega 1d10 de daño a hechizos de fuego, por cada pieza de armadura de Oricalco (
                                 Incluye escudo).
                             </td>
                           </tr>
@@ -1614,7 +1585,7 @@
                           </tr>
                           <tr>
                             <td colspan="3"><x class="text-info">Bono. </x>Obtienes inmunidad a la quemadura y el daño de fuego. Los ataques de fuego cuerpo a cuerpo obtienen dos dados de 
-                              daño adicionales, y los hechizos 1d6 de daño adicional por pieza</td>
+                              daño adicionales, y los hechizos 1d10 de daño adicional por pieza</td>
                           </tr>
                             <th class="text-warning" scope="row">Luminita</th>
                             <td class="text-warning">4</td>
