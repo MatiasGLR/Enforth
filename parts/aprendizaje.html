@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../files/img/favicon.ico">
+  <title>Cuentos de Enforth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <!-- Hojas de estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Script -->
+  <link rel="stylesheet" href="../files/css/header.css">
+  <link rel="stylesheet" href="../files/css/main.css">
+  <style>
+    body {
+      background: url("../files/img/background.jpg");
+      background-size: cover;
+    }
+
+    #myBtn {
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      width:100px;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-main p-5 row row-cols-1 row-cols-md-3 m-0">
+      <div class="title-main col-md-8 text-center">
+        <h2 class="medieval titulo">Cuentos de Enforth</h2>
+        <h4 class="titulo">Manual interactivo</h4>
+      </div>
+      <div class="header-main-admin col-md-2">
+        <div class="header-main-admin-btn d-flex justify-content-around">
+          <a href="../index.html" style="color: white;">
+            <h4 class="medieval m-2 titulo boton">Inicio</h4>
+          </a>
+          <a href="#" style="color: white;" onclick="openAdm();">
+            <h4 id="ingresar" class="medieval m-2 titulo boton">Ingresar</h4>
+          </a>
+          <h4 id="logged" style="display:none" class="text-warning medieval m-2 titulo boton">Administrador</h4>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered text-dark" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title m-auto" id="exampleModalLabel"><b class="text-danger">Ingresar a tu cuenta</b></h5>
+          </div> 
+          <div class="modal-body">
+              <div id="login-box" class="bg-white text-dark p-2">
+              <div class="data m-auto" style="width:80%">
+                  <div class="usuario">
+                      <label for="user"><b class="text-danger">Usuario</b></label><br>
+                      <input id="username" name="username" type="text" id="user" style="width:100%">
+                  </div>
+                  <div class="usuario mt-4">
+                      <label for="pass"><b class="text-danger">Contraseña</b></label><br>
+                      <input id="password" name="password" type="text" max="24" id="pass" style="width:100%">
+                  </div>
+                  <div id="datos">
+
+                  </div>
+              </div>
+              </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+              <button id="loginButton" class="btn btn-danger" type="button" onclick="login(); return false">Ingresar</button>
+          </div>
+          </div>
+      </div>
+  </div>
+  <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
+  <div class="x" onclick="$('.collapse').collapse('hide');"><span>X</span></div>
+    <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
+      <h2 class="titulo"><a href="../index.html">Inicio</a> > <a href="./personaje.html">Personaje</a> > Aprendizaje</h2>
+      <div style="max-width: 100%; border-radius: 5px;"
+        class="mw-100 w-100 p-4 m-2 col-12 bg-dark text-white text-start" style="box-sizing: border-box;">
+        <p><h5 class="text-warning">¿Que es el aprendizaje?</h5></p>
+        <p>A medida que un jugador va avanzando en el mundo, va aprendiendo a como utilizar sus armas, sus conocimientos, e
+          incluso como derrotar a ciertas criaturas.
+        </p>
+        <hr id="skipto">
+        <div id="informacion">
+          <div id="estadistica" class="collapse" data-bs-parent="#informacion">
+            
+          </div>
+          <div id="criatura" class="collapse" data-bs-parent="#informacion">
+            
+          </div>
+          <div id="armamento" class="collapse" data-bs-parent="#informacion">
+            
+          </div>
+
+        </div>
+      </div>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#estadistica" aria-expanded="true"
+        aria-controls="estadistica" onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Estadísticas</b></span>
+        <img class="card-img-top" src="../files/img/aprendizaje/stats.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            Las mejoras en las estadísticas por sacar 20 naturales en tiradas de estadística
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#criatura" aria-expanded="true"
+        aria-controls="criatura" onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Criaturas</b></span>
+        <img class="card-img-top" src="../files/img/aprendizaje/bestia.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            El aprendizaje por criaturas y los beneficios que da al derrotarlas en combate
+          </p>
+        </div>
+      </button>
+      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
+        data-bs-toggle="collapse" data-bs-target="#armamento" aria-expanded="true"
+        aria-controls="armamento" onclick="window.location.href='#skipto'">
+        <span class="p-1 align-self-center"><b>Armamento</b></span>
+        <img class="card-img-top" src="../files/img/aprendizaje/armas.png" alt="Card image cap" />
+        <div class="card-body text-white">
+          <p class="card-text">
+            El aprendizaje en la utilización de armas por combate
+          </p>
+        </div>
+      </button>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+<script type="text/javascript" src="../files/js/jpop.js"></script>
+<script>
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+</html>
