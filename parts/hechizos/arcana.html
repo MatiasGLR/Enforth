@@ -16,14 +16,34 @@
     <!-- Script -->
 </head>
 
-<body class="bg-dark">
+<style>
+    .col-md-3 {
+        margin-top:12px;
+    }
+
+    .descripcion {
+        text-align: justify !important;
+    }
+</style>
+
+<body style="box-sizing: border-box; overflow-x:hidden;" class="bg-dark">
     <header class="mb-4">
         <div>
             <a href="../combate.html"><h4 class="btn w-100 m-2" style="background-color: violet;">Volver</h4></a>
         </div>
     </header>
     <main>
-        <div class="row ms-2 me-2">
+        <div class="row m-4 text-white">
+            <div class="col-12">
+                <ul>
+                    <li>Todas las creaciones hechas en magia arcana, son de color <x style="color: violet;">violeta</x>, 
+                        o <x style="color: purple;">morado</x>, de color traslucido, al romperse se disipa,
+                        no tiene peso ni temperatura, pero son sólidos de magia pura (Es decir, no cuentan como madera, piedra,
+                        o cualquier otro tipo de material); cosas como la luz natural, no puede ser evitada de pasar
+                        por estas creaciones (Excepto hechizos de luz).
+                    </li>
+                </ul>
+            </div>
             <div class="col-md-3"> <!-- Ráfaga arcana -->
                 <x class="text-white">
                     <h6 style="color:violet"><b>Ráfaga arcana</b></h6>
@@ -48,22 +68,99 @@
             <div class="col-md-3"> <!-- Composición arcana -->
                 <x class="text-white">
                     <h6 style="color:violet"><b>Composición arcana</b></h6>
-                    <b>Costo. </b>2 núcleos por ronda<br>
+                    <b>Costo. </b>5 núcleos por ronda<br>
                     <b>Nivel de mago requerido. </b>Nivel 2<br>
                     <b>Descripción. </b>Agrega tu armadura como armadura mágica.
                 </x>
             </div>
-            <div class="col-md-3"> <!-- Lanzapelotas -->
+            <div class="col-md-3">
                 <x class="text-white">
-                    <h6 style="color:violet"><b>Lanzapelotas</b></h6>
-                    <b>Distancia. </b>10ft + 5ft por nivel en <a href="../../parts/clases.html">Mago</a><br>
-                    <b>Efecto. </b>Ninguno<br>
-                    <b>Daño. </b>1d6 + 1d6 por nivel en mago<br>
-                    <b>Tipo de daño. </b>Magia<br>
-                    <b>Costo. </b>1 núcleo<br>
-                    <b>Nivel de mago requerido. </b>No requerido<br>
-                    <b>Descripción. </b>Lanza un has arcano en una dirección, impactando contra el primer objetivo en su camino. El ataque al impactar, le dará -1 en armadura mágica al objetivo (Acumulable
-                    por todo el combate, y puede aumentar hasta negativo).
+                    <h6 style="color:violet"><b>Infusión arcana</b></h6>
+                    <b>Costo. </b>2 núcleos<br>
+                    <b>Nivel de mago requerido. </b>Nivel 1<br>
+                    <b>Descripción. </b>Imbuye el arma en magia arcana, por lo que su escalado pasa a ser con inteligencia
+                    por el resto de tu turno (Puedes consumir núcleos adicionales para agregar turnos de duración, igual
+                    a los núcleos consumidos).
+                </x>
+            </div>
+            <div class="col-md-3">
+                <x class="text-white">
+                    <h6 style="color:violet"><b>Modificación</b></h6>
+                    <b>Costo. </b>4 núcleos<br>
+                    <b>Nivel de mago requerido. </b>Nivel 4<br>
+                    <b>Descripción. </b>Puedes modificar la estructura de los hechizos arcanos sólidos, como las barreras
+                    y escudos. La modificación no puede superar el tamaño de la estructura, ni puede separarse mucho de esta,
+                    además, el cambio se disipará al terminar el turno, o cuando se disipe el hechizo modificado.
+                </x>
+            </div>
+            <div class="col-md-3">
+                <x class="text-white">
+                    <h6 style="color:violet"><b>Creación</b></h6>
+                    <b>Costo. </b>6 núcleos<br>
+                    <b>Nivel de mago requerido. </b>Nivel 5<br>
+                    <b>Descripción. </b>Pueden crear algun objeto pequeño, sabiendo que es lo que se está creando (Por lo que
+                    no se pueden crear llaves, por ejemplo, debido a que debes saber la combinación de la misma); pueden crearse
+                    herramientas pequeñas, utencilios de cocina, etc.
+                </x>
+            </div>
+            <div class="col-md-3">
+                <x class="text-white">
+                    <h6 style="color:violet"><b>Imaginación</b></h6>
+                    <b>Costo. </b>10 núcleos<br>
+                    <b>Nivel de mago requerido. </b>Nivel 8<br>
+                    <b>Costo de desbloqueo. </b>3 puntos de mejora<br>
+                    <b>Descripción. </b>Deben realizar una tirada de imaginación (20 + Inteligencia/2), y, si se supera el 15,
+                    se puede modificar algun aspecto físico del personaje, un aliado, o un objeto, de forma temporal; en caso
+                    de no superar el 15, el efecto saldrá de forma diferente, dependiendo de que tan mala sea la tirada.
+                </x>
+            </div>
+            <div class="col-md-3">
+                <x class="text-white">
+                    <h6 style="color:violet"><b>Impulso arcano</b></h6>
+                    <b>Costo. </b>2 núcleos<br>
+                    <b>Nivel de mago requerido. </b>Nivel 2<br>
+                    <b>Descripción. </b>Sube un puesto en la lista de espera de turno. Esto solo puede hacerse al inicio del combate.
+                    Pasar sobre el turno de un aliado cuesta la mitad.
+                </x>
+            </div>
+            <div class="col-md-3">
+                <x class="text-white">
+                    <h6 style="color:violet"><b>Sable arcano: Ataque</b></h6>
+                    <b>Costo. </b>3 núcleos + 1 Acción de ataque<br>
+                    <b>Daño. </b>Daño del arma + 1d6 por núcleo consumido + 1d4 por núcleos restantes<br>
+                    <b>Nivel de mago requerido. </b>Nivel 3<br>
+                    <b>Costo de desbloqueo. </b>2 puntos de mejora<br>
+                    <b>Descripción. </b>Puedes lanzar una ráfaga en linea recta desde una espada, la cuál esté imbuida en magia arcana;
+                    esta tendrá tanta distancia como núcleos se hayan consumido en el hechizo (Se pueden consumir mas para
+                    aumentar la distancia). <b>Este hechizo solo se puede usar una vez por turno del conjurador.</b>
+                </x>
+            </div>
+            <div class="col-md-3">
+                <x class="text-white">
+                    <h6 style="color:violet"><b>Sable arcano: Arco</b></h6>
+                    <b>Costo. </b>2 núcleos<br>
+                    <b>Nivel de mago requerido. </b>Nivel 4<br>
+                    <b>Descripción. </b>Puedes conjurar este hechizo, para mejorar el rango de "Sable arcano: Ataque", para que,
+                    en lugar de ser en linea recta, sea en un cono de 45º.
+                </x>
+            </div>
+            <div class="col-md-3">
+                <x class="text-white">
+                    <h6 style="color:violet"><b>Sable arcano: Potencia</b></h6>
+                    <b>Costo. </b>2 núcleos<br>
+                    <b>Nivel de mago requerido. </b>Nivel 5<br>
+                    <b>Descripción. </b>Aumenta en 2d10 el daño del ataque de "Sable arcano: Ataque", y duplica el daño del arma.
+                    En caso de que los 2d10 causen el máximo daño, recupera los núcleos gastados, y recupera 20 de vida.
+                </x>
+            </div>
+            <div class="col-md-3">
+                <x class="text-white">
+                    <h6 style="color:violet"><b>Flecha arcana</b></h6>
+                    <b>Costo. </b>2 núcleo<br>
+                    <b>Nivel de mago requerido. </b>Nivel 2<br>
+                    <b>Daño. </b>1d8<br>
+                    <b>Descripción. </b>Al disparar con un arco, puedes disparar con un proyectil arcano, el cuál tendrá
+                    1d8 de daño, agregando 1d8 adicional por cada 2 núcleos consumidos adicionales. El rango será de 30ft.
                 </x>
             </div>
         </div>
