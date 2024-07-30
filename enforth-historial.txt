@@ -3,6 +3,17 @@
 (+) Bufos
 (-) Nerfeos
 
+Versión 4.3 - 30/7/24
++ Listado de hechizos de magia Arcana, Fuego y Hielo terminados
++ Rework al sistema de combate.
+  > Los daños pasaron a las armas, en lugar del material
+  > Se elimina la armadura y la vida, para una unificación de ambas
+  > Reformulación de la vida
+(+) Limite de estadísticas, pasa de 45, a 45 hasta Lv5, y a partir de Lv5 (No incluido) el límite aumentará en 1.
+(+) Nuevo formato de ficha
+(+) Cada 5 niveles (No contado el Nivel 0), se obtendrá de forma gratuita un slot de hechizo o táctica.
+(-) Nivel máximo de jugador pasa a ser 20.
+
 Version 4.23 - 28/6/24
 + Tirada de salvaciones antes del inicio de cada turno 
 + Fruto de raza dorado agregado
