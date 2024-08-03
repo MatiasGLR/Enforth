@@ -22,7 +22,7 @@ Terán: Cantinero, Guardia, Ingeniero, Médico, Herrero, Carpintero, Mercader.
 Yajaraverey: Cantinero, Guarida, Ingeniero, Mercader, Alquimista, Religioso, Mercenario.
 Zarand: Cantinero, Guardia, Carpintero, Alquimista, Médico, Bardo, Granjero.
 
-En base a estos datos, dame 10 de estos comerciantes que den una misión, y que misión sería, debe ser algo simple como 
+En base a estos datos, dame 10 de estos comerciantes aleatorios que den una misión, y que misión sería, debe ser algo simple como 
 entregar algún producto, o ir a buscar materias primas, poca posibilidad de que sea algo muy importante y de buen pago.
 
 En formato siguiente:
@@ -30,3 +30,5 @@ En formato siguiente:
 Descripción del trabajo
 
 Las profesiones que salgan aleatoriamente deben estar en orden alfabético, y todo el texto debe estar en formato código de programación
+
+Los comerciantes, misiones y pueblos deben ser variados, pero los comerciantes solo deben ser los de la lista de cada pueblo
