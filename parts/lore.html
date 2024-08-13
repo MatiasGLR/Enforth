@@ -87,44 +87,45 @@
   <img id="myBtn" onclick="topFunction()" src="../back.png" alt="">
   <div class="x" onclick="$('.collapse').collapse('hide');"><span>X</span></div>
     <div class="main-main d-flex justify-content-center text-center row m-0 w-100">
-      <h2 class="titulo"><a href="../index.html">Inicio</a> > <a href="./personaje.html">Personaje</a> > Estados</h2>
+      <h2 class="titulo"><a href="../index.html">Inicio</a> > Historias previas</h2>
       <div style="max-width: 100%; border-radius: 5px;"
         class="mw-100 w-100 p-4 m-2 col-12 bg-dark text-white text-start" style="box-sizing: border-box;">
-        <p><h5 class="text-warning">¿Que son los estados?</h5></p>
-        <p>Son habilidades especiales agregables al personaje, los cuales deben ser equilibrados con uno negativo. Estas habilidades
-          son indiferentes para las clases, razas, son habilidades pertenecientes al jugador y su personaje. Cada jugador empieza
-          con un punto a favor, y puede tener hasta 3 negativos, o 3 positivos, pero siempre la suma de los positivos y los negativos
-          debe de ser de 0, o menor a 0.
-        </p>
-        <p>Los estados se conforman de siguiente modo:<br>
-          <code>(Puntos) Nombre. Descripción</code>
-        </p>
         <hr id="skipto">
-      </div>
-      <button type="button" class="card mb-3 text-center m-1 bg-dark text-white" style="max-width: 18rem"
-        data-bs-toggle="collapse" data-bs-target="#swordsqal" aria-expanded="true"
-        aria-controls="swordsqal" onclick="window.location.href='#skipto'">
-        <span class="p-1 align-self-center"><b>Swordsqal</b></span>
-        <img class="card-img-top" src="../parts/mejoras/1.webp" alt="Card image cap" />
-        <div class="card-body text-white">
-        </div>
-      </button>
-      <div id="informacion">
-        <div id="swordsqal" class="collapse" data-bs-parent="#informacion">
-          <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-              <div id="desplegables">
-                <button type="button" class="btn btn-outline-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#hechizos" 
-                data-bs-parent="desplegables" onclick="bugcoll('#desplegables')"><h5 class="text-warning m-auto">Hechizos</h5></button>
-                <div id="hechizos" class="collapse mt-2">
-                  <div class="row d-flex justify-content-center">
-                    
+        <div id="informacion">
+          <div id="swordsqal" data-bs-parent="#informacion">
+            <div class="row">
+              <div class="col-md-8 w-100">
+                <div id="desplegables">
+                  <button type="button" class="btn btn-warning w-100 mt-1" data-bs-toggle="collapse" data-bs-target="#hechizos" 
+                  data-bs-parent="desplegables" onclick="bugcoll('#desplegables')"><h5 class="text-dark m-auto">I. La Última Guerra Infernal</h5></button>
+                  <div id="hechizos" class="collapse mt-2">
+                    <div class="row d-flex">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-8" style="text-align: justify;">
+                        <p>
+                          Siglos atras, tras la caida de la última orda de demonios que se alzó cinco noches atras en el Santuario Norte, derrotando a los Arcangeles
+                          con una facilidad abrumadora; quiza sea por la gran cantidad de tiempo que había pasado tras su última llegada, o que los antiguos sacerdotes ya
+                          habían pasado a mejor vida; el portal no pudo ser detenido, y cientos de criaturas infernales salieron al mundo para conquistarlo nuevamente. Entre
+                          ellos, el general Khlosatt Ammón, quien derrotó sin piedad a un grupo de arcangeles por su propia mano, dando el paso libre a sus compañeros de tomar
+                          la ciudad de Oldedge, donde existia el legado de los sacerdotes, y toda la información necesaria para poder detenerlos, reduciendo todo a escombros,
+                          aunque, desafortunadamente para ellos, nunca lograron encontrar la Biblioteca.
+                        </p>
+                        <p>Su siguiente objetivo, era acabar con las dos ciudades mas viejas del continente, Abbasel, en el centro del bosque de su mismo nombre; sus tropas
+                          se lanzaron inmediatamente, quemando todo a su paso, hasta que, con los primeros rayos de la mañana, arribaron al pueblo de Kabnak, donde buscaron
+                          esclavizar a su población, y hacerlos sus eternos sirvientes. Allí, se encontraron con el Comandante de la Guardia, Reginald Salvado, quién dio una
+                          batalla feróz, pero finalmente sucumbió ante el General Ammón, no sin antes utilizar un último hechizo, que limpio la consciencia del General, 
+                          haciendolo dudar de si lo que hacían era correcto, brindando a su familia, el Corazón del Infierno, quien daría la vida a eterna a quien este aceptara,
+                          siendo reclamado años después, por el hijo de Samantha y Robert Salvado, Dominic, quien había nacido con ciertas habilidades especiales, como la
+                          capacidad de conjurar de forma innata distintos tipos de magia, y una rápida regeneración de heridas. Tras ser consumido por esta joya, su cabello y 
+                          ojos cambiaron a un rojo oscuro, que reflejaban el propio fuego del infierno, y desde entonces, nunca mas envejeció.
+                        </p>
+                      </div>
+                      <div class="col-md-2"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-2"></div>
           </div>
         </div>
       </div>
