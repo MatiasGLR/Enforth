@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./files/img/favicon.ico">
+    <title>Enforth X FeRoS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=MedievalSharp&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Hojas de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Script -->
+    <link rel="stylesheet" href="./files/css/header.css">
+    <style>
+        * {
+            font-family: Merriweather;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: rgb(233, 89, 84) !important;
+        }
+
+        a:hover, a > x:hover{
+            color:rgb(209, 29, 164) !important;
+        }
+    </style>
+  </head>
+<body class="text-white bg-dark" style="overflow-x:hidden">
+    <header class="bg-dark">
+        <div class="merryw w-100 text-center text-white">
+            <div class="row text-dark">
+                <div class="col-1"></div>
+                <div class="col-10 bg-white">
+                    <div class="row pb-4 pt-4">
+                        <div class="col-md-4 m-auto text-dark pb-2"><h1>Cuentos de Enforth</h1>Por Matlerod</div>
+                        <div class="col-md-4"><h1 style="font-size: 700%;">&</h1></div>
+                        <div class="col-md-4"><img style="width:120px" src="./parts/feros/feros.png" alt=""><br>Por <a class="" href="https://fedorian.com/feros">Grupo Fedorian</a></div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </header>
+    <main class="text-dark">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 bg-white" style="min-height:1200px; overflow-x:hidden">
+                <hr>
+                <div class="ms-4 me-4">
+                    <h3 class="mt-4">Cambios realizados</h3>
+                    <p>Aqui se escribirán los cambios realizados al <a href="./FEROS Manual.pdf" download>manual de FeRoS (Fedorian Roleplaying System)</a>, para uso personal de Cuentos de Enforth; asi como otros agregados para complementar el manual.</p>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_salud" role="button" aria-expanded="false" aria-controls="collap_salud">
+                    Daño y salud durante un combate ↓</a></h4>
+                <div id="collap_salud" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p>En FeDoS, el daño se realiza directamente dependiendo de la tirada del dado. En esta modificación, los daños se deben realizar de forma acumulativa, de forma que, para realizar un daño <b>Incapacitante</b>,
+                            es necesario primero realizar 3 veces el daño Grave. Esto es acumulativo; al realizar 3 daños <b>superficiales</b>, causarás un daño <b>severo</b>, y asi sucesivamente con el resto de daños.</p>
+                        <p>Al realizar dos veces un daño Incapacitante, el enemigo quedará fuera de combate, aplicando las reglas igual que en FeRoS.</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_equipo" role="button" aria-expanded="false" aria-controls="collap_equipo">
+                    Equipamiento e Inventario ↓</a></h4>
+                <div id="collap_equipo" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p>El equipamiento ahora constará de 5 slots, uno para equipamiento general (Tácticos en su ropa, joyería, alguna especie de arma escondida, etc.), uno para las armas
+                            de uso común por el personaje; dejamos uno en blanco para algún añadido, como utilizar armas en dual. Agregamos uno para la armadura y el escudo, para asi describir
+                            si estos tienen alguna habilidad o nombre en específico.
+                        </p>
+                        <p>Adicional a esto se agregó el Inventario, que consta de 3 columnas principales:
+                            <ul>
+                                <li><b>Tipo de almacén.</b> Aqui se coloca el donde se encuentran estos objetos, ya sea una casa, vehículo, mascota (Si tiene bolsos encima), carreta, cofres, etc; 
+                                Si el tipo de objeto, es alguno relacionado al jugador (Riñonera, bolsillos, cinturón, mochila, etc.) este solo podrá cargar con 5 objetos. Los objetos del equipo
+                                no cuentan para este límite de objetos.</li>
+                                <li><b>Tipo de objeto.</b> Se procede a colocar el nombre del objeto, asi como las tipos de modificaciones que tenga (Arma mejorada o encantada, un ingrediente
+                                    de un color particular, etc.)</li>
+                                <li><b>Cantidad.</b> Es la cantidad unitaria que se tiene de un objeto. Se podrán apilar objetos pequeños en cualquier cantidad, pero los objetos grandes o medianos
+                                solo se podrán apilar en un monto lógico, discutible con el DJ; en caso de tratarse de almacenamientos mágicos (Portales, agujeros de gusano, etc.) se podrán almacenar
+                                libremente, e incluso, si uno de ellos es un contenedor (Una casa grande, un sótano, una furgoneta) se podrán apilar objetos de gran tamaño en unas cantidades mayores.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_historia" role="button" aria-expanded="false" aria-controls="collap_historia">
+                    Historia y Diario ↓</a></h4>
+                <div id="collap_historia" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p>La historia es donde el jugador podrá colocar un lore resumido de su personaje, que explique su inventario o habilidades, no tiene que ser muy largo, y en caso de serlo, se puede
+                            añadir datos también en el <b>Diario.</b>
+                        </p>
+                        <p>El <b>Diario</b> será un anotador libre para el jugador, donde podrá ir escribiendo datos de sumo interes en la historia que desee guardar mas adelante, asi como sus propios
+                        pensamientos, o lo que este crea necesario.</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_habilidades" role="button" aria-expanded="false" aria-controls="collap_habilidades">
+                    Habilidades especiales ↓</a></h4>
+                <div id="collap_habilidades" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p>Estas son habilidades narrativas aparte de las que se van aprendiendo con los <b>avances</b>; estas se pueden ir aprendiendo conforme pasa la historia, ya sea por instructores,
+                        aprender a utilizar algun dispositivo extraño, conocer el mapa de una zona grande, etc.</p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_nucleo" role="button" aria-expanded="false" aria-controls="collap_nucleo">
+                    Núcleo de Dermyl ↓</a></h4>
+                <div id="collap_nucleo" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p>Este es el poder de la propia alma dentro del mundo, la cuál puede potenciar al ser de forma física (Corpus) o mental (Anima). Para ello, se deben consumir:
+                            <ul>
+                                <li><b>Núcleos de furia.</b> Dará 10% de probabilidad por cada uno, de duplicar el daño causado por ataques "Corpus"</li>
+                                <li><b>Núcleos de maná.</b> Dará 10% de probabilidad por cada uno, de duplicar el daño causado por ataques "Anima"</li>
+                            </ul>
+                            Los núcleos pueden ser eliminados, si se consume un cristal de paz, el cuál quitará aleatoriamente un núcleo.
+                        </p>
+                        <p>Este da su nombre por los estudios del cientifico británico Matthew Dermyl, quien dedicó su vida a descubrir el potencial del alma, descubriendo los tres cristales
+                            que podrían potenciar las capacidades físicas de un ser, aunque este no modifique su fisionomía.
+                        </p>
+                        <p class="text-center">
+                            <img style="width:300px" src="./parts/feros/nucleo.png" alt=""><br>
+                            Cada uno de estos colores (Excepto el negro), es una zona del alma donde uno de estos cristales puede situar su escencia
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_registro" role="button" aria-expanded="false" aria-controls="collap_registro">
+                    Registro importante ↓</a></h4>
+                <div id="collap_registro" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p>Estos son <b>glorias</b> ganadas por el personaje con el pasar de la historia, lo que le dará cierto estatus, habilidades, o un rango dentro de un entorno especifico (Acceso
+                        a zonas exclusivas, zonas militares, etc.)</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="ms-4 me-4">
+                    <h3 class="mt-4">Datos para la jugabilidad</h3>
+                    <p>Aqui serán explicados datos de campaña, como las ascendencias, habilidades, trasfondos, ocupaciones, equipamiento, y la <b>tienda</b></p>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_ascendencias" role="button" aria-expanded="false" aria-controls="collap_ascendencias">
+                    <x class="text-danger">Ascendencias ↓</x></a></h4>
+                <div id="collap_ascendencias" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p></p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_trasfondos" role="button" aria-expanded="false" aria-controls="collap_trasfondos">
+                    <x class="text-danger">Trasfondos ↓</x></a></h4>
+                <div id="collap_trasfondos" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p></p>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="text-center"><a style="text-decoration: none;" class="text-secondary" data-bs-toggle="collapse" href="#collap_ocupaciones" role="button" aria-expanded="false" aria-controls="collap_ocupaciones">
+                    <x class="text-danger">Ocupaciones ↓</x></a></h4>
+                <div id="collap_ocupaciones" class="collapse">
+                    <div class="row ms-4 me-4">
+                        <p></p>
+                    </div>
+                </div>
+
+
+                <hr>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </main>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+<script type="text/javascript" src="./files/js/jpop.js"></script>
+</html>

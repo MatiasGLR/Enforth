@@ -8,6 +8,11 @@
     src: url(../fonts/Abel/Abel.ttf);
 }
 
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merryweather/Merriweather.ttf);
+}
+
 * {
     font-family: Abel;
 }
